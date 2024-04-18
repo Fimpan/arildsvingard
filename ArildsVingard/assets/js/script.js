@@ -7,51 +7,51 @@ const overlayMenu = document.querySelector(".overlay");
 
 // Show and Hide Navbar Function
 const toggleMenu = () => {
-   navbarMenu.classList.toggle("active");
-   overlayMenu.classList.toggle("active");
+  navbarMenu.classList.toggle("active");
+  overlayMenu.classList.toggle("active");
 };
 
 // Collapsible Mobile Submenu Function
 const collapseSubMenu = () => {
-   navbarMenu
-      .querySelector(".menu-dropdown.active .submenu")
-      .removeAttribute("style");
-   navbarMenu.querySelector(".menu-dropdown.active").classList.remove("active");
+  navbarMenu
+    .querySelector(".menu-dropdown.active .submenu")
+    .removeAttribute("style");
+  navbarMenu.querySelector(".menu-dropdown.active").classList.remove("active");
 };
 
 // Toggle Mobile Submenu Function
 const toggleSubMenu = (e) => {
-   if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
-      e.preventDefault();
-      const menuDropdown = e.target.parentElement;
+  if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
+    e.preventDefault();
+    const menuDropdown = e.target.parentElement;
 
-      // If Dropdown is Expanded, then Collapse It
-      if (menuDropdown.classList.contains("active")) {
-         collapseSubMenu();
-      } else {
-         // Collapse Existing Expanded Dropdown
-         if (navbarMenu.querySelector(".menu-dropdown.active")) {
-            collapseSubMenu();
-         }
-
-         // Expanded the New Dropdown
-         menuDropdown.classList.add("active");
-         const subMenu = menuDropdown.querySelector(".submenu");
-         subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+    // If Dropdown is Expanded, then Collapse It
+    if (menuDropdown.classList.contains("active")) {
+      collapseSubMenu();
+    } else {
+      // Collapse Existing Expanded Dropdown
+      if (navbarMenu.querySelector(".menu-dropdown.active")) {
+        collapseSubMenu();
       }
-   }
+
+      // Expanded the New Dropdown
+      menuDropdown.classList.add("active");
+      const subMenu = menuDropdown.querySelector(".submenu");
+      subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+    }
+  }
 };
 
 // Fixed Resize Window Function
 const resizeWindow = () => {
-   if (window.innerWidth > 992) {
-      if (navbarMenu.classList.contains("active")) {
-         toggleMenu();
-      }
-      if (navbarMenu.querySelector(".menu-dropdown.active")) {
-         collapseSubMenu();
-      }
-   }
+  if (window.innerWidth > 992) {
+    if (navbarMenu.classList.contains("active")) {
+      toggleMenu();
+    }
+    if (navbarMenu.querySelector(".menu-dropdown.active")) {
+      collapseSubMenu();
+    }
+  }
 };
 
 // Initialize Event Listeners
@@ -61,18 +61,18 @@ navbarMenu.addEventListener("click", toggleSubMenu);
 window.addEventListener("resize", resizeWindow);
 
 //date picker
-document.getElementById('openDatePicker').addEventListener('click', function() {
-   document.getElementById('datePickerModal').style.display = 'block';
-});
+// document.getElementById('openDatePicker').addEventListener('click', function() {
+//    document.getElementById('datePickerModal').style.display = 'block';
+// });
 
-document.getElementsByClassName('close')[0].addEventListener('click', function() {
-   document.getElementById('datePickerModal').style.display = 'none';
-});
+// document.getElementsByClassName('close')[0].addEventListener('click', function() {
+//    document.getElementById('datePickerModal').style.display = 'none';
+// });
 
-// Close the modal if the user clicks anywhere outside of the modal content
-window.onclick = function(event) {
-   let modal = document.getElementById('datePickerModal');
-   if (event.target == modal) {
-       modal.style.display = 'none';
-   }
-}
+// // Close the modal if the user clicks anywhere outside of the modal content
+// window.onclick = function(event) {
+//    let modal = document.getElementById('datePickerModal');
+//    if (event.target == modal) {
+//        modal.style.display = 'none';
+//    }
+// }

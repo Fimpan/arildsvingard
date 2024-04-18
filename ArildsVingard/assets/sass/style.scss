@@ -13,9 +13,28 @@
 
 @import "pages/home";
 
-body{
-  padding-top:4rem ;
+body {
+  padding-top: 4rem;
 }
-.container{
-  margin:  0rem 1.25rem;
+.container {
+  margin: 0rem 1.25rem;
+}
+
+//boknings steg text
+.stages {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+
+  .number {
+    .circle {
+      border-radius: 50%;
+      background-color: #d9d9d9;
+      padding: 0.625rem;
+
+      p {
+        font-size: $stage-font-size;
+      }
+    }
+  }
 }
