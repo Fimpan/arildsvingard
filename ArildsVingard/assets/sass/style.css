@@ -184,21 +184,10 @@ body {
 
 .stageText {
   font-size: 0.625rem;
+  margin-top: 0.5rem;
 }
 
 /* The layout/ folder contains everything that takes part in laying out the site or application. This folder could have stylesheets for the main parts of the site (header, footer, navigation, sidebar…), the grid system or even CSS styles for all the forms.*/
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: auto;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
-}
-
 *,
 *::before,
 *::after {
@@ -219,8 +208,8 @@ button {
   border: none;
   outline: none;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   background: none;
   box-shadow: none;
 }
@@ -231,7 +220,7 @@ video {
   max-width: 100%;
   height: auto;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .menuContainer {
@@ -259,8 +248,7 @@ video {
   height: auto;
   z-index: 100;
   margin: 0 auto;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   background-color: white;
 }
 
@@ -269,7 +257,7 @@ video {
   align-items: center;
   justify-content: space-between;
   -moz-column-gap: 1rem;
-  column-gap: 1rem;
+       column-gap: 1rem;
   row-gap: 2rem;
   width: 100%;
   height: 4rem;
@@ -287,8 +275,7 @@ video {
     opacity: 0;
     overflow-y: auto;
     visibility: hidden;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     background-color: white;
     transition: all 0.5s ease;
   }
@@ -309,7 +296,7 @@ video {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 0.25rem;
-  column-gap: 0.25rem;
+       column-gap: 0.25rem;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 500;
@@ -364,8 +351,7 @@ video {
   transform: translateY(1rem);
   border-radius: 0 0 0.25rem 0.25rem;
   border-top: 2px solid pink;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   background-color: white;
   transition: all 0.3s ease-in-out;
 }
@@ -410,8 +396,8 @@ video {
   display: none;
   cursor: pointer;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   width: 1.6rem;
   height: 1.15rem;
   opacity: 0;
@@ -468,25 +454,50 @@ video {
   }
 }
 
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
 body {
   padding-top: 4rem;
 }
 
-.container {
+.stage-container {
   margin: 0rem 1.25rem;
 }
-
-.stages {
+.stage-container .top {
+  text-align: center;
+  margin: 2rem 0;
+}
+.stage-container .top .bokinghead {
+  margin-bottom: 1rem;
+}
+.stage-container .top .stages {
   display: flex;
   text-align: center;
   justify-content: space-between;
+  align-items: center;
 }
-.stages .number .circle {
+.stage-container .top .stages .number .flex-circle .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background-color: #d9d9d9;
-  padding: 0.625rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
 }
-.stages .number .circle p {
-  font-size: 0.75rem;
-} /*# sourceMappingURL=style.css.map */
+.stage-container .top .stages .emptyStage {
+  border-bottom: 2px solid black;
+  flex: 0 0 10%;
+}/*# sourceMappingURL=style.css.map */

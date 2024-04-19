@@ -6,33 +6,51 @@
 
 @import "layout/header";
 @import "layout/footer";
+@import "layout/menu";
 
 @import "components/accessibility";
 @import "components/buttons";
-@import "components/menu";
 
 @import "pages/home";
 
 body {
   padding-top: 4rem;
 }
-.container {
+.stage-container {
   margin: 0rem 1.25rem;
 
   //boknings steg text
   .top {
     text-align: center;
+    margin: 2rem 0;
+
+    .bokinghead {
+      margin-bottom: 1rem;
+    }
     .stages {
       display: flex;
       text-align: center;
       justify-content: space-between;
+      align-items: center;
 
       .number {
-        .circle {
-          border-radius: 50%;
-          background-color: #d9d9d9;
-          padding: 0.625rem;
+        // flex: 1;
+        .flex-circle {
+          .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #d9d9d9;
+            width: 2.5rem;
+            height: 2.5rem;
+            margin: auto;
+          }
         }
+      }
+      .emptyStage {
+        border-bottom: 2px solid black;
+        flex: 0 0 10%;
       }
     }
   }
