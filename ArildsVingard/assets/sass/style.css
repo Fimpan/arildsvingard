@@ -187,6 +187,17 @@ body {
   margin-top: 0.5rem;
 }
 
+.check {
+  padding: 1rem;
+  background-color: grey;
+}
+.check .checkInfo {
+  font-weight: 600;
+}
+.check .checkChoose {
+  font-weight: 400;
+}
+
 /* The layout/ folder contains everything that takes part in laying out the site or application. This folder could have stylesheets for the main parts of the site (header, footer, navigation, sidebar…), the grid system or even CSS styles for all the forms.*/
 *,
 *::before,
