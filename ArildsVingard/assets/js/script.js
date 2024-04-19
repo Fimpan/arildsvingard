@@ -60,19 +60,4 @@ overlayMenu.addEventListener("click", toggleMenu);
 navbarMenu.addEventListener("click", toggleSubMenu);
 window.addEventListener("resize", resizeWindow);
 
-//date picker
-// document.getElementById('openDatePicker').addEventListener('click', function() {
-//    document.getElementById('datePickerModal').style.display = 'block';
-// });
-
-// document.getElementsByClassName('close')[0].addEventListener('click', function() {
-//    document.getElementById('datePickerModal').style.display = 'none';
-// });
-
-// // Close the modal if the user clicks anywhere outside of the modal content
-// window.onclick = function(event) {
-//    let modal = document.getElementById('datePickerModal');
-//    if (event.target == modal) {
-//        modal.style.display = 'none';
-//    }
-// }
+// _________________________________________________________
