@@ -10,8 +10,12 @@ $h3: 1.5rem;
 $s-font-size: 1rem;
 $m-font-size: 1rem;
 $l-font-size: 1rem;
-$stage-font-size: 0.75rem;
+$stage-font-size: 0.625rem;
 $stageNum-font-size: 0.75rem;
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.stageText {
+  font-size: $stage-font-size;
 }
