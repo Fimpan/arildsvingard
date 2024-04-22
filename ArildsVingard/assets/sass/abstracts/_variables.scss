@@ -1,7 +1,10 @@
-// Här kan ni använda CSS och SCSS variables 
+// Här kan ni använda CSS och SCSS variables
 :root {
-    /* Variable for gap */
-    --flex-gap: 1rem;
-    /* Number of flex items*/
-    --flex-items: 1;
+  /* Variable for gap */
+  --flex-gap: 1rem;
+  /* Number of flex items*/
+  --flex-items: 1;
 }
+
+$ipad-breakpoint: 768px;
+$desktop-breakpoint: 992px;
