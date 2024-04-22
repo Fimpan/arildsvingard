@@ -187,14 +187,11 @@ body {
   margin-top: 0.5rem;
 }
 
-.check {
-  padding: 1rem;
-  background-color: grey;
-}
-.check .checkInfo {
+.checkInfo {
   font-weight: 600;
 }
-.check .checkChoose {
+
+.checkChoose {
   font-weight: 400;
 }
 
@@ -477,13 +474,78 @@ video {
   white-space: nowrap;
 }
 
+.booking {
+  background-color: #f0f0f0;
+}
+.booking .datepicker {
+  padding: 0 1rem;
+}
+.booking .datepicker .check {
+  padding: 1rem 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+.booking .datepicker .check.btnCheck {
+  display: flex;
+  justify-content: right;
+  border-bottom: none;
+}
+
+@media (min-width: 992px) {
+  .booking .datepicker {
+    display: flex;
+    justify-content: space-between;
+  }
+  .booking .datepicker .check {
+    border-right: 1px solid #d9d9d9;
+    border-bottom: none;
+    flex: 1;
+    padding-left: 1rem;
+  }
+  .booking .datepicker .check.btnCheck {
+    justify-content: center;
+    border: none;
+  }
+}
+.calContainer .cal {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calContainer .cal span {
+  padding: 3rem 2rem;
+  flex: 0 0 14.28%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.calContainer .cal span:hover {
+  background-color: #efefef;
+}
+.calContainer .cal span.active {
+  background-color: lightyellow;
+}
+
+.btn {
+  background-color: pink;
+  padding: 0.75rem 1rem;
+}
+
+.btnOffer {
+  background-color: red;
+  flex: 1;
+  text-align: center;
+}
+
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
 body {
   padding-top: 4rem;
 }
 
 .stage-container {
-  margin: 0rem 1.25rem;
+  padding: 0rem 1.25rem;
+  max-width: 800px;
+  margin: auto;
 }
 .stage-container .top {
   text-align: center;
@@ -511,4 +573,10 @@ body {
 .stage-container .top .stages .emptyStage {
   border-bottom: 2px solid black;
   flex: 0 0 10%;
+}
+
+@media (min-width: 992px) {
+  .stage-container {
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -17,8 +17,9 @@ body {
   padding-top: 4rem;
 }
 .stage-container {
-  margin: 0rem 1.25rem;
-
+  padding: 0rem 1.25rem;
+  max-width: 800px;
+  margin: auto;
   //boknings steg text
   .top {
     text-align: center;
@@ -53,5 +54,10 @@ body {
         flex: 0 0 10%;
       }
     }
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  .stage-container {
+    padding: 0;
   }
 }

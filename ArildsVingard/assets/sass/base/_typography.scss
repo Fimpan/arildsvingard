@@ -32,13 +32,10 @@ body {
 }
 
 //datepicker
-.check {
-  padding: 1rem;
-  background-color: grey;
-  .checkInfo {
-    font-weight: $semi-bold;
-  }
-  .checkChoose {
-    font-weight: $regular;
-  }
+
+.checkInfo {
+  font-weight: $semi-bold;
+}
+.checkChoose {
+  font-weight: $regular;
 }

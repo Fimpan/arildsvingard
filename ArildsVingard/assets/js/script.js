@@ -61,3 +61,45 @@ navbarMenu.addEventListener("click", toggleSubMenu);
 window.addEventListener("resize", resizeWindow);
 
 // _________________________________________________________
+
+//Datepicker
+let myDays = document.querySelectorAll(".cal span");
+let start = "";
+let end = "";
+myDays.forEach(function (day) {
+  day.addEventListener("click", function (e) {
+    if (start == "" && end == "") {
+      start = this.innerHTML;
+      day.classList.add("active");
+    } else if (start != "" && end == "") {
+      end = this.innerHTML;
+      myDays.forEach(function (day2) {
+        if (
+          Number(day2.innerHTML) >= Number(start) &&
+          Number(day2.innerHTML) <= Number(end)
+        ) {
+          day2.classList.add("active");
+        }
+      });
+    } else {
+      start = "";
+      end = "";
+      myDays.forEach(function (day3) {
+        day3.classList.remove("active");
+      });
+    }
+    console.log("Start: " + start + " End: " + end);
+  });
+});
+
+function addRange(startDay, endDay) {
+  myDays.forEach(function (day) {
+    let dayNumber = Number(day.innerHTML);
+    if (dayNumber >= startDay && dayNumber <= endDay) {
+      day.classList.add("active");
+    }
+  });
+}
+
+// Usage
+addRange(5, 10);
