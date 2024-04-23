@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: $desktop-breakpoint) {
+@media (min-width: $ipad-breakpoint) {
   .booking {
     .datepicker {
       display: flex;
@@ -49,6 +49,26 @@
   }
 }
 .calContainer {
+  background-color: #f7f4ff;
+  padding: 1rem;
+  .bookingInfo {
+    padding-bottom: 1rem;
+    .bookingHead {
+      font-size: $head-booking;
+      font-weight: $bold;
+      margin-bottom: 0.5rem;
+    }
+    .bookingText {
+      font-size: $text-booking;
+    }
+  }
+
+  .calendar-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
   .cal {
     --flex-gap: 0.75rem;
     gap: var(--flex-gap);

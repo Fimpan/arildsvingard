@@ -6,7 +6,6 @@ $h1: 6rem;
 $h2: 4rem;
 $h3: 2.5rem;
 $h4: 2rem;
-$head-booking: 1rem;
 
 //line-height
 $line-height-normal: 110%;
@@ -27,6 +26,16 @@ $medium: 500;
 $semi-bold: 600;
 $bold: 700;
 
+// _______________
+
+//Booking
+
+//Heading
+$head-booking: 1rem;
+
+//Text
+$text-booking: 0.75rem;
+//
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
