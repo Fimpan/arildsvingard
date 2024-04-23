@@ -122,23 +122,74 @@
       <div class="booking">
         <section class="datepicker">
           <div class="check">
-            <h4 class="checkInfo">Incheckning</h4>
-            <p class="checkChoose">Lägg till datum</p>
+            <a href="#calendarContainer">
+              <h4 class="checkInfo">Incheckning</h4>
+              <p class="checkChoose">Lägg till datum</p>
+            </a>
           </div>
           <div class="check">
-            <h4 class="checkInfo">Utcheckning</h4>
-            <p class="checkChoose">Lägg till datum</p>
+            <a href="#calendarContainer">
+              <h4 class="checkInfo">Utcheckning</h4>
+              <p class="checkChoose">Lägg till datum</p>
+            </a>
           </div>
           <div class="check">
-            <h4 class="checkInfo">Gäster och rum</h4>
-            <p class="checkChoose">Antal gäster och rum</p>
+            <button class="guestModal">
+              <h4 class="checkInfo">Gäster och rum</h4>
+              <p class="checkChoose quantity">Antal gäster och rum</p>
+            </button>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Choose number of guests and rooms</p>
+                <div>
+                  <button id="subtractGuests">-</button>
+                  <span id="guestCount">0</span>
+                  <button id="addGuests">+</button>
+                  <p>Guests</p>
+                </div>
+                <div>
+                  <button id="subtractRooms">-</button>
+                  <span id="roomCount">0</span>
+                  <button id="addRooms">+</button>
+                  <p>Rooms</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Choose number of guests and rooms</p>
+                <button id="subtract">-</button>
+                <span id="count">0</span>
+                <button id="add">+</button>
+              </div>
+            </div> -->
+            <!-- <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Choose number of guests and rooms</p>
+                <div>
+                  <button id="subtractGuests">-</button>
+                  <span id="guestCount">0</span>
+                  <button id="addGuests">+</button>
+                  <p>Guests</p>
+                </div>
+                <div>
+                  <button id="subtractRooms">-</button>
+                  <span id="roomCount">0</span>
+                  <button id="addRooms">+</button>
+                  <p>Rooms</p>
+                </div>
+              </div>
+            </div> -->
           </div>
           <div class="check btnCheck">
             <a href="#" class="btn btnOffer">Visa erbjudande</a>
           </div>
         </section>
       </div>
-      <section class="calContainer">
+      <section class="calContainer" id="calendarContainer">
         <div class="bookingInfo">
           <h3 class="bookingHead">
             Välj incheckningsdatum och utcheckningsdatum
@@ -186,13 +237,10 @@
           <span id="d29">29</span>
           <span id="d30">30</span>
           <span id="d31">31</span>
-          <!-- <span id="d32">1</span>
-          <span id="d33">2</span>
-          <span id="d34">3</span>
-          <span id="d35">4</span> -->
         </div>
       </section>
     </div>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/modal.js"></script>
   </body>
 </html>
