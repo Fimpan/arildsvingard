@@ -50,14 +50,22 @@
 }
 .calContainer {
   .cal {
+    --flex-gap: 0.75rem;
+    gap: var(--flex-gap);
     display: flex;
     flex-wrap: wrap;
+
     // gap: 0.75rem;
     span {
-      padding: 3rem 2rem;
-      flex: 0 0 14.28%;
+      --flex-items: 7;
+      width: calc(
+        (100% / var(--flex-items)) -
+          (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
+      );
+      aspect-ratio: 1 / 1;
+
       display: flex;
-      justify-content: center;
+      justify-content: left;
       align-content: center;
       border: 1px solid black;
       // border-bottom: 1px solid black;
