@@ -1,12 +1,17 @@
 //Style för all typografi, dvs lägg inget som har med typ i någon annan partial
 //Eftersom vi har nollställt all style, så kommer all text per default bli 16px, dvs ni måste bestämma storlek på allt
 
-//Heading
-$h1: 6rem;
-$h2: 4rem;
-$h3: 2.5rem;
-$h4: 2rem;
+//Headlines - Desktop
+$headline-1: 6rem;
+$headline-2: 4rem;
+$headline-3: 2.5rem;
+$headline-4: 2rem;
 
+//Headlines - Mobile
+$headline-1-m: 6rem;
+$headline-2-m: 4rem;
+$headline-3-m: 2.5rem;
+$headline-4-m: 2rem;
 //line-height
 $line-height-normal: 110%;
 $line-height-m: 100%;

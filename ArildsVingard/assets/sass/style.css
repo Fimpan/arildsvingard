@@ -475,6 +475,44 @@ video {
   white-space: nowrap;
 }
 
+.top .bookingContent {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.top .bookingContent a {
+  display: flex;
+  align-items: center;
+  flex: 0 0 33.33%;
+}
+.top .bookingContent .emptybox {
+  flex: 0 0 33.33%;
+}
+.top .stages {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+}
+.top .stages .number .flex-circle .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+}
+.top .stages .emptyStage {
+  border-bottom: 2px solid black;
+  flex: 0 0 10%;
+}
+
 .booking {
   background-color: #f0f0f0;
 }
@@ -581,6 +619,47 @@ video {
   background-color: lightyellow;
 }
 
+.selected-dates-section {
+  background-color: #f0f0f0;
+  text-align: center;
+}
+.selected-dates-section .header-container {
+  background-color: #d9d9d9;
+  padding: 1rem 0;
+}
+.selected-dates-section .dates-wrapper {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.selected-dates-section .dates-wrapper .selected-dates-container {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.selected-dates-section .dates-wrapper .selected-dates-container .invisible-link {
+  flex: 0 0 45%;
+  background-color: white;
+}
+.selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .day-container {
+  background-color: #d9d9d9;
+  padding: 0.25rem 0.5rem;
+}
+.selected-dates-section .dates-wrapper .selected-dates-container .invisible-link p {
+  margin: 0.5rem;
+}
+.selected-dates-section .dates-wrapper .booking-details {
+  text-align: left;
+  flex: 0 0 45%;
+}
+.selected-dates-section .change-search {
+  flex: 1;
+  width: 100%;
+}
+
 .btn {
   background-color: pink;
   padding: 0.75rem 1rem;
@@ -606,36 +685,19 @@ body {
   max-width: 800px;
   margin: auto;
 }
-.stage-container .top {
-  text-align: center;
-  margin: 2rem 0;
-}
-.stage-container .top .bokinghead {
-  margin-bottom: 1rem;
-}
-.stage-container .top .stages {
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  align-items: center;
-}
-.stage-container .top .stages .number .flex-circle .circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: #d9d9d9;
-  width: 2.5rem;
-  height: 2.5rem;
+
+.stage-container-m {
+  padding: 0rem 1.25rem;
+  max-width: 1200px;
   margin: auto;
-}
-.stage-container .top .stages .emptyStage {
-  border-bottom: 2px solid black;
-  flex: 0 0 10%;
 }
 
 @media (min-width: 992px) {
   .stage-container {
     padding: 0;
   }
+}
+.top {
+  text-align: center;
+  margin: 2rem 0;
 }/*# sourceMappingURL=style.css.map */

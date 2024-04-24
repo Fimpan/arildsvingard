@@ -5,10 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arilds Vingård</title>
     <link rel="stylesheet" href="assets/sass/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <header class="header" id="header">
+      <section class="wrapper menuContainer">
+        <a href="./index.html" class="brand">Brand</a>
+        <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
+        <span class="overlay"></span>
+        <nav class="navbar" id="navbar">
+          <ul class="menu" id="menu">
+            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+            <li class="menu-item menu-dropdown">
+              <span class="menu-link" data-toggle="submenu"
+                >Feature<i class="bx bx-chevron-down"></i
+              ></span>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Feature Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Feature Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Feature Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Feature Link</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item menu-dropdown">
+              <span class="menu-link" data-toggle="submenu"
+                >Discover<i class="bx bx-chevron-down"></i
+              ></span>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Discover Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Discover Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Discover Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Discover Link</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item menu-dropdown">
+              <span class="menu-link" data-toggle="submenu"
+                >Resource<i class="bx bx-chevron-down"></i
+              ></span>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Resource Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Resource Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Resource Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Resource Link</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="#" class="menu-link">Support</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <div class="stage-container-m">
+      <section class="top">
+        <div class="bookingContent">
+          <a href="stepOne.html" class="backLink"
+            ><span class="material-symbols-outlined"> arrow_back </span>
+            Tillbaka</a
+          >
+          <h1 class="bokinghead">Välj datum</h1>
+          <div class="emptybox"></div>
+        </div>
+        <div class="stages">
+          <div class="number">
+            <div class="flex-circle">
+              <a href="stepOne.html" class="circle">1</a>
+            </div>
+            <p class="stageText">Välj datum</p>
+          </div>
+          <div class="emptyStage"></div>
+          <div class="number">
+            <div class="flex-circle">
+              <a href="stepOne.html" class="circle">2</a>
+            </div>
+            <p class="stageText">Välj erbjudande</p>
+          </div>
+          <div class="emptyStage"></div>
+          <div class="number">
+            <div class="flex-circle">
+              <a href="stepOne.html" class="circle">3</a>
+            </div>
+            <p class="stageText">Välj tillval</p>
+          </div>
+          <div class="emptyStage"></div>
+          <div class="number">
+            <div class="flex-circle">
+              <a href="stepOne.html" class="circle">4</a>
+            </div>
+            <p class="stageText">Betalning</p>
+          </div>
+        </div>
+      </section>
+      <section class="selected-dates-section">
+        <div class="header-container">
+          <h2>Valda datum</h2>
+        </div>
+        <div class="dates-wrapper">
+          <div class="selected-dates-container">
+            <a href="stepOne.html" class="invisible-link">
+              <div class="single-date-container">
+                <div class="day-container">
+                  <p class="selected-day">Fre</p>
+                </div>
+                <p class="selected-date">12</p>
+                <p class="selected-month">April</p>
+              </div>
+            </a>
+            <a href="stepOne.html" class="invisible-link">
+              <div class="single-date-container">
+                <div class="day-container">
+                  <p class="selected-day">Lör</p>
+                </div>
+                <p class="selected-date">13</p>
+                <p class="selected-month">April</p>
+              </div>
+            </a>
+          </div>
+          <div class="booking-details">
+            <p class="nights-count">1 night</p>
+            <p class="room-guests-details">1 room, 2 guests</p>
+          </div>
+        </div>
+        <a href="stepOne.html" class="change-search">Ändra sökning</a>
+      </section>
+    </div>
     <script src="assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>

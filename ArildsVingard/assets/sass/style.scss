@@ -21,43 +21,20 @@ body {
   max-width: 800px;
   margin: auto;
   //boknings steg text
-  .top {
-    text-align: center;
-    margin: 2rem 0;
-
-    .bokinghead {
-      margin-bottom: 1rem;
-    }
-    .stages {
-      display: flex;
-      text-align: center;
-      justify-content: space-between;
-      align-items: center;
-
-      .number {
-        // flex: 1;
-        .flex-circle {
-          .circle {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            background-color: #d9d9d9;
-            width: 2.5rem;
-            height: 2.5rem;
-            margin: auto;
-          }
-        }
-      }
-      .emptyStage {
-        border-bottom: 2px solid black;
-        flex: 0 0 10%;
-      }
-    }
-  }
 }
+
+.stage-container-m {
+  padding: 0rem 1.25rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
 @media (min-width: $desktop-breakpoint) {
   .stage-container {
     padding: 0;
   }
+}
+.top {
+  text-align: center;
+  margin: 2rem 0;
 }
