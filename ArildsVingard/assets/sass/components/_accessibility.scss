@@ -199,17 +199,16 @@
 
   .dates-wrapper {
     padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: center;
+    // justify-content: space-between;
     margin-bottom: 2rem;
 
     p {
       margin: 0.5rem;
     }
     .selected-dates-container {
-      flex: 0 0 50%;
       display: flex;
       justify-content: space-between;
 
@@ -221,7 +220,7 @@
             background-color: #d9d9d9;
             padding: 0.25rem 0.5rem;
             .selected-day {
-              font-size: 1rem;
+              font-size: 1.25rem;
             }
           }
           .selected-date {
@@ -236,7 +235,13 @@
 
     .booking-details {
       text-align: left;
-      flex: 0 0 45%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .nights-count {
+        margin-top: 2rem;
+      }
     }
   }
   .change-search {
