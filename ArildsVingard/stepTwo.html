@@ -88,7 +88,7 @@
     </header>
     <div class="stage-container-m">
       <section class="top">
-        <div class="bookingContent">
+        <div class="wrappBookingContent">
           <a href="stepOne.html" class="backLink"
             ><span class="material-symbols-outlined"> arrow_back </span>
             Tillbaka</a
@@ -128,7 +128,7 @@
       </section>
       <section class="selected-dates-section">
         <div class="header-container">
-          <h2>Valda datum</h2>
+          <span class="selected-headline">Du har valt</span>
         </div>
         <div class="dates-wrapper">
           <div class="selected-dates-container">
@@ -151,7 +151,7 @@
               </div>
             </a>
           </div>
-          <div class="detalis-container">
+          <div class="details-container">
             <div class="booking-details">
               <p class="nights-count">Antal nätter:</p>
               <p class="room-guests-details">1 natt</p>
@@ -164,6 +164,38 @@
         </div>
         <a href="stepOne.html" class="change-search">Ändra sökning</a>
       </section>
+      <main class="offers-container">
+        <section class="offers">
+          <h2 class="offer-head">Vingårdspaket</h2>
+          <div class="offercard">
+            <picture class="offer-picture">
+              <source
+                media="(min-width:768px)"
+                srcset="assets/img/Rectangle 213.png"
+              />
+              <source
+                media="(max-width:769px)"
+                srcset="assets/img/Rectangle 213.png"
+              />
+              <img src="assets/img/Rectangle 213.png" alt="" />
+            </picture>
+            <div class="offer-text">
+              <h3>Vingårdspaket</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                voluptatibus quod illo molestiae ullam, vero repellat iusto
+                deleniti quo temporibus vitae, necessitatibus debitis
+                dignissimos atque laboriosam corporis, adipisci itaque. Eius!
+              </p>
+              <span>Vingårdens trerättersmeny Vinprovning</span>
+            </div>
+            <div class="offer-select">
+              <h4>Från 2 250 SEK</h4>
+              <span>per gäst och natt</span>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
     <script src="assets/js/script.js"></script>
   </body>

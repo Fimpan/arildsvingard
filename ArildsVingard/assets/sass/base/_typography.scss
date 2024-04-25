@@ -19,10 +19,17 @@ h2 {
 p {
   line-height: 1.2;
 }
+
+// Booking header
+.bokinghead {
+  font-size: $b-headline-1;
+}
 .stageText {
   font-size: $stage-font-size;
   margin-top: 0.5rem;
 }
+
+// ____________________________
 
 //datepicker
 
@@ -31,4 +38,11 @@ p {
 }
 .checkChoose {
   font-weight: $regular;
+}
+
+// ________________________
+
+//Booking choosed date
+.selected-headline {
+  font-size: $headline-booking;
 }

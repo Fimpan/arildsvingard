@@ -28,43 +28,50 @@ $headline-2-m: 4rem;
 $headline-3-m: 2.5rem;
 $headline-4-m: 2rem;
 
+// _______________________
+//Booking
+
+//Booking head - desktop
+$stage-font-size: 0.625rem;
+$stageNum-font-size: 0.75rem;
+$select-date-head: 1.25rem;
+
+//Booking head - mobile
+$stage-font-size: 0.625rem;
+$stageNum-font-size: 0.75rem;
+$select-date-head: 1rem;
+
 //-Headline - bookingsystem
-$b-headline-1: 1.5rem;
+$b-headline-1: 1rem;
 $b-headline-2: 1.5rem;
 $b-headline-3: 1.5rem;
+$b-headline-4: 1.5rem;
 //line-height
 $line-height-normal: 110%;
 $line-height-m: 100%;
 
-// text
+// body-text
 $s-font-size: 1rem;
 $m-font-size: 1rem;
 $l-font-size: 1rem;
-$stage-font-size: 0.625rem;
-$stageNum-font-size: 0.75rem;
-$choose-booking: 1rem;
+
+//valda datum container
+$headline-booking: 1.25rem;
 
 //Text - Bookingsystem
 
 //Mobile
 
 //Desktop
-$text-booking-s: 0.75rem;
-$text-booking-m: 1rem;
-$text-booking-l: 1.25rem;
+$body-booking-s: 0.75rem;
+$body-booking-m: 1rem;
+$body-booking-l: 1.25rem;
 //Font weight
 $light: 300;
 $regular: 400;
 $medium: 500;
 $semi-bold: 600;
 $bold: 700;
-
-// _______________
-
-//Booking
-
-//Heading
-$head-booking: 1rem;
 
 //Text
 $text-booking: 0.75rem;

@@ -23,11 +23,19 @@ html {
 *::before,
 *::after {
   box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 
 img,
@@ -206,6 +214,10 @@ p {
   line-height: 1.2;
 }
 
+.bokinghead {
+  font-size: 1rem;
+}
+
 .stageText {
   font-size: 0.625rem;
   margin-top: 0.5rem;
@@ -219,7 +231,32 @@ p {
   font-weight: 400;
 }
 
+.selected-headline {
+  font-size: 1.25rem;
+}
+
 /* The layout/ folder contains everything that takes part in laying out the site or application. This folder could have stylesheets for the main parts of the site (header, footer, navigation, sidebar…), the grid system or even CSS styles for all the forms.*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  height: -webkit-fill-available;
+}
+
 a,
 button {
   cursor: pointer;
@@ -485,17 +522,21 @@ video {
 
 .top .bookingContent {
   margin-bottom: 1rem;
+  text-align: center;
+}
+.top .wrappBookingContent {
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.top .bookingContent a {
+.top .wrappBookingContent a {
   display: flex;
   align-items: center;
   flex: 0 0 33.33%;
 }
-.top .bookingContent .emptybox {
+.top .wrappBookingContent .emptybox {
   flex: 0 0 33.33%;
 }
 .top .stages {
@@ -630,17 +671,14 @@ video {
 .selected-dates-section {
   background-color: #f0f0f0;
   text-align: center;
+  max-width: 384px;
 }
 .selected-dates-section .header-container {
   background-color: #d9d9d9;
   padding: 1rem 0;
 }
-.selected-dates-section .header-container h2 {
-  font-size: 1.25rem;
-}
 .selected-dates-section .dates-wrapper {
-  padding: 1rem;
-  margin-bottom: 2rem;
+  padding: 1rem 1rem 0 1rem;
 }
 .selected-dates-section .dates-wrapper p {
   margin: 0.5rem;
@@ -666,14 +704,14 @@ video {
 .selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .selected-month {
   font-size: 1.25rem;
 }
-.selected-dates-section .dates-wrapper .booking-details {
+.selected-dates-section .dates-wrapper .details-container {
+  padding: 2rem 0;
+}
+.selected-dates-section .dates-wrapper .details-container .booking-details {
   text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.selected-dates-section .dates-wrapper .booking-details .nights-count {
-  margin-top: 2rem;
 }
 .selected-dates-section .change-search {
   display: flex;
