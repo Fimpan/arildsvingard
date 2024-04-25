@@ -1,63 +1,24 @@
 //Style för all typografi, dvs lägg inget som har med typ i någon annan partial
 //Eftersom vi har nollställt all style, så kommer all text per default bli 16px, dvs ni måste bestämma storlek på allt
 
-//Headlines - Desktop
-$headline-1: 6rem;
-$headline-2: 4rem;
-$headline-3: 2.5rem;
-$headline-4: 2rem;
-
-//Headlines - Mobile
-$headline-1-m: 6rem;
-$headline-2-m: 4rem;
-$headline-3-m: 2.5rem;
-$headline-4-m: 2rem;
-
-//-Headline - bookingsystem
-$b-headline-1: 1.5rem;
-$b-headline-2: 1.5rem;
-$b-headline-3: 1, 5rem;
-//line-height
-$line-height-normal: 110%;
-$line-height-m: 100%;
-
-// text
-$s-font-size: 1rem;
-$m-font-size: 1rem;
-$l-font-size: 1rem;
-$stage-font-size: 0.625rem;
-$stageNum-font-size: 0.75rem;
-$choose-booking: 1rem;
-
-//Text - Bookingsystem
-
-//Mobile
-
-//Desktop
-$text-booking-s: 0.75rem;
-$text-booking-m: 1rem;
-$text-booking-l: 1.25rem;
-//Font weight
-$light: 300;
-$regular: 400;
-$medium: 500;
-$semi-bold: 600;
-$bold: 700;
-
-// _______________
-
-//Booking
-
-//Heading
-$head-booking: 1rem;
-
-//Text
-$text-booking: 0.75rem;
-//
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+h1 {
+  font-size: 3rem;
+  @media (min-width: 768px) {
+    font-size: 5rem;
+  }
+  @media (min-width: 992px) {
+    font-size: 6rem;
+  }
+}
+h2 {
+  font-size: 3rem;
+}
+p {
+  line-height: 1.2;
+}
 .stageText {
   font-size: $stage-font-size;
   margin-top: 0.5rem;

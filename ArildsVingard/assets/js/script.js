@@ -226,3 +226,5 @@ addRange(5, 10);
 
 // Reset the selected dates
 resetDates();
+
+// localStorage.setItem("name", true);
