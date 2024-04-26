@@ -193,112 +193,124 @@
     display: flex;
     justify-content: space-between;
   }
-}
 
-.selected-dates-section {
-  background-color: #f0f0f0;
-  text-align: center;
-  max-width: 384px;
+  .selected-dates-section {
+    background-color: #f0f0f0;
+    text-align: center;
+    max-width: 384px;
 
-  @media (min-width: $desktop-breakpoint) {
-    max-height: 438px;
-  }
-  .header-container {
-    background-color: #d9d9d9;
-    padding: 1rem 0;
-  }
-
-  .dates-wrapper {
-    padding: 1rem 1rem 0 1rem;
-
-    p {
-      margin: 0.5rem;
+    @media (min-width: $desktop-breakpoint) {
+      max-height: 438px;
+      flex: 0 0 33%;
     }
-    .selected-dates-container {
-      display: flex;
-      justify-content: space-between;
+    .header-container {
+      background-color: #d9d9d9;
+      padding: 1rem 0;
+    }
 
-      .invisible-link {
-        flex: 0 0 45%;
-        background-color: white;
-        .single-date-container {
-          .day-container {
-            background-color: #d9d9d9;
-            padding: 0.25rem 0.5rem;
-            .selected-day {
+    .dates-wrapper {
+      padding: 1rem 1rem 0 1rem;
+
+      p {
+        margin: 0.5rem;
+      }
+      .selected-dates-container {
+        display: flex;
+        justify-content: space-between;
+
+        .invisible-link {
+          flex: 0 0 45%;
+          background-color: white;
+          .single-date-container {
+            .day-container {
+              background-color: #d9d9d9;
+              padding: 0.25rem 0.5rem;
+              .selected-day {
+                font-size: 1.25rem;
+              }
+            }
+            .selected-date {
+              font-size: 0.75rem;
+            }
+            .selected-month {
               font-size: 1.25rem;
             }
           }
-          .selected-date {
-            font-size: 0.75rem;
-          }
-          .selected-month {
-            font-size: 1.25rem;
-          }
+        }
+      }
+      .details-container {
+        padding: 2rem 0;
+        .booking-details {
+          text-align: left;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
         }
       }
     }
-    .details-container {
-      padding: 2rem 0;
-      .booking-details {
-        text-align: left;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
+    .change-search {
+      display: flex;
+      justify-content: center;
+      padding: 0.75rem 0;
+      background-color: red;
     }
   }
-  .change-search {
-    display: flex;
-    justify-content: center;
-    padding: 0.75rem 0;
-    background-color: red;
-  }
-}
-// _______________________
+  // _______________________
 
-//Offer-card
-.offers-container {
-  .offers {
-    .offer-card {
-      .offer-content {
-        margin: 1.5rem 0;
-        .include-contianer {
-          ul {
-            li {
-              list-style-type: disc;
+  //Offer-card
+  .offers-container {
+    margin: 1.5rem 0;
+
+    .offers {
+      .offer-card {
+        .offer-content {
+          margin: 1.5rem 0;
+          .include-contianer {
+            ul {
+              li {
+                list-style-type: disc;
+              }
             }
           }
         }
-      }
-      .offer-selected {
-        display: flex;
-        justify-content: space-between;
+        .offer-selected {
+          display: flex;
+          justify-content: space-between;
+        }
       }
     }
   }
-}
 
-@media (min-width: $desktop-breakpoint) {
-  .offers {
-    .offer-card {
-      display: flex;
-      justify-content: space-between;
-      .offer-picture {
-        flex: 0 0 30%;
-      }
-      .offer-content {
-        flex: 0 0 30%;
-        margin: 0;
-        .include-contianer {
+  @media (min-width: $desktop-breakpoint) {
+    .offers-container {
+      margin: 0;
+      flex: 0 0 66%;
+      .offers {
+        .offer-card {
+          display: flex;
+          justify-content: space-between;
+          .offer-picture {
+            flex: 0 0 35%;
+          }
+          .offer-content {
+            flex: 0 0 35%;
+            margin: 0;
+            .include-contianer {
+              padding-left: 1rem;
+              ul {
+                li {
+                  list-style-type: disc;
+                }
+              }
+            }
+          }
+          .offer-selected {
+            flex: 0 0 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+          }
         }
-      }
-      .offer-selected {
-        flex: 0 0 25%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: end;
       }
     }
   }

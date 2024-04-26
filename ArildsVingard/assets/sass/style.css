@@ -727,95 +727,106 @@ video {
     justify-content: space-between;
   }
 }
-
-.selected-dates-section {
+.select-container .selected-dates-section {
   background-color: #f0f0f0;
   text-align: center;
   max-width: 384px;
 }
 @media (min-width: 992px) {
-  .selected-dates-section {
+  .select-container .selected-dates-section {
     max-height: 438px;
+    flex: 0 0 33%;
   }
 }
-.selected-dates-section .header-container {
+.select-container .selected-dates-section .header-container {
   background-color: #d9d9d9;
   padding: 1rem 0;
 }
-.selected-dates-section .dates-wrapper {
+.select-container .selected-dates-section .dates-wrapper {
   padding: 1rem 1rem 0 1rem;
 }
-.selected-dates-section .dates-wrapper p {
+.select-container .selected-dates-section .dates-wrapper p {
   margin: 0.5rem;
 }
-.selected-dates-section .dates-wrapper .selected-dates-container {
+.select-container .selected-dates-section .dates-wrapper .selected-dates-container {
   display: flex;
   justify-content: space-between;
 }
-.selected-dates-section .dates-wrapper .selected-dates-container .invisible-link {
+.select-container .selected-dates-section .dates-wrapper .selected-dates-container .invisible-link {
   flex: 0 0 45%;
   background-color: white;
 }
-.selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .day-container {
+.select-container .selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .day-container {
   background-color: #d9d9d9;
   padding: 0.25rem 0.5rem;
 }
-.selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .day-container .selected-day {
+.select-container .selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .day-container .selected-day {
   font-size: 1.25rem;
 }
-.selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .selected-date {
+.select-container .selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .selected-date {
   font-size: 0.75rem;
 }
-.selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .selected-month {
+.select-container .selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .selected-month {
   font-size: 1.25rem;
 }
-.selected-dates-section .dates-wrapper .details-container {
+.select-container .selected-dates-section .dates-wrapper .details-container {
   padding: 2rem 0;
 }
-.selected-dates-section .dates-wrapper .details-container .booking-details {
+.select-container .selected-dates-section .dates-wrapper .details-container .booking-details {
   text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.selected-dates-section .change-search {
+.select-container .selected-dates-section .change-search {
   display: flex;
   justify-content: center;
   padding: 0.75rem 0;
   background-color: red;
 }
-
-.offers-container .offers .offer-card .offer-content {
+.select-container .offers-container {
   margin: 1.5rem 0;
 }
-.offers-container .offers .offer-card .offer-content .include-contianer ul li {
+.select-container .offers-container .offers .offer-card .offer-content {
+  margin: 1.5rem 0;
+}
+.select-container .offers-container .offers .offer-card .offer-content .include-contianer ul li {
   list-style-type: disc;
 }
-.offers-container .offers .offer-card .offer-selected {
+.select-container .offers-container .offers .offer-card .offer-selected {
   display: flex;
   justify-content: space-between;
 }
-
 @media (min-width: 992px) {
-  .offers .offer-card {
+  .select-container .offers-container {
+    margin: 0;
+    flex: 0 0 66%;
+  }
+  .select-container .offers-container .offers .offer-card {
     display: flex;
     justify-content: space-between;
   }
-  .offers .offer-card .offer-picture {
-    flex: 0 0 30%;
+  .select-container .offers-container .offers .offer-card .offer-picture {
+    flex: 0 0 35%;
   }
-  .offers .offer-card .offer-content {
-    flex: 0 0 30%;
+  .select-container .offers-container .offers .offer-card .offer-content {
+    flex: 0 0 35%;
     margin: 0;
   }
-  .offers .offer-card .offer-selected {
+  .select-container .offers-container .offers .offer-card .offer-content .include-contianer {
+    padding-left: 1rem;
+  }
+  .select-container .offers-container .offers .offer-card .offer-content .include-contianer ul li {
+    list-style-type: disc;
+  }
+  .select-container .offers-container .offers .offer-card .offer-selected {
     flex: 0 0 25%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: end;
   }
 }
+
 .btn {
   background-color: #252a10;
   padding: 0.75rem 1.5rem;
@@ -869,8 +880,4 @@ body {
 .top {
   text-align: center;
   margin: 2rem 0;
-}
-
-.offers-container {
-  margin: 1.5rem 0;
 }/*# sourceMappingURL=style.css.map */
