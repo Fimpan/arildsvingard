@@ -22,7 +22,11 @@ p {
 
 // Booking header
 .bokinghead {
-  font-size: $b-headline-1;
+  font-size: $b-headline-1-m;
+
+  @media (min-width: $ipad-breakpoint) {
+    font-size: $b-headline-1;
+  }
 }
 .stageText {
   font-size: $stage-font-size;
@@ -45,4 +49,44 @@ p {
 //Booking choosed date
 .selected-headline {
   font-size: $headline-booking;
+}
+
+.h2-booking {
+  font-size: $b-headline-2-m;
+  margin-bottom: $b-headline-2-m-mb;
+}
+.h3-booking {
+  font-size: $b-headline-3-m;
+  font-weight: $semi-bold;
+  margin-bottom: $b-headline-3-m-mb;
+  @media (min-width: $ipad-breakpoint) {
+    font-size: $b-headline-3;
+  }
+}
+.p-booking {
+  font-size: $body-booking-s;
+  margin-bottom: $body-booking-m-mb;
+  @media (min-width: $ipad-breakpoint) {
+    font-size: $body-booking-m;
+  }
+  @media (min-width: $desktop-breakpoint) {
+    font-size: $body-booking-l;
+  }
+}
+
+.span-booking {
+  font-size: $body-booking-xs;
+}
+.span-price {
+  font-weight: $semi-bold;
+}
+.span-include {
+  font-size: $body-booking-xs;
+}
+@media (min-width: $desktop-breakpoint) {
+  .span-include {
+    &.include-ralign {
+      text-align: right;
+    }
+  }
 }

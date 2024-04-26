@@ -1,7 +1,20 @@
 //Style för buttons
 .btn {
-  background-color: pink;
-  padding: 0.75rem 1rem;
+  background-color: $btn-color-primary;
+  padding: $btn-padding;
+  border-radius: $btn-border-radius;
+  color: $btn-text-primary-color;
+}
+
+.btn-secondary {
+  color: $btn-text-secondary-color;
+  background-color: $btn-color-secondary;
+  border: $btn-stroke-secondary;
+  padding: $btn-padding;
+  border-radius: $btn-border-radius;
+  min-width: 150px;
+  min-height: 48px;
+  text-align: center;
 }
 
 .btnOffer {

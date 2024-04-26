@@ -188,11 +188,21 @@
 }
 
 // Choosen dates
+.select-container {
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .selected-dates-section {
   background-color: #f0f0f0;
   text-align: center;
   max-width: 384px;
+
+  @media (min-width: $desktop-breakpoint) {
+    max-height: 438px;
+  }
   .header-container {
     background-color: #d9d9d9;
     padding: 1rem 0;
@@ -235,9 +245,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        .nights-count {
-        }
       }
     }
   }
@@ -246,5 +253,53 @@
     justify-content: center;
     padding: 0.75rem 0;
     background-color: red;
+  }
+}
+// _______________________
+
+//Offer-card
+.offers-container {
+  .offers {
+    .offer-card {
+      .offer-content {
+        margin: 1.5rem 0;
+        .include-contianer {
+          ul {
+            li {
+              list-style-type: disc;
+            }
+          }
+        }
+      }
+      .offer-selected {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .offers {
+    .offer-card {
+      display: flex;
+      justify-content: space-between;
+      .offer-picture {
+        flex: 0 0 30%;
+      }
+      .offer-content {
+        flex: 0 0 30%;
+        margin: 0;
+        .include-contianer {
+        }
+      }
+      .offer-selected {
+        flex: 0 0 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: end;
+      }
+    }
   }
 }

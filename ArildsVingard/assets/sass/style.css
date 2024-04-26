@@ -215,7 +215,12 @@ p {
 }
 
 .bokinghead {
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .bokinghead {
+    font-size: 2rem;
+  }
 }
 
 .stageText {
@@ -235,6 +240,54 @@ p {
   font-size: 1.25rem;
 }
 
+.h2-booking {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.h3-booking {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 768px) {
+  .h3-booking {
+    font-size: 1.25rem;
+  }
+}
+
+.p-booking {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .p-booking {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .p-booking {
+    font-size: 1.25rem;
+  }
+}
+
+.span-booking {
+  font-size: 0.75rem;
+}
+
+.span-price {
+  font-weight: 600;
+}
+
+.span-include {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 992px) {
+  .span-include.include-ralign {
+    text-align: right;
+  }
+}
 /* The layout/ folder contains everything that takes part in laying out the site or application. This folder could have stylesheets for the main parts of the site (header, footer, navigation, sidebar…), the grid system or even CSS styles for all the forms.*/
 *,
 *::before,
@@ -668,10 +721,22 @@ video {
   background-color: lightyellow;
 }
 
+@media (min-width: 992px) {
+  .select-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .selected-dates-section {
   background-color: #f0f0f0;
   text-align: center;
   max-width: 384px;
+}
+@media (min-width: 992px) {
+  .selected-dates-section {
+    max-height: 438px;
+  }
 }
 .selected-dates-section .header-container {
   background-color: #d9d9d9;
@@ -720,9 +785,53 @@ video {
   background-color: red;
 }
 
+.offers-container .offers .offer-card .offer-content {
+  margin: 1.5rem 0;
+}
+.offers-container .offers .offer-card .offer-content .include-contianer ul li {
+  list-style-type: disc;
+}
+.offers-container .offers .offer-card .offer-selected {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+  .offers .offer-card {
+    display: flex;
+    justify-content: space-between;
+  }
+  .offers .offer-card .offer-picture {
+    flex: 0 0 30%;
+  }
+  .offers .offer-card .offer-content {
+    flex: 0 0 30%;
+    margin: 0;
+  }
+  .offers .offer-card .offer-selected {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+  }
+}
 .btn {
-  background-color: pink;
-  padding: 0.75rem 1rem;
+  background-color: #252a10;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  color: #c1d955;
+}
+
+.btn-secondary {
+  color: #1a1a1a;
+  background-color: none;
+  border: 1.5px solid #434d1a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  min-width: 150px;
+  min-height: 48px;
+  text-align: center;
 }
 
 .btnOffer {
@@ -760,4 +869,8 @@ body {
 .top {
   text-align: center;
   margin: 2rem 0;
+}
+
+.offers-container {
+  margin: 1.5rem 0;
 }/*# sourceMappingURL=style.css.map */

@@ -22,11 +22,23 @@ $headline-2: 4rem;
 $headline-3: 2.5rem;
 $headline-4: 2rem;
 
-//Headlines - Mobile
 $headline-1-m: 6rem;
 $headline-2-m: 4rem;
 $headline-3-m: 2.5rem;
 $headline-4-m: 2rem;
+
+$s-font-size: 0.875rem;
+$m-font-size: 0.875rem;
+$l-font-size: 1rem;
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+$line-height-normal: 110%;
+$line-height-m: 100%;
 
 // _______________________
 //Booking
@@ -41,38 +53,48 @@ $stage-font-size: 0.625rem;
 $stageNum-font-size: 0.75rem;
 $select-date-head: 1rem;
 
-//-Headline - bookingsystem
-$b-headline-1: 1rem;
+$b-headline-1: 2rem;
 $b-headline-2: 1.5rem;
-$b-headline-3: 1.5rem;
+$b-headline-3: 1.25rem;
 $b-headline-4: 1.5rem;
-//line-height
-$line-height-normal: 110%;
-$line-height-m: 100%;
 
-// body-text
-$s-font-size: 1rem;
-$m-font-size: 1rem;
-$l-font-size: 1rem;
+$b-headline-1-m: 1.5rem;
+$b-headline-2-m: 1.5rem;
+$b-headline-3-m: 1.25rem;
+$b-headline-4-m: 1.5rem;
+
+$b-headline-2-m-mb: 0.75rem;
+$b-headline-3-m-mb: 0.75rem;
 
 //valda datum container
 $headline-booking: 1.25rem;
 
-//Text - Bookingsystem
-
-//Mobile
-
-//Desktop
-$body-booking-s: 0.75rem;
+$body-booking-xs: 0.75rem;
+$body-booking-s: 0.875rem;
 $body-booking-m: 1rem;
 $body-booking-l: 1.25rem;
-//Font weight
-$light: 300;
-$regular: 400;
-$medium: 500;
-$semi-bold: 600;
-$bold: 700;
 
-//Text
+$body-booking-m-mb: 1rem;
+
 $text-booking: 0.75rem;
-//
+// _______________________
+
+// Button
+
+$btn-color-enable: #252a10;
+$btn-color-disable: #99a273;
+$btn-color-hover: #434d1a;
+
+//primary
+$btn-color-primary: #252a10;
+$btn-text-primary-color: #c1d955;
+
+//secondary
+$btn-color-secondary: none;
+$btn-text-secondary-color: #1a1a1a;
+$btn-stroke-secondary: 1.5px solid #434d1a;
+
+$btn-padding: 0.75rem 1.5rem;
+$btn-padding-s: 0.5rem 1.5rem;
+
+$btn-border-radius: 50px;
