@@ -7,6 +7,17 @@
   --heding: 2rem;
 }
 
+@font-face {
+  font-family: "Ambit Regular";
+  src: url(ArildsVingard/font/AmbitRegular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Ambit SemiBold";
+  src: url(ArildsVingard/font/AmbitSemiBold.otf);
+  font-weight: 600;
+}
+
 /* Breakpoints */
 $ipad-breakpoint: 768px;
 $desktop-breakpoint: 992px;
