@@ -77,9 +77,11 @@ p {
 .booking-body {
   font-size: $body-booking-xs;
   font-weight: $regular;
+
   @media (min-width: $ipad-breakpoint) {
     font-size: $body-booking-m;
   }
+
   @media (min-width: $desktop-breakpoint) {
     font-size: $body-booking-l;
   }

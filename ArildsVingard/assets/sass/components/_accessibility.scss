@@ -334,6 +334,29 @@
             }
           }
         }
+        .offer-text {
+          .booking-text-info {
+            position: relative;
+            max-height: 100px;
+            overflow: hidden;
+            transition: max-height 1s ease;
+            &.-expanded {
+              max-height: 100vh;
+            }
+          }
+          .booking-text-info:not(.-expanded)::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(
+              rgba(255, 255, 255, 0),
+              rgba(255, 255, 255, 1)
+            );
+          }
+        }
         .offer-selected {
           display: flex;
           justify-content: space-between;
@@ -360,7 +383,8 @@
             &.oc-booking {
               flex: 0 0 63%;
             }
-            .include-contianer {
+
+            .include-container {
               ul {
                 li {
                   list-style-type: disc;

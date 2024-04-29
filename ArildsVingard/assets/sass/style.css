@@ -877,6 +877,24 @@ video {
 .select-container .offers-container .offers .offer-card .offer-content .include-contianer ul li {
   list-style-type: disc;
 }
+.select-container .offers-container .offers .offer-card .offer-text .booking-text-info {
+  position: relative;
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+.select-container .offers-container .offers .offer-card .offer-text .booking-text-info.-expanded {
+  max-height: 100vh;
+}
+.select-container .offers-container .offers .offer-card .offer-text .booking-text-info:not(.-expanded)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
+}
 .select-container .offers-container .offers .offer-card .offer-selected {
   display: flex;
   justify-content: space-between;
@@ -900,7 +918,7 @@ video {
   .select-container .offers-container .offers .offer-card .offer-content.oc-booking {
     flex: 0 0 63%;
   }
-  .select-container .offers-container .offers .offer-card .offer-content .include-contianer ul li {
+  .select-container .offers-container .offers .offer-card .offer-content .include-container ul li {
     list-style-type: disc;
   }
   .select-container .offers-container .offers .offer-card .offer-selected {
