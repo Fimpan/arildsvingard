@@ -5,10 +5,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arilds Vingård</title>
     <link rel="stylesheet" href="assets/sass/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <script src="assets/js/script.js"></script>
-</body>
+    <div class="stage-container-m">
+      <section class="top">
+        <div class="wrappBookingContent">
+          <a href="stepTwo.html" class="backLink"
+            ><span class="material-symbols-outlined"> arrow_back </span>
+            Tillbaka</a
+          >
+          <h1 class="bokinghead">Välj datum</h1>
+          <div class="emptybox"></div>
+        </div>
+        <div class="stages">
+          <div class="number">
+            <div class="flex-circle">
+              <a href="stepOne.html" class="circle">1</a>
+            </div>
+            <p class="stageText">Välj datum</p>
+          </div>
+          <div class="emptyStage"></div>
+          <div class="number">
+            <div class="flex-circle">
+              <a href="stepOne.html" class="circle">2</a>
+            </div>
+            <p class="stageText">Välj erbjudande</p>
+          </div>
+          <div class="emptyStage"></div>
+          <div class="number">
+            <div class="flex-circle">
+              <a href="stepOne.html" class="circle">3</a>
+            </div>
+            <p class="stageText">Välj tillval</p>
+          </div>
+          <div class="emptyStage"></div>
+          <div class="number">
+            <div class="flex-circle">
+              <a href="stepOne.html" class="circle">4</a>
+            </div>
+            <p class="stageText">Betalning</p>
+          </div>
+        </div>
+      </section>
+      <div class="select-container">
+        <section class="selected-dates-section">
+          <div class="header-container">
+            <span class="selected-headline">Bokning</span>
+          </div>
+          <div class="booking-container">
+            <div class="booking-selected mb2">
+              <figure class="booking-img">
+                <img src="assets/img/Rectangle 213.png" alt="" />
+              </figure>
+              <div class="booking-text">
+                <p class="selected-day">
+                  1x Större dubbelrum med utsikt över vinodling (2 vuxna)
+                </p>
+                <p class="selected-date">Dubbelsäng</p>
+              </div>
+            </div>
+            <div class="booking-info-container mb2">
+              <div class="booking-info bi-bg">
+                <p class="selected-date sd-bold sd-width">Incheckning</p>
+                <p class="selected-date">fre 24 april 2024 15:00</p>
+              </div>
+              <div class="booking-info">
+                <p class="selected-date sd-bold sd-width">Antal nätter:</p>
+                <p class="selected-date">lör 25 april 2024, 1 natt</p>
+              </div>
+              <div class="booking-info bi-bg">
+                <p class="selected-date sd-bold sd-width">Gäster</p>
+                <p class="selected-date">2 vuxna</p>
+              </div>
+              <div class="booking-info bi-borderrb">
+                <p class="selected-date sd-bold sd-width">Inkluderar:</p>
+                <ul class="list-includes">
+                  <li class="span-include">Frukost</li>
+                  <li class="span-include">Vingårdens 3-rättersmeny</li>
+                  <li class="span-include">Vinprovning</li>
+                </ul>
+              </div>
+            </div>
 
+            <div class="booking-price-container mb2">
+              <div class="booking-price mb1">
+                <p class="selected-date sd-bold">fre 19 april – lör 20 april</p>
+                <p class="selected-date">3 450 SEK</p>
+              </div>
+              <div class="booking-price">
+                <p class="selsected-day">Totalpris</p>
+                <p class="selsected-day">3 450 SEK</p>
+              </div>
+              <div class="booking-price">
+                <p class="selected-date">Moms</p>
+                <p class="selected-date">25%</p>
+              </div>
+            </div>
+            <div class="booking-link-container">
+              <div class="booking-link">
+                <a href="#">Villkor för Bokning och betalning</a>
+              </div>
+              <div class="booking-link">
+                <a href="#">Avbryt bokning och gå tillbaka till startsidan</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <main class="offers-container">
+          <section class="offers">
+            <div class="offer-card">
+              <picture class="offer-picture">
+                <source
+                  media="(min-width:768px)"
+                  srcset="assets/img/Rectangle 213.png"
+                />
+                <source
+                  media="(max-width:769px)"
+                  srcset="assets/img/Rectangle 213.png"
+                />
+                <img src="assets/img/Rectangle 213.png" alt="" />
+              </picture>
+              <div class="offer-content oc-booking">
+                <div class="offer-text">
+                  <h3 class="h3-booking">Vingårdspaket</h3>
+                  <p class="booking-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- https://codepen.io/kiprutobrian/pen/YzyOKjB -->
+          <div class="option-contianer">
+            <h3 class="h3-booking"></h3>
+            <section class="select-time">
+              <div class="btn-group col-xs-12">
+                <label class="option">
+                  <input type="radio" name="optradio" /><span
+                    class="btn btn-warning btn-option"
+                    >Option 1</span
+                  >
+                </label>
+                <label class="option">
+                  <input type="radio" name="optradio" /><span
+                    class="btn btn-warning btn-option"
+                    >Option 2</span
+                  >
+                </label>
+                <label class="option">
+                  <input type="radio" name="optradio" /><span
+                    class="btn btn-warning btn-option"
+                    >Option 3</span
+                  >
+                </label>
+              </div>
+            </section>
+            <section class="massage-container">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Meddelande till restaurangen:"
+              ></textarea>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

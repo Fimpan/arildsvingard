@@ -20,7 +20,6 @@
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
     a {
       display: flex;
@@ -29,6 +28,12 @@
     }
     .emptybox {
       flex: 0 0 33.33%;
+    }
+  }
+
+  @media (min-width: $ipad-breakpoint) {
+    .wrappBookingContent {
+      justify-content: space-between;
     }
   }
   .stages {
@@ -195,6 +200,7 @@
   }
 
   .selected-dates-section {
+    margin: auto;
     background-color: #f0f0f0;
     text-align: center;
     max-width: 384px;
@@ -231,9 +237,9 @@
                 font-size: 1.25rem;
               }
             }
-            .selected-date {
-              font-size: 0.75rem;
-            }
+            // .selected-date {
+            //   font-size: 0.75rem;
+            // }
             .selected-month {
               font-size: 1.25rem;
             }
@@ -256,6 +262,58 @@
       padding: 0.75rem 0;
       background-color: red;
     }
+
+    // ___________
+    // Boooking card
+    .booking-container {
+      text-align: left;
+      padding: 1.5rem;
+      .booking-selected {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        .booking-img {
+          flex: 0 0 30%;
+        }
+      }
+      .booking-info-container {
+        margin-bottom: 1rem;
+        border-bottom: 2px solid black;
+        .booking-info {
+          display: flex;
+
+          &.bi-bg {
+            background-color: #d9d9d9;
+          }
+
+          .selected-date {
+            padding: 0.5rem 1rem 0.5rem 0.5rem;
+
+            &.sd-width {
+              flex: 0 0 30%;
+            }
+          }
+          .list-includes {
+            padding: 0.5rem 1rem 0.5rem 0.5rem;
+          }
+        }
+      }
+      .booking-price-container {
+        margin-bottom: 1rem;
+        .booking-price {
+          display: flex;
+          justify-content: space-between;
+          &.mb1 {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      .booking-link-container {
+        text-decoration: underline;
+        font-size: 0.75rem;
+      }
+    }
   }
   // _______________________
 
@@ -268,6 +326,7 @@
         .offer-content {
           margin: 1.5rem 0;
           .include-contianer {
+            padding-left: 1rem;
             ul {
               li {
                 list-style-type: disc;
@@ -297,8 +356,11 @@
           .offer-content {
             flex: 0 0 35%;
             margin: 0;
+
+            &.oc-booking {
+              flex: 0 0 63%;
+            }
             .include-contianer {
-              padding-left: 1rem;
               ul {
                 li {
                   list-style-type: disc;
