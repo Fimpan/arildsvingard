@@ -9,11 +9,12 @@
 @import "layout/menu";
 
 @import "components/accessibility";
+@import "components/bookingStages";
 @import "components/buttons";
 @import "components/chat";
-@import "components/selectDates.scss";
 @import "components/datepicker";
-@import "components/bookingInfo";
+@import "components/selectCard";
+@import "components/selectDates.scss";
 
 @import "pages/home";
 

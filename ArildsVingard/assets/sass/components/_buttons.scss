@@ -72,20 +72,25 @@
 .radio-tile-group {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-
+  // justify-content: center;
+  --flex-gap: 0.75rem;
+  gap: var(--flex-gap);
   .input-container {
     position: relative;
-    height: 80px;
-    width: 80px;
-    margin: 0.5rem;
+    // height: 80px;
+    // margin: 0.5rem;
     --flex-items: 2;
+
     width: calc(
       (100% / var(--flex-items)) -
         (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
     );
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 2 / 1;
 
+    &.input-container-one {
+      width: 100%;
+      aspect-ratio: 8 / 1;
+    }
     .radio-button {
       opacity: 0;
       position: absolute;
@@ -104,21 +109,15 @@
       justify-content: center;
       width: 100%;
       height: 100%;
-      border: 2px solid #079ad9;
+      border: 1px solid #079ad9;
       border-radius: 5px;
       padding: 1rem;
       transition: transform 300ms ease;
     }
 
-    .icon svg {
-      fill: #079ad9;
-      width: 2rem;
-      height: 2rem;
-    }
-
     .radio-tile-label {
       text-align: center;
-      font-size: 0.75rem;
+      font-size: 1rem;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -128,20 +127,44 @@
     .radio-button:checked {
       + .radio-tile {
         background-color: #079ad9;
-        border: 2px solid #079ad9;
+        border: 1px solid #079ad9;
         color: white;
-        transform: scale(1.1, 1.1);
-      }
-
-      + .radio-tile .icon svg {
-        fill: white;
-        background-color: #079ad9;
+        transform: scale(1.01, 1.01);
       }
 
       + .radio-tile .radio-tile-label {
         color: white;
         background-color: #079ad9;
       }
+    }
+  }
+}
+@media (min-width: $ipad-breakpoint) {
+  .radio-tile-group {
+    --flex-gap: 1rem;
+    gap: var(--flex-gap);
+    .input-container {
+      --flex-items: 3;
+
+      width: calc(
+        (100% / var(--flex-items)) -
+          (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
+      );
+      aspect-ratio: 2 / 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .radio-tile-group {
+    .input-container {
+      --flex-items: 5;
+
+      width: calc(
+        (100% / var(--flex-items)) -
+          (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
+      );
+      aspect-ratio: 2 / 1;
     }
   }
 }
