@@ -182,3 +182,12 @@ ul,
 ol {
   list-style-type: "";
 }
+
+a,
+button {
+  cursor: pointer;
+  border: none;
+  user-select: none;
+  background: none;
+  box-shadow: none;
+}

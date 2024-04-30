@@ -17,6 +17,11 @@
   src: url(ArildsVingard/font/AmbitSemiBold.otf);
   font-weight: 600;
 }
+@font-face {
+  font-family: "MonumentGrotesk-Regular";
+  src: url(ArildsVingard/font/MonumentGrotesk-Regular.ttf);
+  font-weight: 500;
+}
 /* Breakpoints */
 *,
 html {
@@ -198,6 +203,17 @@ ol {
   list-style-type: "";
 }
 
+a,
+button {
+  cursor: pointer;
+  border: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background: none;
+  box-shadow: none;
+}
+
 body {
   font-family: Ambit;
 }
@@ -222,6 +238,11 @@ h2 {
 
 p {
   line-height: 1.2;
+}
+
+a {
+  color: #1a1a1a;
+  text-decoration: none;
 }
 
 .bokinghead {
@@ -321,47 +342,6 @@ p {
   }
 }
 /* The layout/ folder contains everything that takes part in laying out the site or application. This folder could have stylesheets for the main parts of the site (header, footer, navigation, sidebar…), the grid system or even CSS styles for all the forms.*/
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  list-style: none;
-  list-style-type: none;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
-
-html {
-  font-size: 100%;
-  box-sizing: inherit;
-  scroll-behavior: smooth;
-  height: -webkit-fill-available;
-}
-
-a,
-button {
-  cursor: pointer;
-  border: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  background: none;
-  box-shadow: none;
-}
-
-img,
-video {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .menuContainer {
   max-width: 75rem;
   height: auto;
@@ -899,6 +879,42 @@ video {
   display: flex;
   justify-content: space-between;
 }
+.select-container .offers-container .option-container .select-time .btn-group .option {
+  position: relative;
+}
+.select-container .offers-container .option-container .select-time .btn-group .option input {
+  opacity: 0;
+  position: absolute;
+}
+.select-container .offers-container .option-container .select-time .btn-group .option input:checked + span {
+  background-color: #ffc107;
+}
+.select-container .offers-container .option-container .select-time .btn-group .option input:checked + span:hover, .select-container .offers-container .option-container .select-time .btn-group .option input:checked + span:focus, .select-container .offers-container .option-container .select-time .btn-group .option input:checked + span:active {
+  background-color: #ffc107;
+}
+.select-container .offers-container .option-container .select-time .btn-group .option .btn-option {
+  padding: 1rem;
+  background-color: transparent;
+}
+.select-container .offers-container .option-container .select-time .btn-group .option .btn-option:hover, .select-container .offers-container .option-container .select-time .btn-group .option .btn-option:focus, .select-container .offers-container .option-container .select-time .btn-group .option .btn-option:active {
+  background-color: transparent;
+}
+.select-container .offers-container .option-container .massage-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  border-radius: 20px;
+  background: #ddd;
+  resize: none;
+  min-height: 200px;
+  color: #777;
+  /* When the textarea gets focus, do something */
+}
+.select-container .offers-container .option-container .massage-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
 @media (min-width: 992px) {
   .select-container .offers-container {
     margin: 0;
@@ -930,31 +946,175 @@ video {
 }
 
 .btn {
-  background-color: #252a10;
   padding: 0.75rem 1.5rem;
   border-radius: 50px;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.24;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 0.8px;
+  transition: 0.9s background-color, 0.9s color;
+}
+.btn:focus {
+  outline: 3px solid #c1d955;
+  outline-offset: 0px;
+}
+.btn.btn-primary {
+  background-color: #252a10;
   color: #c1d955;
 }
-
-.btn-secondary {
-  color: #1a1a1a;
-  background-color: none;
-  border: 1.5px solid #434d1a;
-  padding: 0.75rem 1.5rem;
-  border-radius: 50px;
-  min-width: 150px;
-  min-height: 48px;
-  text-align: center;
+.btn.btn-primary:hover {
+  background-color: #434d1a;
 }
-
-.btnOffer {
+.btn.btn-primary:active {
+  background-color: #252a10;
+}
+.btn.btn-secondary {
+  border: 1.5px solid #434d1a;
+}
+.btn.btn-secondary:hover {
+  background-color: #252a10;
+  color: #c1d955;
+}
+.btn.btn-secondary:active {
+  background-color: #434d1a;
+}
+.btn.btn-tetriary:hover {
+  text-decoration: underline;
+}
+.btn.btn-chat {
+  background-color: #04aa6d;
+  color: white;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+}
+.btn.btn-booking {
+  min-width: 180px;
+}
+.btn.btn-close {
   background-color: red;
-  flex: 1;
-  text-align: center;
+}
+.btn.btn-open {
+  background-color: #04aa6d;
+}
+.btn.btn-full-bleed {
+  border-radius: 0;
+  display: block;
 }
 
 .guestModal {
   text-align: left;
+}
+
+.radio-tile-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.radio-tile-group .input-container {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  margin: 0.5rem;
+  --flex-items: 2;
+  width: calc(100% / var(--flex-items) - (var(--flex-items) - 1) / var(--flex-items) * var(--flex-gap));
+  aspect-ratio: 1/1;
+}
+.radio-tile-group .input-container .radio-button {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+.radio-tile-group .input-container .radio-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #079ad9;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: transform 300ms ease;
+}
+.radio-tile-group .input-container .icon svg {
+  fill: #079ad9;
+  width: 2rem;
+  height: 2rem;
+}
+.radio-tile-group .input-container .radio-tile-label {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #079ad9;
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile {
+  background-color: #079ad9;
+  border: 2px solid #079ad9;
+  color: white;
+  transform: scale(1.1, 1.1);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .icon svg {
+  fill: white;
+  background-color: #079ad9;
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .radio-tile-label {
+  color: white;
+  background-color: #079ad9;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  /* Add styles to the form container */
+}
+.chat-popup .form-container {
+  position: relative;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+  color: #777;
+  /* Full-width textarea */
+}
+.chat-popup .form-container .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.chat-popup .form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  border-radius: 20px;
+  background: #ddd;
+  resize: none;
+  min-height: 200px;
+  color: #777;
+  /* When the textarea gets focus, do something */
+}
+.chat-popup .form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
 }
 
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/

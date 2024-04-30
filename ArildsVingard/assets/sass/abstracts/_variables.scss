@@ -17,6 +17,11 @@
   src: url(ArildsVingard/font/AmbitSemiBold.otf);
   font-weight: 600;
 }
+@font-face {
+  font-family: "MonumentGrotesk-Regular";
+  src: url(ArildsVingard/font/MonumentGrotesk-Regular.ttf);
+  font-weight: 500;
+}
 
 /* Breakpoints */
 $ipad-breakpoint: 768px;
@@ -39,7 +44,7 @@ $headline-3-m: 2.5rem;
 $headline-4-m: 2rem;
 
 $s-font-size: 0.875rem;
-$m-font-size: 0.875rem;
+$m-font-size: 1rem;
 $l-font-size: 1rem;
 
 $light: 300;
@@ -109,3 +114,5 @@ $btn-padding: 0.75rem 1.5rem;
 $btn-padding-s: 0.5rem 1.5rem;
 
 $btn-border-radius: 50px;
+
+$primary-text-color: #1a1a1a;

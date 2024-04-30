@@ -9,6 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
   </head>
 
   <body>
@@ -134,7 +140,7 @@
           <div class="booking-container">
             <div class="booking-selected mb2">
               <figure class="booking-img">
-                <img src="assets/img/Rectangle 213.png" alt="" />
+                <img src="assets/img/Rectangle 213.png" alt="hej" />
               </figure>
               <div class="booking-text">
                 <p class="selected-day">
@@ -202,85 +208,91 @@
                   media="(max-width:769px)"
                   srcset="assets/img/Rectangle 213.png"
                 />
-                <img src="assets/img/Rectangle 213.png" alt="" />
+                <img src="assets/img/Rectangle 213.png" alt="hej" />
               </picture>
               <div class="offer-content oc-booking">
                 <div class="offer-text oc-max-height">
                   <h3 class="h3-booking">Vingårdspaket</h3>
-                  <article class="booking-text-info">
-                    <p class="booking-body">
-                      <!-- <p> -->
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. 
-                    </p>
-
-                    <p class="booking-body">
-                      <!-- <p class="hiddentext"> -->
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua.  Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua.  Lorem ipsum dolor sit
-                      amet, consectetur adipiscing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Lorem ipsum
-                      dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.  Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua.  Lorem ipsum dolor sit
-                      amet, consectetur adipiscing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Lorem ipsum
-                      dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.  Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. 
-                    </p>
-                  </article>
-
-                  <button class="expand-button">Continue Reading</button>
+                  <p class=".booking-body">
+                    <!-- <p> -->
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. 
+                  </p>
                 </div>
               </div>
             </div>
           </section>
           <!-- https://codepen.io/kiprutobrian/pen/YzyOKjB -->
-          <div class="option-contianer">
-            <h3 class="h3-booking"></h3>
+          <div class="option-container">
+            <h3 class="h3-booking">Fredag 19 april, 2 personer</h3>
             <section class="select-time">
-              <div class="btn-group col-xs-12">
-                <label class="option">
-                  <input type="radio" name="optradio" /><span
-                    class="btn btn-warning btn-option"
-                    >Option 1</span
-                  >
-                </label>
-                <label class="option">
-                  <input type="radio" name="optradio" /><span
-                    class="btn btn-warning btn-option"
-                    >Option 2</span
-                  >
-                </label>
-                <label class="option">
-                  <input type="radio" name="optradio" /><span
-                    class="btn btn-warning btn-option"
-                    >Option 3</span
-                  >
-                </label>
+              <div class="radio-tile-group">
+                <div class="input-container">
+                  <input
+                    id="walk"
+                    class="radio-button"
+                    type="radio"
+                    name="radio"
+                  />
+                  <div class="radio-tile">
+                    <label for="walk" class="radio-tile-label">Walk</label>
+                  </div>
+                </div>
+
+                <div class="input-container">
+                  <input
+                    id="bike"
+                    class="radio-button"
+                    type="radio"
+                    name="radio"
+                  />
+                  <div class="radio-tile">
+                    <label for="bike" class="radio-tile-label">Bike</label>
+                  </div>
+                </div>
+
+                <div class="input-container">
+                  <input
+                    id="drive"
+                    class="radio-button"
+                    type="radio"
+                    name="radio"
+                  />
+                  <div class="radio-tile">
+                    <label for="drive" class="radio-tile-label">Drive</label>
+                  </div>
+                </div>
               </div>
             </section>
             <section class="massage-container">
               <textarea
                 id="message"
                 name="message"
-                placeholder="Meddelande till restaurangen:"
+                placeholder="Meddelande till restaurangen"
               ></textarea>
             </section>
           </div>
         </main>
       </div>
+    </div>
+    <button class="btn btn-chat" onclick="openForm()">Chat</button>
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <button type="button" class="close-icon" onclick="closeForm()">
+          X
+        </button>
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <h3>Chat with us</h3>
+
+        <label for="msg">Message</label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+
+        <button type="submit" class="btn btn-open">Send</button>
+        <button type="button" class="btn btn-close" onclick="closeForm()">
+          Close
+        </button>
+      </form>
     </div>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/menu.js"></script>
