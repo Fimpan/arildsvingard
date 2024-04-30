@@ -1,0 +1,55 @@
+// booking steges
+.top {
+  .bookingContent {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .wrappBookingContent {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    a {
+      display: flex;
+      align-items: center;
+      flex: 0 0 33.33%;
+    }
+    .emptybox {
+      flex: 0 0 33.33%;
+    }
+  }
+
+  @media (min-width: $ipad-breakpoint) {
+    .wrappBookingContent {
+      justify-content: space-between;
+    }
+  }
+  .stages {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+
+    .number {
+      // flex: 1;
+      .flex-circle {
+        .circle {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background-color: #d9d9d9;
+          width: 2.5rem;
+          height: 2.5rem;
+          margin: auto;
+        }
+      }
+    }
+    .emptyStage {
+      border-bottom: 2px solid black;
+      flex: 0 0 10%;
+    }
+  }
+}

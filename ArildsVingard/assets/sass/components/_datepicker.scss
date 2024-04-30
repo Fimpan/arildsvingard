@@ -1,0 +1,52 @@
+.calContainer {
+  background-color: #f7f4ff;
+  padding: 1rem;
+  .bookingInfo {
+    padding-bottom: 1rem;
+    .bookingHead {
+      font-size: $select-date-head;
+      font-weight: $bold;
+      margin-bottom: 0.5rem;
+    }
+    .bookingText {
+      font-size: $text-booking;
+    }
+  }
+
+  .calendar-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .cal {
+    --flex-gap: 0.75rem;
+    gap: var(--flex-gap);
+    display: flex;
+    flex-wrap: wrap;
+
+    // gap: 0.75rem;
+    span {
+      --flex-items: 7;
+      width: calc(
+        (100% / var(--flex-items)) -
+          (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
+      );
+      aspect-ratio: 1 / 1;
+
+      display: flex;
+      justify-content: left;
+      align-content: center;
+      border: 1px solid black;
+      // border-bottom: 1px solid black;
+      // border-right: 1px solid black;
+      cursor: pointer;
+      &:hover {
+        background-color: #efefef;
+      }
+      &.active {
+        background-color: lightyellow;
+      }
+    }
+  }
+}
