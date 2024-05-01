@@ -11,10 +11,19 @@
     max-width: 384px;
 
     @media (min-width: $desktop-breakpoint) {
+      margin: 0;
       position: sticky;
       top: 0;
       max-height: 438px;
       flex: 0 0 33%;
+    }
+
+    &.hide-selected-dates-section {
+      display: none;
+      @media (min-width: $ipad-breakpoint) {
+        display: block;
+        max-height: 470px;
+      }
     }
     .header-container {
       background-color: #d9d9d9;
@@ -126,10 +135,22 @@
   .offers-container {
     margin: 1.5rem 0;
 
+    .b-offer-content {
+      background-color: #f0f0f0;
+    }
     .offers {
+      &.b-offers {
+        // padding: 1.5rem;
+        @media (min-width: $desktop-breakpoint) {
+          padding: 1rem;
+        }
+      }
       .offer-card {
         .offer-content {
           margin: 1.5rem 0;
+          &.oc-booking {
+            margin: 1rem;
+          }
           .include-contianer {
             padding-left: 1rem;
             ul {
@@ -169,7 +190,9 @@
       }
     }
     .option-container {
+      padding: 0 1rem;
       .select-time {
+        margin-bottom: 1rem;
         .btn-group {
           .option {
             position: relative;
@@ -220,6 +243,16 @@
             outline: none;
           }
         }
+      }
+    }
+  }
+
+  @media (min-width: $ipad-breakpoint) {
+    .option-container {
+      padding: 0.5rem 1.5rem;
+
+      .select-time {
+        margin-bottom: 0.75rem;
       }
     }
   }
