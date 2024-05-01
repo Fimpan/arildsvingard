@@ -1226,7 +1226,18 @@ a {
 }
 .payment-container .info-text-buttons .booking-modal .selected-dates-section .header-container {
   background-color: #d9d9d9;
-  padding: 1rem 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.payment-container .info-text-buttons .booking-modal .selected-dates-section .header-container span {
+  display: flex;
+  align-items: center;
+}
+.payment-container .info-text-buttons .booking-modal .selected-dates-section .header-container .close-button .close-modal-icon {
+  display: flex;
+  align-items: center;
 }
 .payment-container .info-text-buttons .booking-modal .selected-dates-section .dates-wrapper {
   padding: 1rem 1rem 0 1rem;
@@ -1270,6 +1281,11 @@ a {
 .payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container {
   text-align: left;
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  height: calc(100vh - 3rem - 64px);
 }
 .payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container .booking-selected {
   display: flex;
@@ -1280,14 +1296,26 @@ a {
   flex: 0 0 30%;
 }
 .payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container .booking-info-container {
-  margin-bottom: 1rem;
-  border-bottom: 2px solid black;
+  display: none;
+  overflow: auto;
+}
+.payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container .booking-info-container.expanded {
+  display: block !important;
 }
 .payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container .booking-info-container .booking-info {
   display: flex;
 }
 .payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container .booking-info-container .booking-info.bi-bg {
   background-color: #d9d9d9;
+}
+.payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container .booking-info-container .booking-info.bi-borderrb {
+  border-bottom: 2px solid black;
+}
+.payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container .booking-info-container .booking-info.b-flex-sb {
+  justify-content: space-between;
+}
+.payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container .booking-info-container .booking-info.b-flex-sb p {
+  padding: 0.5rem 0 0 0;
 }
 .payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container .booking-info-container .booking-info .selected-date {
   padding: 0.5rem 1rem 0.5rem 0.5rem;
@@ -1307,6 +1335,11 @@ a {
 }
 .payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container .booking-price-container .booking-price.mb1 {
   margin-bottom: 1rem;
+}
+.payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container .booking-price-container .keep-goto {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 .payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container .booking-link-container {
   text-decoration: underline;

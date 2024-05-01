@@ -43,9 +43,23 @@
           max-height: 438px;
           flex: 0 0 33%;
         }
+
         .header-container {
           background-color: #d9d9d9;
-          padding: 1rem 0;
+          padding: 1rem;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          span {
+            display: flex;
+            align-items: center;
+          }
+          .close-button {
+            .close-modal-icon {
+              display: flex;
+              align-items: center;
+            }
+          }
         }
 
         .dates-wrapper {
@@ -100,6 +114,11 @@
         .booking-container {
           text-align: left;
           padding: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100vh;
+          height: calc(100vh - 2 * 1.5rem - 64px);
           .booking-selected {
             display: flex;
             gap: 1rem;
@@ -109,13 +128,27 @@
             }
           }
           .booking-info-container {
-            margin-bottom: 1rem;
-            border-bottom: 2px solid black;
+            // margin-bottom: 1rem;
+            // border-bottom: 2px solid black;
+            display: none;
+            &.expanded {
+              display: block !important;
+            }
+            overflow: auto;
             .booking-info {
               display: flex;
 
               &.bi-bg {
                 background-color: #d9d9d9;
+              }
+              &.bi-borderrb {
+                border-bottom: 2px solid black;
+              }
+              &.b-flex-sb {
+                justify-content: space-between;
+                p {
+                  padding: 0.5rem 0 0 0;
+                }
               }
 
               .selected-date {
@@ -132,12 +165,18 @@
           }
           .booking-price-container {
             margin-bottom: 1rem;
+
             .booking-price {
               display: flex;
               justify-content: space-between;
               &.mb1 {
                 margin-bottom: 1rem;
               }
+            }
+            .keep-goto {
+              margin-top: 1rem;
+              display: flex;
+              justify-content: space-between;
             }
           }
 

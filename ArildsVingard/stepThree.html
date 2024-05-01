@@ -385,7 +385,24 @@
         </main>
       </div>
     </div>
+    <button class="btn btn-chat btn-chat-mb" onclick="openForm()">Chat</button>
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <button type="button" class="close-icon" onclick="closeForm()">
+          X
+        </button>
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <h3>Chat with us</h3>
 
+        <label for="msg">Message</label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+
+        <button type="submit" class="btn btn-open">Send</button>
+        <button type="button" class="btn btn-close" onclick="closeForm()">
+          Close
+        </button>
+      </form>
+    </div>
     <section class="payment-container">
       <div class="payment-icons">
         <span class="card-icon">
@@ -420,54 +437,61 @@
             />
           </button>
           <section class="selected-dates-section hide-selected-dates-section">
-            <button class="close-button">
-              <img src="assets/icons/close.svg" alt="Close" class="icon" />
-            </button>
             <div class="header-container">
-              <span class="selected-headline">Bokning</span>
+              <span>Min kundvagn</span>
+              <button class="close-button">
+                <span class="close-modal-icon"
+                  >Stäng
+                  <img src="assets/icons/close.svg" alt="Close" class="icon" />
+                </span>
+              </button>
+              <!-- <span class="selected-headline">Bokning</span> -->
             </div>
             <div class="booking-container">
-              <div class="booking-selected mb2">
-                <figure class="booking-img">
-                  <img src="assets/img/Rectangle 213.png" alt="hej" />
-                </figure>
-                <div class="booking-text">
-                  <p class="selected-day">
-                    1x Större dubbelrum med utsikt över vinodling (2 vuxna)
-                  </p>
-                  <p class="selected-date">Dubbelsäng</p>
+              <div class="booking-flex">
+                <div class="booking-selected mb2">
+                  <figure class="booking-img">
+                    <img src="assets/img/Rectangle 213.png" alt="hej" />
+                  </figure>
+                  <div class="booking-text">
+                    <p class="selected-day">
+                      1x Större dubbelrum med utsikt över vinodling (2 vuxna)
+                    </p>
+                    <p class="selected-date">Dubbelsäng</p>
+                  </div>
                 </div>
-              </div>
-              <div class="booking-info-container mb2">
-                <div class="booking-info bi-bg">
-                  <p class="selected-date sd-bold sd-width">Incheckning</p>
-                  <p class="selected-date">fre 24 april 2024 15:00</p>
-                </div>
-                <div class="booking-info">
-                  <p class="selected-date sd-bold sd-width">Antal nätter:</p>
-                  <p class="selected-date">lör 25 april 2024, 1 natt</p>
-                </div>
-                <div class="booking-info bi-bg">
-                  <p class="selected-date sd-bold sd-width">Gäster</p>
-                  <p class="selected-date">2 vuxna</p>
-                </div>
-                <div class="booking-info bi-borderrb">
-                  <p class="selected-date sd-bold sd-width">Inkluderar:</p>
-                  <ul class="list-includes">
-                    <li class="span-include">Frukost</li>
-                    <li class="span-include">Vingårdens 3-rättersmeny</li>
-                    <li class="span-include">Vinprovning</li>
-                  </ul>
-                </div>
-              </div>
+                <button class="read-more">Toggle Info</button>
 
-              <div class="booking-price-container mb2">
-                <div class="booking-price mb1">
-                  <p class="selected-date sd-bold">
-                    fre 19 april – lör 20 april
-                  </p>
-                  <p class="selected-date">3 450 SEK</p>
+                <div class="booking-info-container expanded mb2">
+                  <div class="booking-info bi-bg">
+                    <p class="selected-date sd-bold sd-width">Incheckning</p>
+                    <p class="selected-date">fre 24 april 2024 15:00</p>
+                  </div>
+                  <div class="booking-info">
+                    <p class="selected-date sd-bold sd-width">Antal nätter:</p>
+                    <p class="selected-date">lör 25 april 2024, 1 natt</p>
+                  </div>
+                  <div class="booking-info bi-bg">
+                    <p class="selected-date sd-bold sd-width">Gäster</p>
+                    <p class="selected-date">2 vuxna</p>
+                  </div>
+                  <div class="booking-info bi-borderrb">
+                    <p class="selected-date sd-bold sd-width">Inkluderar:</p>
+                    <ul class="list-includes">
+                      <li class="span-include">Frukost</li>
+                      <li class="span-include">Vingårdens 3-rättersmeny</li>
+                      <li class="span-include">Vinprovning</li>
+                    </ul>
+                  </div>
+                  <div class="booking-info b-flex-sb">
+                    <p class="selected-date sd-bold">
+                      fre 19 april – lör 20 april
+                    </p>
+                    <p class="selected-date">3 450 SEK</p>
+                  </div>
                 </div>
+              </div>
+              <div class="booking-price-container mb2">
                 <div class="booking-price">
                   <p class="selsected-day">Totalpris</p>
                   <p class="selsected-day">3 450 SEK</p>
@@ -476,14 +500,15 @@
                   <p class="selected-date">Moms</p>
                   <p class="selected-date">25%</p>
                 </div>
-              </div>
-              <div class="booking-link-container">
-                <div class="booking-link">
-                  <a href="#">Villkor för Bokning och betalning</a>
-                </div>
-                <div class="booking-link">
-                  <a href="#">Avbryt bokning och gå tillbaka till startsidan</a>
-                </div>
+                <section class="keep-goto">
+                  <button
+                    class="btn btn-primary continue-shopping"
+                    onclick="closeModal()"
+                  >
+                    Fortsätta handla
+                  </button>
+                  <a class="btn btn-secondary">Gå till kassan</a>
+                </section>
               </div>
             </div>
           </section>
@@ -498,24 +523,7 @@
         </div>
       </section>
     </section>
-    <button class="btn btn-chat btn-chat-mb" onclick="openForm()">Chat</button>
-    <div class="chat-popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
-        <button type="button" class="close-icon" onclick="closeForm()">
-          X
-        </button>
-        <i class="fa-solid fa-chalkboard-user"></i>
-        <h3>Chat with us</h3>
 
-        <label for="msg">Message</label>
-        <textarea placeholder="Type message.." name="msg" required></textarea>
-
-        <button type="submit" class="btn btn-open">Send</button>
-        <button type="button" class="btn btn-close" onclick="closeForm()">
-          Close
-        </button>
-      </form>
-    </div>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/bookingModal.js"></script>
