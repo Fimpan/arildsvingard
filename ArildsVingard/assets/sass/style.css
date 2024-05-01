@@ -993,6 +993,7 @@ a {
 }
 .select-container .offers-container .b-offer-content {
   background-color: #f0f0f0;
+  margin-bottom: 2rem;
 }
 @media (min-width: 992px) {
   .select-container .offers-container .offers.b-offers {
@@ -1062,12 +1063,12 @@ a {
 .select-container .offers-container .option-container .massage-container textarea {
   width: 100%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 0 0 1rem 0;
   border: none;
   border-radius: 20px;
   background: #ddd;
   resize: none;
-  min-height: 200px;
+  min-height: 100px;
   color: #777;
   /* When the textarea gets focus, do something */
 }
