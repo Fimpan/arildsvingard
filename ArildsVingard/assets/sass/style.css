@@ -657,6 +657,10 @@ a {
 .btn.btn-primary:active {
   background-color: #252a10;
 }
+.btn.btn-primary-disable {
+  background-color: #99a273;
+  color: #c1d955;
+}
 .btn.btn-secondary {
   border: 1.5px solid #434d1a;
 }
