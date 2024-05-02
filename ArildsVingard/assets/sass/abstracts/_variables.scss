@@ -7,22 +7,6 @@
   --heding: 2rem;
 }
 
-@font-face {
-  font-family: "Ambit Regular";
-  src: url(arildsVingard/assets/font/AmbitRegular.otf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Ambit SemiBold";
-  src: url(ArildsVingard/font/AmbitSemiBold.otf);
-  font-weight: 600;
-}
-@font-face {
-  font-family: "MonumentGrotesk-Regular";
-  src: url(ArildsVingard/assets/font/MonumentGrotesk-Regular.ttf);
-  font-weight: 400;
-}
-
 /* Breakpoints */
 $ipad-breakpoint: 768px;
 $desktop-breakpoint: 992px;

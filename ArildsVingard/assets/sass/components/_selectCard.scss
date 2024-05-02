@@ -9,12 +9,13 @@
     background-color: #f0f0f0;
     text-align: center;
     max-width: 384px;
+    max-height: 470px;
 
     @media (min-width: $desktop-breakpoint) {
       margin: 0;
       position: sticky;
       top: 0;
-      max-height: 438px;
+      // max-height: 438px;
       flex: 0 0 33%;
     }
 

@@ -2,7 +2,25 @@
 //Eftersom vi har nollställt all style, så kommer all text per default bli 16px, dvs ni måste bestämma storlek på allt
 
 body {
-  font-family: Ambit;
+  font-family: "AmbitRegular";
+}
+
+@font-face {
+  font-family: "AmbitRegular";
+  src: url("/ArildsVingard/assets/fonts/Ambit\ Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "AmbitSemiBold";
+  src: url("/ArildsVingard/assets/fonts/Ambit\ SemiBold.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "MonumentGrotesk";
+  src: url("/ArildsVingard/assets/fonts/MonumentGrotesk-Regular.ttf")
+    format("truetype");
 }
 h1 {
   font-size: 3rem;

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arilds Vingård</title>
+    <link rel="stylesheet" href="assets/sass/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <!-- https://codepen.io/edwardrburton/pen/NWyzxMN/1000 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <section class="wrapper menuContainer">
+        <a href="./index.html" class="brand">Brand</a>
+        <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
+        <span class="overlay"></span>
+        <nav class="navbar" id="navbar">
+          <ul class="menu" id="menu">
+            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+            <li class="menu-item menu-dropdown">
+              <span class="menu-link" data-toggle="submenu"
+                >Feature<i class="bx bx-chevron-down"></i
+              ></span>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Feature Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Feature Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Feature Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Feature Link</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item menu-dropdown">
+              <span class="menu-link" data-toggle="submenu"
+                >Discover<i class="bx bx-chevron-down"></i
+              ></span>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Discover Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Discover Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Discover Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Discover Link</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item menu-dropdown">
+              <span class="menu-link" data-toggle="submenu"
+                >Resource<i class="bx bx-chevron-down"></i
+              ></span>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Resource Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Resource Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Resource Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Resource Link</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="#" class="menu-link">Support</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <div class="stage-container-m">
+      <section class="top">
+        <div class="wrappBookingContent">
+          <a href="stepOne.html" class="backLink"
+            ><span class="material-symbols-outlined"> arrow_back </span>
+            Tillbaka</a
+          >
+          <h1 class="bokinghead">Välj datum</h1>
+          <div class="emptybox"></div>
+        </div>
+        <div class="stages">
+          <div class="number">
+            <div class="flex-circle">
+              <a href="stepOne.html" class="circle">1</a>
+            </div>
+            <p class="stageText">Välj datum</p>
+          </div>
+          <div class="emptyStage"></div>
+          <div class="number">
+            <div class="flex-circle">
+              <a href="stepOne.html" class="circle">2</a>
+            </div>
+            <p class="stageText">Välj erbjudande</p>
+          </div>
+          <div class="emptyStage"></div>
+          <div class="number">
+            <div class="flex-circle">
+              <a href="stepOne.html" class="circle">3</a>
+            </div>
+            <p class="stageText">Välj tillval</p>
+          </div>
+          <div class="emptyStage"></div>
+          <div class="number">
+            <div class="flex-circle">
+              <a href="stepOne.html" class="circle">4</a>
+            </div>
+            <p class="stageText">Betalning</p>
+          </div>
+        </div>
+      </section>
+      <div class="select-container">
+        <section class="selected-dates-section">
+          <div class="header-container">
+            <span class="selected-headline">Bokning</span>
+          </div>
+          <div class="booking-container">
+            <div class="booking-selected mb2">
+              <figure class="booking-img">
+                <img src="assets/img/Rectangle 213.png" alt="hej" />
+              </figure>
+              <div class="booking-text">
+                <p class="selected-day">
+                  1x Större dubbelrum med utsikt över vinodling (2 vuxna)
+                </p>
+                <p class="selected-date">Dubbelsäng</p>
+              </div>
+            </div>
+            <div class="booking-info-container mb2">
+              <div class="booking-info bi-bg">
+                <p class="selected-date sd-bold sd-width">Incheckning</p>
+                <p class="selected-date">fre 24 april 2024 15:00</p>
+              </div>
+              <div class="booking-info">
+                <p class="selected-date sd-bold sd-width">Antal nätter:</p>
+                <p class="selected-date">lör 25 april 2024, 1 natt</p>
+              </div>
+              <div class="booking-info bi-bg">
+                <p class="selected-date sd-bold sd-width">Gäster</p>
+                <p class="selected-date">2 vuxna</p>
+              </div>
+              <div class="booking-info bi-borderrb">
+                <p class="selected-date sd-bold sd-width">Inkluderar:</p>
+                <ul class="list-includes">
+                  <li class="span-include">Frukost</li>
+                  <li class="span-include">Vingårdens 3-rättersmeny</li>
+                  <li class="span-include">Vinprovning</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="booking-price-container mb2">
+              <div class="booking-price mb1">
+                <p class="selected-date sd-bold">fre 19 april – lör 20 april</p>
+                <p class="selected-date">3 450 SEK</p>
+              </div>
+              <div class="booking-price">
+                <p class="selsected-day">Totalpris</p>
+                <p class="selsected-day">3 450 SEK</p>
+              </div>
+              <div class="booking-price">
+                <p class="selected-date">Moms</p>
+                <p class="selected-date">25%</p>
+              </div>
+            </div>
+            <div class="booking-link-container">
+              <div class="booking-link">
+                <a href="#">Villkor för Bokning och betalning</a>
+              </div>
+              <div class="booking-link">
+                <a href="#">Avbryt bokning och gå tillbaka till startsidan</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <main class="offers-container">
+          <section class="personal-data-container">
+            <h2 class="h2-booking">Ansvarig för bokningen</h2>
+            <label class="material-checkbox">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              Jag är företagskund
+            </label>
+            <form action="" class="form-container" autocomplete="off">
+              <div class="form-flex">
+                <input
+                  type="text"
+                  id="surname"
+                  class="input-field if-mb"
+                  placeholder="Förnamn"
+                />
+                <input
+                  type="text"
+                  id="forname"
+                  class="input-field if-mb"
+                  placeholder="Efternamn"
+                />
+              </div>
+              <div class="form-flex">
+                <input
+                  type="text"
+                  id="email"
+                  class="input-field if-mb"
+                  placeholder="E-post"
+                />
+                <input
+                  type="text"
+                  id="email"
+                  class="input-field if-mb"
+                  placeholder="Bekfräfta e-post"
+                />
+              </div>
+              <div class="form-flex">
+                <input
+                  type="text"
+                  id="adress"
+                  class="input-field if-mb"
+                  placeholder="Adress"
+                />
+                <input
+                  type="text"
+                  id="adress"
+                  class="input-field if-mb"
+                  placeholder="C/O"
+                />
+              </div>
+              <div class="form-flex">
+                <input
+                  type="text"
+                  id="city"
+                  class="input-field if-mb"
+                  placeholder="Stad"
+                />
+                <input
+                  type="text"
+                  id="postNumer"
+                  class="input-field if-mb"
+                  placeholder="Postnummer"
+                />
+              </div>
+              <div class="form-flex">
+                <input
+                  type="text"
+                  id="country"
+                  class="input-field if-mb"
+                  placeholder="Land"
+                />
+                <input id="phone" type="tel" name="phone" />
+              </div>
+            </form>
+          </section>
+          <section class="form-container">
+            <h2 class="h2-booking">Meddelande och speciella önskemål</h2>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Skriv ditt önskemål"
+            ></textarea>
+          </section>
+          <section class="form-container">
+            <div class="card-coupons">
+              <h3>Presentkort</h3>
+              <label class="title">Apply coupons</label>
+              <form action="" autocomplete="on" class="coupon-container">
+                <input
+                  type="text"
+                  placeholder="Apply your coupons here"
+                  class="input_field"
+                />
+                <button class="btn btn-primary">Apply</button>
+              </form>
+            </div>
+            <div class="card-payment">
+              <form action="" class="form-container" autocomplete="off">
+                <div class="form-no-flex">
+                  <div class="input-wrapper">
+                    <img
+                      src="assets/icons/user.svg"
+                      alt="user"
+                      class="input-icon"
+                    />
+
+                    <input
+                      id="name"
+                      maxlength="40"
+                      type="text"
+                      placeholder="Kortinnehavare"
+                      class="input-field if-pl"
+                    />
+                  </div>
+                </div>
+                <div class="form-no-flex">
+                  <div class="input-wrapper">
+                    <img
+                      src="assets/icons/purchase.svg"
+                      alt="user"
+                      class="input-icon"
+                    />
+                    <input
+                      id="cardnumber"
+                      type="tel"
+                      inputmode="numeric"
+                      placeholder="Kortnummer"
+                      class="input-field if-pl"
+                    />
+                  </div>
+                </div>
+                <div class="form-flex">
+                  <div class="input-wrapper">
+                    <img
+                      src="assets/icons/calendar.svg"
+                      alt="user"
+                      class="input-icon"
+                    />
+                    <input
+                      id="expirationdate"
+                      type="tel"
+                      inputmode="numeric"
+                      placeholder="MM/YY"
+                      class="input-field if-pl"
+                    />
+                  </div>
+                  <div class="input-wrapper">
+                    <img
+                      src="assets/icons/locked.svg"
+                      alt="user"
+                      class="input-icon"
+                    />
+                    <input
+                      id="securitycode"
+                      type="tel"
+                      inputmode="numeric"
+                      placeholder="CVC"
+                      class="input-field if-pl"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/forms.js"></script>
+  </body>
+</html>
