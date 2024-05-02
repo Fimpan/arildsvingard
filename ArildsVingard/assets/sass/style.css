@@ -925,6 +925,10 @@ a {
   border-color: #c3cf34;
 }
 
+.iti {
+  width: 100%;
+}
+
 .form-container .card-coupons .coupon-container {
   display: flex;
   gap: 12px;
