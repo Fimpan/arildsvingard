@@ -84,7 +84,7 @@ input::placeholder {
   font-size: 1rem;
 }
 .input-field {
-  width: 100%;
+  width: 99%;
   //   margin-bottom: 0.75rem;
   &.if-mb {
     margin-bottom: 0.75rem;
@@ -97,6 +97,7 @@ input::placeholder {
 .input-wrapper {
   position: relative;
   margin-bottom: 0.75rem;
+  width: 100%;
 }
 @media (min-width: $ipad-breakpoint) {
   .form-flex {
