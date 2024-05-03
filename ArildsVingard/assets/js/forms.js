@@ -31,6 +31,20 @@ function process(event) {
 }
 
 //_________________________________
+
+function formatPostalCode(input) {
+  // Remove any non-digit characters
+  var value = input.value.replace(/\D/g, "");
+
+  // Add a space after the third digit
+  if (value.length > 3) {
+    value = value.slice(0, 3) + " " + value.slice(3);
+  }
+
+  // Update the input value
+  input.value = value;
+}
+
 // card-form
 document.getElementById("name").addEventListener("input", function (e) {
   e.target.value = e.target.value.replace(/[^a-zA-Z\s]/g, "");

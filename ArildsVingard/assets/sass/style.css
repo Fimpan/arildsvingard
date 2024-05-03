@@ -876,15 +876,16 @@ a {
 .material-checkbox {
   display: flex;
   align-items: center;
-  font-size: 16px;
   color: #777777;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
   cursor: pointer;
 }
 .material-checkbox input[type=checkbox] {
   position: absolute;
   opacity: 0;
-  width: 0;
-  height: 0;
+  width: 20px;
+  height: 20px;
 }
 .material-checkbox input[type=checkbox]:checked ~ .checkmark {
   background-color: #2f3300;
@@ -923,6 +924,10 @@ a {
 }
 .material-checkbox:hover input[type=checkbox] ~ .checkmark {
   border-color: #c3cf34;
+}
+.material-checkbox a {
+  padding-left: 0.2rem;
+  text-decoration: underline;
 }
 
 .iti {
@@ -970,6 +975,22 @@ input::placeholder {
     gap: 12px;
   }
 }
+.cancel-continue-buttons a {
+  display: flex;
+  align-items: center;
+  gap: 0.75px;
+  justify-content: center;
+}
+.cancel-continue-buttons .cancel {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .cancel-continue-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .input-icon {
   position: absolute;
   top: 50%;
@@ -977,6 +998,11 @@ input::placeholder {
   bottom: 0;
   transform: translate(-50%, -50%);
   width: 16px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
 }
 
 @media (min-width: 992px) {

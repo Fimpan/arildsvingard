@@ -1,15 +1,17 @@
 .material-checkbox {
   display: flex;
   align-items: center;
-  font-size: 16px;
   color: #777777;
+  margin-bottom: 1rem;
+  font-size: $body-booking-s;
+
   cursor: pointer;
 
   input[type="checkbox"] {
     position: absolute;
     opacity: 0;
-    width: 0;
-    height: 0;
+    width: 20px;
+    height: 20px;
 
     &:checked {
       ~ .checkmark {
@@ -66,6 +68,11 @@
       }
     }
   }
+
+  a {
+    padding-left: 0.2rem;
+    text-decoration: underline;
+  }
 }
 
 .iti {
@@ -108,5 +115,25 @@ input::placeholder {
   .form-flex {
     display: flex;
     gap: 12px;
+  }
+}
+
+// ________
+
+.cancel-continue-buttons {
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.75px;
+    justify-content: center;
+  }
+  .cancel {
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: $ipad-breakpoint) {
+  .cancel-continue-buttons {
+    display: flex;
+    justify-content: space-between;
   }
 }

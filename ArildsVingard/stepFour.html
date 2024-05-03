@@ -259,6 +259,8 @@
                   id="postNumer"
                   class="input-field if-mb"
                   placeholder="Postnummer"
+                  oninput="formatPostalCode(this)"
+                  maxlength="6"
                 />
               </div>
               <div class="form-flex">
@@ -360,6 +362,39 @@
                   </div>
                 </div>
               </form>
+            </div>
+          </section>
+          <section class="terms-news">
+            <label class="material-checkbox">
+              <input type="checkbox" />
+              <span class="checkmark checkmark-semibold"></span>
+              Jag har läst och godkänt
+              <a href="#"> bokningsvillkoren</a>
+            </label>
+            <label class="material-checkbox">
+              <input type="checkbox" />
+              <span class="checkmark checkmark-semibold"></span>
+              Jag vill premenurera på nyhetsbrev och få erbjudande samt
+              information via e-post
+            </label>
+          </section>
+          <section class="cancel-continue-buttons">
+            <div class="cancel">
+              <a href="stepOne.html" class="btn btn-secondary">
+                Avbryt<img
+                  src="assets/icons/close.svg"
+                  class="icon"
+                  alt="close-icon"
+              /></a>
+            </div>
+            <div class="continue">
+              <a href="stepFive.html" class="btn btn-primary"
+                >Fortsätt
+                <img
+                  src="assets/icons/chew_right_green.svg"
+                  class="icon"
+                  alt="Forward"
+              /></a>
             </div>
           </section>
         </main>
