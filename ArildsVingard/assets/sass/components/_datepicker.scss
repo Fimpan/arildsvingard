@@ -1,23 +1,72 @@
 .calContainer {
-  background-color: #f7f4ff;
+  background-color: #ffffff;
   padding: 1rem;
   .bookingInfo {
-    padding-bottom: 1rem;
+    margin-bottom: 2rem;
     .bookingHead {
       font-size: $select-date-head;
-      font-weight: $bold;
-      margin-bottom: 0.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
     }
     .bookingText {
       font-size: $text-booking;
+      margin-top: 0.7rem;
     }
   }
-
+  @media (min-width: $ipad-breakpoint) {
+    .bookingInfo {
+      margin-bottom: 3rem;
+    }
+  }
   .calendar-navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
+
+    .move-direction {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f3f0e8;
+      border-radius: 50%;
+      width: 2rem;
+      height: 2rem;
+      .calendar-button {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .month {
+      font-weight: 600;
+    }
+    @media (min-width: $ipad-breakpoint) {
+      .move-direction {
+        width: 2.5rem;
+        height: 2.5rem;
+        .calendar-button {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .month {
+        font-weight: 600;
+        font-size: 1.125rem;
+      }
+    }
+  }
+  @media (min-width: $ipad-breakpoint) {
+    .calendar-navigation {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .week-days-container {
+    display: flex;
+    justify-content: space-between;
+    .week-day-text {
+      flex: 0 0 14.28%;
+    }
   }
   .cal {
     --flex-gap: 0.75rem;

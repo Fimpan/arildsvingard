@@ -160,7 +160,11 @@
             </div>
           </div>
           <div class="check btnCheck">
-            <a href="stepTwo.html" class="btn btn-primary btn-full-bleed"
+            <a
+              href="stepTwo.html"
+              class="btn btn-primary btn-full-bleed"
+              id="offerButton"
+              disabled
               >Visa erbjudande</a
             >
           </div>
@@ -175,12 +179,29 @@
         </div>
         <section class="calendar-navigation">
           <button class="move-direction">
-            <span class="material-symbols-outlined"> chevron_left </span>
+            <img
+              src="assets/icons/chevron--left.svg"
+              alt="Left"
+              class="calendar-button"
+            />
           </button>
           <p class="month">April</p>
           <button class="move-direction">
-            <span class="material-symbols-outlined"> chevron_right </span>
+            <img
+              src="assets/icons/chevron--right.svg"
+              alt="Left"
+              class="calendar-button"
+            />
           </button>
+        </section>
+        <section class="week-days-container">
+          <span id="week-day-text">MÅN</span>
+          <span id="week-day-text">TIS</span>
+          <span id="week-day-text">ONS</span>
+          <span id="week-day-text">TORS</span>
+          <span id="week-day-text">FRE</span>
+          <span id="week-day-text">LÖR</span>
+          <span id="week-day-text">SÖN</span>
         </section>
         <div class="cal">
           <span id="d1">1</span>

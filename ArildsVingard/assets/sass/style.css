@@ -263,9 +263,11 @@ a {
 
 .checkInfo {
   font-weight: 600;
+  font-size: 0.875rem;
 }
 
 .checkChoose {
+  font-size: 0.75rem;
   font-weight: 400;
 }
 
@@ -969,25 +971,73 @@ a {
   }
 }
 .calContainer {
-  background-color: #f7f4ff;
+  background-color: #ffffff;
   padding: 1rem;
 }
 .calContainer .bookingInfo {
-  padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .calContainer .bookingInfo .bookingHead {
   font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 .calContainer .bookingInfo .bookingText {
   font-size: 0.75rem;
+  margin-top: 0.7rem;
+}
+@media (min-width: 768px) {
+  .calContainer .bookingInfo {
+    margin-bottom: 3rem;
+  }
 }
 .calContainer .calendar-navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
+}
+.calContainer .calendar-navigation .move-direction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f0e8;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+.calContainer .calendar-navigation .move-direction .calendar-button {
+  width: 16px;
+  height: 16px;
+}
+.calContainer .calendar-navigation .month {
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .calContainer .calendar-navigation .move-direction {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .calContainer .calendar-navigation .move-direction .calendar-button {
+    width: 24px;
+    height: 24px;
+  }
+  .calContainer .calendar-navigation .month {
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 768px) {
+  .calContainer .calendar-navigation {
+    margin-bottom: 2rem;
+  }
+}
+.calContainer .week-days-container {
+  display: flex;
+  justify-content: space-between;
+}
+.calContainer .week-days-container .week-day-text {
+  flex: 0 0 14.28%;
 }
 .calContainer .cal {
   --flex-gap: 0.75rem;
@@ -1389,7 +1439,8 @@ input::placeholder {
 }
 
 .booking {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
 }
 .booking .datepicker {
   padding: 0 1rem;
@@ -1444,10 +1495,13 @@ input::placeholder {
     border-bottom: none;
     flex: 1;
     padding-left: 1rem;
+    display: flex;
+    align-items: center;
   }
   .booking .datepicker .check.btnCheck {
     justify-content: center;
     border: none;
+    flex: 0 0 32%;
   }
 }
 .payment-container {
