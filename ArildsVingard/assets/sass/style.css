@@ -1034,25 +1034,41 @@ a {
 }
 .calContainer .week-days-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  --flex-gap: 0.75rem;
+  gap: var(--flex-gap);
 }
-.calContainer .week-days-container .week-day-text {
-  flex: 0 0 14.28%;
+.calContainer .week-days-container #week-day-text {
+  --flex-items: 7;
+  width: calc(100% / var(--flex-items) - (var(--flex-items) - 1) / var(--flex-items) * var(--flex-gap));
+  font-size: 0.75rem;
+}
+@media (min-width: 768px) {
+  .calContainer .week-days-container {
+    margin-bottom: 1rem;
+  }
+  .calContainer #week-day-text {
+    font-size: 0.875rem;
+  }
 }
 .calContainer .cal {
   --flex-gap: 0.75rem;
   gap: var(--flex-gap);
   display: flex;
   flex-wrap: wrap;
+  font-family: "MonumentGrotesk";
 }
 .calContainer .cal span {
   --flex-items: 7;
   width: calc(100% / var(--flex-items) - (var(--flex-items) - 1) / var(--flex-items) * var(--flex-gap));
   aspect-ratio: 1/1;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-content: center;
   border: 1px solid black;
+  font-size: 1rem;
+  background-color: #d9d1c5;
   cursor: pointer;
 }
 .calContainer .cal span:hover {
@@ -1060,6 +1076,20 @@ a {
 }
 .calContainer .cal span.active {
   background-color: lightyellow;
+}
+.calContainer .cal span.prev-month, .calContainer .cal span.next-month {
+  background-color: #f3f0e8;
+  cursor: default;
+}
+.calContainer .cal span.prev-month:hover, .calContainer .cal span.next-month:hover {
+  background-color: inherit;
+}
+@media (min-width: 768px) {
+  .calContainer .cal span {
+    justify-content: left;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+  }
 }
 
 .material-checkbox {
@@ -1104,11 +1134,10 @@ a {
 .material-checkbox .checkmark {
   position: relative;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   margin-right: 12px;
   border: 2px solid #454b00;
-  border-radius: 4px;
   transition: all 0.3s;
 }
 .material-checkbox:hover input[type=checkbox] ~ .checkmark {
@@ -1467,15 +1496,31 @@ input::placeholder {
 }
 .booking .datepicker .check .modal-content {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 50% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
 }
+.booking .datepicker .check .modal-content .quantityContent {
+  display: flex;
+  justify-content: space-between;
+}
+.booking .datepicker .check .modal-content .quantityContent .add-sub {
+  display: flex;
+  align-items: center;
+}
+.booking .datepicker .check .modal-content .quantityContent .add-sub span {
+  border: 1px solid black;
+  padding: 8px 16px;
+  margin: 0 0.8rem;
+  font-size: 1.5rem;
+}
+.booking .datepicker .check .modal-content .quantityContent .add-sub button {
+  width: 2rem;
+}
 .booking .datepicker .check .close {
   color: #aaa;
-  float: right;
-  font-size: 28px;
+  font-size: 16px;
   font-weight: bold;
 }
 .booking .datepicker .check .close:hover,

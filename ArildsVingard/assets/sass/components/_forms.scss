@@ -53,11 +53,11 @@
   .checkmark {
     position: relative;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     margin-right: 12px;
     border: 2px solid #454b00;
-    border-radius: 4px;
+    // border-radius: 50%;
     transition: all 0.3s;
   }
 

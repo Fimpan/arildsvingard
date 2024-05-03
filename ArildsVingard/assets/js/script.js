@@ -34,8 +34,27 @@ function generateCalendar(month, year) {
   let calContainer = document.querySelector(".cal");
   calContainer.innerHTML = ""; // Clear the existing calendar
 
+  // Get the first day of the month
+  let firstDay = new Date(year, month, 1).getDay();
+
+  // Get the number of days in the previous month
+  let daysInPreviousMonth = new Date(year, month, 0).getDate();
+
+  // Add days from the previous month
+  for (
+    let i = daysInPreviousMonth - firstDay + 1;
+    i <= daysInPreviousMonth;
+    i++
+  ) {
+    let span = document.createElement("span");
+    span.className = "prev-month";
+    span.innerText = i;
+    calContainer.appendChild(span);
+  }
+  // Get the number of days in the month
   let daysInMonth = new Date(year, month + 1, 0).getDate();
 
+  // Add days from the current month
   for (let i = 1; i <= daysInMonth; i++) {
     let span = document.createElement("span");
     span.id = "d" + i;
@@ -43,8 +62,25 @@ function generateCalendar(month, year) {
     calContainer.appendChild(span);
   }
 
+  // Add days from the next month
+  let nextMonthDays = 7 - (calContainer.children.length % 7);
+  if (nextMonthDays < 7) {
+    for (let i = 1; i <= nextMonthDays; i++) {
+      let span = document.createElement("span");
+      span.className = "next-month";
+      span.innerText = i;
+      calContainer.appendChild(span);
+    }
+  }
   myDays = document.querySelectorAll(".cal span");
   myDays.forEach(function (day) {
+    // Ignore clicks on dates from the previous and next month
+    if (
+      day.classList.contains("prev-month") ||
+      day.classList.contains("next-month")
+    ) {
+      return;
+    }
     day.addEventListener("click", function (e) {
       if (start == "" && end == "") {
         start = this.innerHTML;

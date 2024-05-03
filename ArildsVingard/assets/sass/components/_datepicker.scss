@@ -63,9 +63,26 @@
 
   .week-days-container {
     display: flex;
-    justify-content: space-between;
-    .week-day-text {
-      flex: 0 0 14.28%;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+    --flex-gap: 0.75rem;
+    gap: var(--flex-gap);
+    #week-day-text {
+      --flex-items: 7;
+      width: calc(
+        (100% / var(--flex-items)) -
+          (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
+      );
+      font-size: 0.75rem;
+    }
+  }
+
+  @media (min-width: $ipad-breakpoint) {
+    .week-days-container {
+      margin-bottom: 1rem;
+    }
+    #week-day-text {
+      font-size: 0.875rem;
     }
   }
   .cal {
@@ -73,7 +90,7 @@
     gap: var(--flex-gap);
     display: flex;
     flex-wrap: wrap;
-
+    font-family: "MonumentGrotesk";
     // gap: 0.75rem;
     span {
       --flex-items: 7;
@@ -82,19 +99,36 @@
           (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
       );
       aspect-ratio: 1 / 1;
-
       display: flex;
-      justify-content: left;
+      justify-content: center;
       align-content: center;
       border: 1px solid black;
-      // border-bottom: 1px solid black;
-      // border-right: 1px solid black;
+      // padding: 0.3rem 0.5rem;
+      font-size: 1rem;
+      background-color: #d9d1c5;
       cursor: pointer;
       &:hover {
         background-color: #efefef;
       }
       &.active {
         background-color: lightyellow;
+      }
+      // Add styles for previous and next month
+      &.prev-month,
+      &.next-month {
+        background-color: #f3f0e8;
+        cursor: default;
+
+        &:hover {
+          background-color: inherit;
+        }
+      }
+    }
+    @media (min-width: $ipad-breakpoint) {
+      span {
+        justify-content: left;
+        padding: 0.3rem 0.5rem;
+        font-size: 1rem;
       }
     }
   }
