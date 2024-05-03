@@ -1,0 +1,145 @@
+.stage-container {
+  &.confirmation-container {
+    padding: 3rem 1.25rem;
+    max-width: 1000px;
+    margin: auto;
+    .confirm-content {
+      // background-color: #f3f0e8;
+      .confirm-number {
+        margin-bottom: 1rem;
+        .confirm-head {
+          margin-bottom: 1rem;
+          .h1-confirm {
+            font-size: 2rem;
+            font-weight: 600;
+          }
+          .booking-number {
+            font-size: 1.125rem;
+            font-family: "MonumentGrotesk";
+          }
+        }
+        .confirm-text {
+          .booking-body-m {
+            &.bdm-semibold {
+              font-weight: 600;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+      .confirm-picture {
+        .confirm-buttons {
+          display: none;
+        }
+      }
+    }
+    .confirm-info-container {
+      border-bottom: 1px solid #f3f0e8;
+      padding: 1.5rem 0;
+
+      &.cic-bb0 {
+        border: 0;
+      }
+      .confirm-info {
+        padding: 0.5rem;
+
+        .confirm-info-text {
+          &.ci-semibold {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .ci-bg {
+      background-color: #f3f0e8;
+    }
+
+    .confirm-terms-policy-container {
+      font-size: $body-booking-xs;
+      display: flex;
+      justify-content: space-between;
+      .copy-arilds {
+        flex: 0 0 40%;
+      }
+      .confirm-terms-policy {
+        flex: 0 0 56%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+@media (min-width: $ipad-breakpoint) {
+  .stage-container {
+    &.confirmation-container {
+      max-width: 1000px;
+      .confirm-content {
+        display: flex;
+        justify-content: space-between;
+        .confirm-number {
+          flex: 0 0 40%;
+          .confirm-head {
+            .h1-confirm {
+            }
+            .booking-number {
+            }
+          }
+          .confirm-text {
+            .booking-body-m {
+              &.bdm-semibold {
+              }
+            }
+          }
+        }
+        .confirm-picture {
+          flex: 0 0 50%;
+          .confirm-buttons {
+            display: block;
+            display: flex;
+            justify-content: space-between;
+            // gap: 12px;
+            button {
+              flex: 0 0 48%;
+              margin-top: 0.875rem;
+            }
+          }
+        }
+      }
+      .confirm-info-container {
+        .confirm-info {
+          display: flex;
+          justify-content: space-between;
+          text-align: left;
+          &.ci-bg {
+          }
+          .confirm-info-text {
+            flex: 0 0 60%;
+            &.ci-semibold {
+              flex: 0 0 30%;
+            }
+
+            .confirm-list-container {
+              margin-bottom: 1rem;
+              ul {
+                li {
+                  margin-bottom: 0.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .confirm-terms-policy-container {
+        flex-direction: column;
+        font-size: $body-booking-s;
+        align-items: center;
+        .copy-arilds {
+        }
+        .confirm-terms-policy {
+          gap: 1rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

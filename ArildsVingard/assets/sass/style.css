@@ -641,6 +641,10 @@ a {
   font-family: "MonumentGrotesk";
   letter-spacing: 0.8px;
   transition: 0.9s background-color, 0.9s color;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
 }
 .btn:focus {
   outline: 3px solid #c1d955;
@@ -829,6 +833,112 @@ a {
   outline: none;
 }
 
+.stage-container.confirmation-container {
+  padding: 3rem 1.25rem;
+  max-width: 1000px;
+  margin: auto;
+}
+.stage-container.confirmation-container .confirm-content .confirm-number {
+  margin-bottom: 1rem;
+}
+.stage-container.confirmation-container .confirm-content .confirm-number .confirm-head {
+  margin-bottom: 1rem;
+}
+.stage-container.confirmation-container .confirm-content .confirm-number .confirm-head .h1-confirm {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.stage-container.confirmation-container .confirm-content .confirm-number .confirm-head .booking-number {
+  font-size: 1.125rem;
+  font-family: "MonumentGrotesk";
+}
+.stage-container.confirmation-container .confirm-content .confirm-number .confirm-text .booking-body-m.bdm-semibold {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.stage-container.confirmation-container .confirm-content .confirm-picture .confirm-buttons {
+  display: none;
+}
+.stage-container.confirmation-container .confirm-info-container {
+  border-bottom: 1px solid #f3f0e8;
+  padding: 1.5rem 0;
+}
+.stage-container.confirmation-container .confirm-info-container.cic-bb0 {
+  border: 0;
+}
+.stage-container.confirmation-container .confirm-info-container .confirm-info {
+  padding: 0.5rem;
+}
+.stage-container.confirmation-container .confirm-info-container .confirm-info .confirm-info-text.ci-semibold {
+  font-weight: 600;
+}
+.stage-container.confirmation-container .ci-bg {
+  background-color: #f3f0e8;
+}
+.stage-container.confirmation-container .confirm-terms-policy-container {
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+.stage-container.confirmation-container .confirm-terms-policy-container .copy-arilds {
+  flex: 0 0 40%;
+}
+.stage-container.confirmation-container .confirm-terms-policy-container .confirm-terms-policy {
+  flex: 0 0 56%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .stage-container.confirmation-container {
+    max-width: 1000px;
+  }
+  .stage-container.confirmation-container .confirm-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .stage-container.confirmation-container .confirm-content .confirm-number {
+    flex: 0 0 40%;
+  }
+  .stage-container.confirmation-container .confirm-content .confirm-picture {
+    flex: 0 0 50%;
+  }
+  .stage-container.confirmation-container .confirm-content .confirm-picture .confirm-buttons {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  .stage-container.confirmation-container .confirm-content .confirm-picture .confirm-buttons button {
+    flex: 0 0 48%;
+    margin-top: 0.875rem;
+  }
+  .stage-container.confirmation-container .confirm-info-container .confirm-info {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .stage-container.confirmation-container .confirm-info-container .confirm-info .confirm-info-text {
+    flex: 0 0 60%;
+  }
+  .stage-container.confirmation-container .confirm-info-container .confirm-info .confirm-info-text.ci-semibold {
+    flex: 0 0 30%;
+  }
+  .stage-container.confirmation-container .confirm-info-container .confirm-info .confirm-info-text .confirm-list-container {
+    margin-bottom: 1rem;
+  }
+  .stage-container.confirmation-container .confirm-info-container .confirm-info .confirm-info-text .confirm-list-container ul li {
+    margin-bottom: 0.5rem;
+  }
+  .stage-container.confirmation-container .confirm-terms-policy-container {
+    flex-direction: column;
+    font-size: 0.875rem;
+    align-items: center;
+  }
+  .stage-container.confirmation-container .confirm-terms-policy-container .confirm-terms-policy {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
 .calContainer {
   background-color: #f7f4ff;
   padding: 1rem;

@@ -11,6 +11,10 @@
   font-family: "MonumentGrotesk";
   letter-spacing: 0.8px;
   transition: 0.9s background-color, 0.9s color;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
   &:focus {
     outline: 3px solid $btn-text-primary-color;
     outline-offset: 0px;
