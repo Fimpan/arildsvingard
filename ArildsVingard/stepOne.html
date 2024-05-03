@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="booking-body-tag">
     <header class="header" id="header">
       <section class="wrapper menuContainer">
         <a href="./index.html" class="brand">Brand</a>
@@ -94,30 +94,30 @@
         <div class="stages">
           <div class="number">
             <div class="flex-circle">
-              <a href="stepOne.html" class="circle">1</a>
+              <a href="stepOne.html" class="circle c-active">1</a>
             </div>
             <p class="stageText">Välj datum</p>
           </div>
           <div class="emptyStage"></div>
           <div class="number">
             <div class="flex-circle">
-              <a href="stepOne.html" class="circle">2</a>
+              <span class="circle">2</span>
             </div>
-            <p class="stageText">Välj erbjudande</p>
+            <p class="stageText stageText-disable">Välj erbjudande</p>
           </div>
           <div class="emptyStage"></div>
           <div class="number">
             <div class="flex-circle">
-              <a href="stepOne.html" class="circle">3</a>
+              <span class="circle">3</span>
             </div>
-            <p class="stageText">Välj tillval</p>
+            <p class="stageText stageText-disable">Välj tillval</p>
           </div>
           <div class="emptyStage"></div>
           <div class="number">
             <div class="flex-circle">
-              <a href="stepOne.html" class="circle">4</a>
+              <span class="circle">4</span>
             </div>
-            <p class="stageText">Betalning</p>
+            <p class="stageText stageText-disable">Betalning</p>
           </div>
         </div>
       </section>
@@ -160,7 +160,9 @@
             </div>
           </div>
           <div class="check btnCheck">
-            <a href="stepTwo.html" class="btn btn-primary">Visa erbjudande</a>
+            <a href="stepTwo.html" class="btn btn-primary btn-full-bleed"
+              >Visa erbjudande</a
+            >
           </div>
         </section>
       </div>

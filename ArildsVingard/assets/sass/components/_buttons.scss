@@ -70,7 +70,8 @@
     background-color: #04aa6d;
   }
   &.btn-full-bleed {
-    border-radius: 0;
+    // border-radius: 0;
+    width: 100%;
     display: block;
   }
 }

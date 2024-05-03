@@ -36,6 +36,8 @@
       // flex: 1;
       .flex-circle {
         .circle {
+          font-family: "MonumentGrotesk";
+          font-size: 1rem;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -44,6 +46,31 @@
           width: 2.5rem;
           height: 2.5rem;
           margin: auto;
+          color: $color-text-Invert;
+
+          &.c-active {
+            background-color: $btn-color-enable;
+            .icon-stage {
+              width: 16px;
+              height: 16px;
+            }
+            @media (min-width: $ipad-breakpoint) {
+              .icon-stage {
+                width: 24px;
+                height: 24px;
+              }
+            }
+          }
+          &.c-green {
+            background-color: #28a88e;
+          }
+        }
+        @media (min-width: $ipad-breakpoint) {
+          .circle {
+            font-size: 1.25rem;
+            width: 3.125rem;
+            height: 3.125rem;
+          }
         }
       }
     }

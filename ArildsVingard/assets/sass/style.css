@@ -215,7 +215,7 @@ body {
 }
 @font-face {
   font-family: "MonumentGrotesk";
-  src: url("/ArildsVingard/assets/fonts/MonumentGrotesk-Regular.ttf") format("truetype");
+  src: url("/ArildsVingard/assets/fonts/MonumentGrotesk-Semi-Mono.ttf") format("truetype");
 }
 h1 {
   font-size: 3rem;
@@ -256,6 +256,9 @@ a {
 .stageText {
   font-size: 0.625rem;
   margin-top: 0.5rem;
+}
+.stageText.stageText-disable {
+  color: #d9d9d9;
 }
 
 .checkInfo {
@@ -616,6 +619,8 @@ a {
   margin: auto;
 }
 .top .stages .number .flex-circle .circle {
+  font-family: "MonumentGrotesk";
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -624,6 +629,30 @@ a {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
+  color: #ffffff;
+}
+.top .stages .number .flex-circle .circle.c-active {
+  background-color: #252a10;
+}
+.top .stages .number .flex-circle .circle.c-active .icon-stage {
+  width: 16px;
+  height: 16px;
+}
+@media (min-width: 768px) {
+  .top .stages .number .flex-circle .circle.c-active .icon-stage {
+    width: 24px;
+    height: 24px;
+  }
+}
+.top .stages .number .flex-circle .circle.c-green {
+  background-color: #28a88e;
+}
+@media (min-width: 768px) {
+  .top .stages .number .flex-circle .circle {
+    font-size: 1.25rem;
+    width: 3.125rem;
+    height: 3.125rem;
+  }
 }
 .top .stages .emptyStage {
   border-bottom: 2px solid black;
@@ -697,7 +726,7 @@ a {
   background-color: #04aa6d;
 }
 .btn.btn-full-bleed {
-  border-radius: 0;
+  width: 100%;
   display: block;
 }
 
@@ -1606,6 +1635,10 @@ input::placeholder {
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
 body {
   padding-top: 4rem;
+}
+
+.booking-body-tag {
+  background-color: #fbf8f2;
 }
 
 img {

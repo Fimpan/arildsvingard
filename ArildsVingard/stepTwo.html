@@ -11,7 +11,7 @@
     />
   </head>
 
-  <body>
+  <body class="booking-body-tag">
     <header class="header" id="header">
       <section class="wrapper menuContainer">
         <a href="./index.html" class="brand">Brand</a>
@@ -88,41 +88,41 @@
     </header>
     <div class="stage-container-m">
       <section class="top">
-        <div class="wrappBookingContent">
-          <a href="stepOne.html" class="backLink"
-            ><span class="material-symbols-outlined"> arrow_back </span>
-            Tillbaka</a
-          >
+        <div class="bookingContent">
           <h1 class="bokinghead">Välj datum</h1>
-          <div class="emptybox"></div>
         </div>
         <div class="stages">
           <div class="number">
             <div class="flex-circle">
-              <a href="stepOne.html" class="circle">1</a>
+              <a href="stepOne.html" class="circle c-active c-green"
+                ><img
+                  src="assets/icons/checkmark-white.svg"
+                  alt="check"
+                  class="icon-stage"
+              /></a>
             </div>
             <p class="stageText">Välj datum</p>
           </div>
           <div class="emptyStage"></div>
           <div class="number">
             <div class="flex-circle">
-              <a href="stepOne.html" class="circle">2</a>
+              <span class="circle c-active">2</span>
             </div>
             <p class="stageText">Välj erbjudande</p>
           </div>
           <div class="emptyStage"></div>
           <div class="number">
             <div class="flex-circle">
-              <a href="stepOne.html" class="circle">3</a>
+              <span class="circle">3</span>
             </div>
-            <p class="stageText">Välj tillval</p>
+            <p class="stageText stageText-disable">Välj tillval</p>
           </div>
           <div class="emptyStage"></div>
           <div class="number">
             <div class="flex-circle">
-              <a href="stepOne.html" class="circle">4</a>
+              <span class="circle">4</span>
             </div>
-            <p class="stageText">Betalning</p>
+            <p class="stageText stageText-disable">Betalning</p>
           </div>
         </div>
       </section>

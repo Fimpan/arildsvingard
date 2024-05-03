@@ -19,7 +19,7 @@ body {
 
 @font-face {
   font-family: "MonumentGrotesk";
-  src: url("/ArildsVingard/assets/fonts/MonumentGrotesk-Regular.ttf")
+  src: url("/ArildsVingard/assets/fonts/MonumentGrotesk-Semi-Mono.ttf")
     format("truetype");
 }
 h1 {
@@ -53,6 +53,9 @@ a {
 .stageText {
   font-size: $stage-font-size;
   margin-top: 0.5rem;
+  &.stageText-disable {
+    color: #d9d9d9;
+  }
 }
 
 // ____________________________
