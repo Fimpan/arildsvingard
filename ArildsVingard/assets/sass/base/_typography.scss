@@ -87,7 +87,7 @@ a {
   font-weight: $semi-bold;
   margin-bottom: $b-headline-3-m-mb;
   @media (min-width: $ipad-breakpoint) {
-    font-size: $b-headline-3;
+    font-size: $b-headline-3-d;
   }
 }
 .p-booking {
@@ -102,15 +102,15 @@ a {
 }
 
 .booking-body {
-  font-size: $body-booking-xs;
+  font-size: $body-booking-s;
   font-weight: $regular;
 
   @media (min-width: $ipad-breakpoint) {
-    font-size: $body-booking-m;
+    // font-size: $body-booking-m;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    font-size: $body-booking-l;
+    // font-size: $body-booking-l;
   }
 }
 .selected-date {
@@ -125,7 +125,8 @@ a {
   font-size: $body-booking-xs;
 }
 .span-price {
-  font-weight: $semi-bold;
+  letter-spacing: 0.05rem;
+  // font-weight: $semi-bold;
 }
 .span-include {
   font-size: $body-booking-xs;
