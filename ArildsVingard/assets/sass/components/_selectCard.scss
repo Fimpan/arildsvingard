@@ -11,10 +11,20 @@
     max-width: 384px;
     max-height: 470px;
 
+    &.sds-page-two {
+      max-height: 388px;
+      padding-bottom: 1.5rem;
+
+      a {
+        width: 90%;
+        margin: auto;
+      }
+    }
+
     @media (min-width: $desktop-breakpoint) {
       margin: 0;
       position: sticky;
-      top: 0;
+      top: 5rem;
       // max-height: 438px;
       flex: 0 0 33%;
     }
@@ -137,14 +147,16 @@
     margin: 1.5rem 0;
 
     .b-offer-content {
-      background-color: #f0f0f0;
+      background-color: $color-surface-grey-secondary;
       margin-bottom: 2rem;
     }
     .offers {
+      margin: 3rem 0;
       &.b-offers {
         // padding: 1.5rem;
         @media (min-width: $desktop-breakpoint) {
-          padding: 1rem;
+          margin: 0;
+          padding: 1.5rem;
         }
       }
       .offer-card {
@@ -156,10 +168,10 @@
             margin: 1rem;
           }
           .include-contianer {
-            padding-left: 1rem;
+            // padding-left: 1rem;
             ul {
               li {
-                list-style-type: disc;
+                // list-style-type: disc;
               }
             }
           }
@@ -202,6 +214,7 @@
     .option-container {
       padding: 0 1rem;
       .select-time {
+        font-family: "MonumentGrotesk";
         margin-bottom: 1rem;
         .btn-group {
           .option {
@@ -259,7 +272,7 @@
 
   @media (min-width: $ipad-breakpoint) {
     .option-container {
-      padding: 0.5rem 1.5rem;
+      padding: 0rem 1.5rem;
 
       .select-time {
         margin-bottom: 0.75rem;
@@ -275,6 +288,7 @@
         .offer-card {
           display: flex;
           justify-content: space-between;
+
           .offer-picture {
             flex: 0 0 35%;
           }
@@ -284,9 +298,12 @@
             margin: 0;
             flex-direction: column;
             justify-content: space-between;
+            padding: 1.5rem 0;
 
             &.oc-booking {
               flex: 0 0 63%;
+              padding: 0;
+              margin: 0;
             }
 
             .include-container {
@@ -302,6 +319,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+            padding: 1.5rem 1.5rem 1.5rem 0;
 
             .btn-select {
               display: flex;

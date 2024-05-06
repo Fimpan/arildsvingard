@@ -78,19 +78,31 @@
 .iti {
   width: 100%;
 }
-
+.personal-data-container {
+  background-color: $color-surface-grey-secondary;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  #message {
+    width: 100%;
+    padding: 0.75rem;
+  }
+}
 .form-container {
-  .card-coupons {
-    .coupon-container {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 0.75rem;
-    }
+  // padding: 1rem;
+  background-color: $color-surface-grey-secondary;
+}
+.card-coupons {
+  .coupon-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 0.75rem;
   }
 }
 input {
   width: 100%;
   padding: 0.75rem;
+  border: none;
+  border-bottom: 1px solid #bbbbbb;
 }
 input::placeholder {
   font-size: 1rem;

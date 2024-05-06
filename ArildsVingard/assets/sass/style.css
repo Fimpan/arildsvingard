@@ -278,6 +278,7 @@ a {
 .h2-booking {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+  font-weight: 600;
 }
 
 .h3-booking {
@@ -752,15 +753,9 @@ a {
   cursor: pointer;
 }
 .radio-tile-group .input-container .radio-tile {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 100%;
-  border: 1px solid #079ad9;
-  border-radius: 5px;
-  padding: 1rem;
+  border: 1.5px solid #434d1a;
   transition: transform 300ms ease;
 }
 .radio-tile-group .input-container .radio-tile-label {
@@ -769,17 +764,17 @@ a {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #079ad9;
+  color: #1a1a1a;
 }
 .radio-tile-group .input-container .radio-button:checked + .radio-tile {
-  background-color: #079ad9;
+  background-color: #252a10;
+  color: #c1d955;
   border: 1px solid #079ad9;
-  color: white;
   transform: scale(1.01, 1.01);
 }
 .radio-tile-group .input-container .radio-button:checked + .radio-tile .radio-tile-label {
-  color: white;
-  background-color: #079ad9;
+  color: #c1d955;
+  background-color: #252a10;
 }
 
 @media (min-width: 768px) {
@@ -1141,7 +1136,21 @@ a {
   width: 100%;
 }
 
-.form-container .card-coupons .coupon-container {
+.personal-data-container {
+  background-color: #f3f0e8;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.personal-data-container #message {
+  width: 100%;
+  padding: 0.75rem;
+}
+
+.form-container {
+  background-color: #f3f0e8;
+}
+
+.card-coupons .coupon-container {
   display: flex;
   gap: 12px;
   margin-bottom: 0.75rem;
@@ -1150,6 +1159,8 @@ a {
 input {
   width: 100%;
   padding: 0.75rem;
+  border: none;
+  border-bottom: 1px solid #bbbbbb;
 }
 
 input::-moz-placeholder {
@@ -1208,8 +1219,8 @@ input::placeholder {
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
 }
 
 @media (min-width: 992px) {
@@ -1225,11 +1236,19 @@ input::placeholder {
   max-width: 384px;
   max-height: 470px;
 }
+.select-container .selected-dates-section.sds-page-two {
+  max-height: 388px;
+  padding-bottom: 1.5rem;
+}
+.select-container .selected-dates-section.sds-page-two a {
+  width: 90%;
+  margin: auto;
+}
 @media (min-width: 992px) {
   .select-container .selected-dates-section {
     margin: 0;
     position: sticky;
-    top: 0;
+    top: 5rem;
     flex: 0 0 33%;
   }
 }
@@ -1334,12 +1353,16 @@ input::placeholder {
   margin: 1.5rem 0;
 }
 .select-container .offers-container .b-offer-content {
-  background-color: #f0f0f0;
+  background-color: #f3f0e8;
   margin-bottom: 2rem;
+}
+.select-container .offers-container .offers {
+  margin: 3rem 0;
 }
 @media (min-width: 992px) {
   .select-container .offers-container .offers.b-offers {
-    padding: 1rem;
+    margin: 0;
+    padding: 1.5rem;
   }
 }
 .select-container .offers-container .offers .offer-card {
@@ -1351,12 +1374,6 @@ input::placeholder {
 }
 .select-container .offers-container .offers .offer-card .offer-content.oc-booking {
   margin: 1rem;
-}
-.select-container .offers-container .offers .offer-card .offer-content .include-contianer {
-  padding-left: 1rem;
-}
-.select-container .offers-container .offers .offer-card .offer-content .include-contianer ul li {
-  list-style-type: disc;
 }
 .select-container .offers-container .offers .offer-card .offer-text {
   margin-bottom: 1rem;
@@ -1392,6 +1409,7 @@ input::placeholder {
   padding: 0 1rem;
 }
 .select-container .offers-container .option-container .select-time {
+  font-family: "MonumentGrotesk";
   margin-bottom: 1rem;
 }
 .select-container .offers-container .option-container .select-time .btn-group .option {
@@ -1432,7 +1450,7 @@ input::placeholder {
 }
 @media (min-width: 768px) {
   .select-container .option-container {
-    padding: 0.5rem 1.5rem;
+    padding: 0rem 1.5rem;
   }
   .select-container .option-container .select-time {
     margin-bottom: 0.75rem;
@@ -1456,9 +1474,12 @@ input::placeholder {
     margin: 0;
     flex-direction: column;
     justify-content: space-between;
+    padding: 1.5rem 0;
   }
   .select-container .offers-container .offers .offer-card .offer-content.oc-booking {
     flex: 0 0 63%;
+    padding: 0;
+    margin: 0;
   }
   .select-container .offers-container .offers .offer-card .offer-content .include-container ul li {
     list-style-type: disc;
@@ -1468,6 +1489,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding: 1.5rem 1.5rem 1.5rem 0;
   }
   .select-container .offers-container .offers .offer-card .offer-selected .btn-select {
     display: flex;
@@ -1563,7 +1585,7 @@ input::placeholder {
   bottom: 0;
   right: 0;
   width: 100%;
-  background-color: aqua;
+  background-color: white;
   padding: 0.75rem 1rem;
 }
 .payment-container .payment-icons {
@@ -1573,10 +1595,12 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
 }
 .payment-container .info-text-buttons .booking-modal {
   display: flex;
   gap: 12px;
+  align-items: center;
 }
 .payment-container .info-text-buttons .booking-modal .selected-dates-section {
   margin-top: 64px;
@@ -1724,24 +1748,28 @@ input::placeholder {
 }
 
 @media (min-width: 768px) {
-  .payment-container {
+  .payment-container .payment-content {
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
-  .payment-container .payment-icons {
+  .payment-container .payment-content .payment-icons {
     display: block;
     display: flex;
   }
-  .payment-container .payment-icons .card-icon {
+  .payment-container .payment-content .payment-icons .card-icon {
     flex: 0 0 33.33%;
   }
-  .payment-container .info-text-buttons .booking-modal .cart-button {
+  .payment-container .payment-content .info-text-buttons .booking-modal .cart-button {
     display: none;
   }
 }
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
 body {
   padding-top: 4rem;
+  padding-bottom: 4.25rem;
 }
 
 .booking-body-tag {

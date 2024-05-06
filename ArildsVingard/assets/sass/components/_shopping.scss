@@ -6,7 +6,7 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  background-color: aqua;
+  background-color: white;
   padding: 0.75rem 1rem;
   .payment-icons {
     display: none;
@@ -16,10 +16,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
 
     .booking-modal {
       display: flex;
       gap: 12px;
+      align-items: center;
       .selected-dates-section {
         margin-top: 64px;
         display: none;
@@ -192,20 +194,26 @@
 
 @media (min-width: $ipad-breakpoint) {
   .payment-container {
-    display: flex;
-    justify-content: space-between;
-    .payment-icons {
-      display: block;
+    .payment-content {
+      max-width: 1200px;
+      margin: auto;
       display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-      .card-icon {
-        flex: 0 0 33.33%;
+      .payment-icons {
+        display: block;
+        display: flex;
+
+        .card-icon {
+          flex: 0 0 33.33%;
+        }
       }
-    }
-    .info-text-buttons {
-      .booking-modal {
-        .cart-button {
-          display: none;
+      .info-text-buttons {
+        .booking-modal {
+          .cart-button {
+            display: none;
+          }
         }
       }
     }

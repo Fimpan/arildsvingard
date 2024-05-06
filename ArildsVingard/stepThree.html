@@ -241,7 +241,7 @@
                       type="radio"
                       name="radio"
                     />
-                    <div class="radio-tile">
+                    <div class="radio-tile btn btn-secondary">
                       <label for="time1" class="radio-tile-label">18.15</label>
                     </div>
                   </div>
@@ -253,7 +253,7 @@
                       type="radio"
                       name="radio"
                     />
-                    <div class="radio-tile">
+                    <div class="radio-tile btn btn-secondary">
                       <label for="time2" class="radio-tile-label">18.30</label>
                     </div>
                   </div>
@@ -265,7 +265,7 @@
                       type="radio"
                       name="radio"
                     />
-                    <div class="radio-tile">
+                    <div class="radio-tile btn btn-secondary">
                       <label for="time3" class="radio-tile-label">18.45</label>
                     </div>
                   </div>
@@ -276,7 +276,7 @@
                       type="radio"
                       name="radio"
                     />
-                    <div class="radio-tile">
+                    <div class="radio-tile btn btn-secondary">
                       <label for="time4" class="radio-tile-label">19.00</label>
                     </div>
                   </div>
@@ -287,7 +287,7 @@
                       type="radio"
                       name="radio"
                     />
-                    <div class="radio-tile">
+                    <div class="radio-tile btn btn-secondary">
                       <label for="time5" class="radio-tile-label">19.15</label>
                     </div>
                   </div>
@@ -298,7 +298,7 @@
                       type="radio"
                       name="radio"
                     />
-                    <div class="radio-tile">
+                    <div class="radio-tile btn btn-secondary">
                       <label for="time6" class="radio-tile-label">18.45</label>
                     </div>
                   </div>
@@ -309,7 +309,7 @@
                       type="radio"
                       name="radio"
                     />
-                    <div class="radio-tile">
+                    <div class="radio-tile btn btn-secondary">
                       <label for="time7" class="radio-tile-label">18.45</label>
                     </div>
                   </div>
@@ -320,7 +320,7 @@
                       type="radio"
                       name="radio"
                     />
-                    <div class="radio-tile">
+                    <div class="radio-tile btn btn-secondary">
                       <label for="time8" class="radio-tile-label">18.45</label>
                     </div>
                   </div>
@@ -363,6 +363,7 @@
               </div>
             </section>
             <div class="option-container">
+              <h3 class="h3-booking">Fredag 25 april, 2 personer</h3>
               <section class="select-time">
                 <div class="radio-tile-group">
                   <div class="input-container input-container-one">
@@ -372,7 +373,7 @@
                       type="radio"
                       name="radioGroup2"
                     />
-                    <div class="radio-tile">
+                    <div class="radio-tile btn btn-secondary">
                       <label for="time9" class="radio-tile-label">16.15</label>
                     </div>
                   </div>
@@ -409,126 +410,134 @@
       </form>
     </div>
     <section class="payment-container">
-      <div class="payment-icons">
-        <span class="card-icon">
-          <img
-            src="assets/icons/ma_symbol.svg"
-            alt="Master Card"
-            class="icon"
-          />
-        </span>
-        <span class="card-icon">
-          <img src="assets/icons/visa.svg" alt="Visa Card" class="icon" />
-        </span>
-        <span class="card-icon">
-          <img
-            src="assets/icons/ma_symbol.svg"
-            alt="Master Card"
-            class="icon"
-          />
-        </span>
-      </div>
-
-      <section class="info-text-buttons">
-        <div class="total-price">
-          <p class="body-totalprice">Totaltpris: 3 450 SEK</p>
-        </div>
-        <div class="booking-modal">
-          <button class="cart-button">
+      <div class="payment-content">
+        <div class="payment-icons">
+          <span class="card-icon">
             <img
-              src="assets/icons/shopping--cart.svg"
-              alt="cart"
+              src="assets/icons/ma_symbol.svg"
+              alt="Master Card"
               class="icon"
             />
-          </button>
-          <section class="selected-dates-section hide-selected-dates-section">
-            <div class="header-container">
-              <span>Min kundvagn</span>
-              <button class="close-button">
-                <span class="close-modal-icon"
-                  >Stäng
-                  <img src="assets/icons/close.svg" alt="Close" class="icon" />
-                </span>
-              </button>
-              <!-- <span class="selected-headline">Bokning</span> -->
-            </div>
-            <div class="booking-container">
-              <div class="booking-flex">
-                <div class="booking-selected mb2">
-                  <figure class="booking-img">
-                    <img src="assets/img/Rectangle 213.png" alt="hej" />
-                  </figure>
-                  <div class="booking-text">
-                    <p class="selected-day">
-                      1x Större dubbelrum med utsikt över vinodling (2 vuxna)
-                    </p>
-                    <p class="selected-date">Dubbelsäng</p>
-                  </div>
-                </div>
-                <button class="read-more">Toggle Info</button>
-
-                <div class="booking-info-container expanded mb2">
-                  <div class="booking-info bi-bg">
-                    <p class="selected-date sd-bold sd-width">Incheckning</p>
-                    <p class="selected-date">fre 24 april 2024 15:00</p>
-                  </div>
-                  <div class="booking-info">
-                    <p class="selected-date sd-bold sd-width">Antal nätter:</p>
-                    <p class="selected-date">lör 25 april 2024, 1 natt</p>
-                  </div>
-                  <div class="booking-info bi-bg">
-                    <p class="selected-date sd-bold sd-width">Gäster</p>
-                    <p class="selected-date">2 vuxna</p>
-                  </div>
-                  <div class="booking-info bi-borderrb">
-                    <p class="selected-date sd-bold sd-width">Inkluderar:</p>
-                    <ul class="list-includes">
-                      <li class="span-include">Frukost</li>
-                      <li class="span-include">Vingårdens 3-rättersmeny</li>
-                      <li class="span-include">Vinprovning</li>
-                    </ul>
-                  </div>
-                  <div class="booking-info b-flex-sb">
-                    <p class="selected-date sd-bold">
-                      fre 19 april – lör 20 april
-                    </p>
-                    <p class="selected-date">3 450 SEK</p>
-                  </div>
-                </div>
-              </div>
-              <div class="booking-price-container mb2">
-                <div class="booking-price">
-                  <p class="selsected-day">Totalpris</p>
-                  <p class="selsected-day">3 450 SEK</p>
-                </div>
-                <div class="booking-price">
-                  <p class="selected-date">Moms</p>
-                  <p class="selected-date">25%</p>
-                </div>
-                <section class="keep-goto">
-                  <button
-                    class="btn btn-primary continue-shopping"
-                    onclick="closeModal()"
-                  >
-                    Fortsätta handla
-                  </button>
-                  <a href="stepFour.html" class="btn btn-secondary"
-                    >Gå till kassan</a
-                  >
-                </section>
-              </div>
-            </div>
-          </section>
-          <a
-            href="stepFour.html"
-            class="btn btn-primary btn-primary-disable"
-            id="continue-button"
-            disabled
-          >
-            Fortsätt
-          </a>
+          </span>
+          <span class="card-icon">
+            <img src="assets/icons/visa.svg" alt="Visa Card" class="icon" />
+          </span>
+          <span class="card-icon">
+            <img
+              src="assets/icons/ma_symbol.svg"
+              alt="Master Card"
+              class="icon"
+            />
+          </span>
         </div>
-      </section>
+
+        <section class="info-text-buttons">
+          <div class="total-price">
+            <p class="body-totalprice">Totaltpris: 3 450 SEK</p>
+          </div>
+          <div class="booking-modal">
+            <button class="cart-button">
+              <img
+                src="assets/icons/shopping--cart.svg"
+                alt="cart"
+                class="icon"
+              />
+            </button>
+            <section class="selected-dates-section hide-selected-dates-section">
+              <div class="header-container">
+                <span>Min kundvagn</span>
+                <button class="close-button">
+                  <span class="close-modal-icon"
+                    >Stäng
+                    <img
+                      src="assets/icons/close.svg"
+                      alt="Close"
+                      class="icon"
+                    />
+                  </span>
+                </button>
+                <!-- <span class="selected-headline">Bokning</span> -->
+              </div>
+              <div class="booking-container">
+                <div class="booking-flex">
+                  <div class="booking-selected mb2">
+                    <figure class="booking-img">
+                      <img src="assets/img/Rectangle 213.png" alt="hej" />
+                    </figure>
+                    <div class="booking-text">
+                      <p class="selected-day">
+                        1x Större dubbelrum med utsikt över vinodling (2 vuxna)
+                      </p>
+                      <p class="selected-date">Dubbelsäng</p>
+                    </div>
+                  </div>
+                  <button class="read-more">Toggle Info</button>
+
+                  <div class="booking-info-container expanded mb2">
+                    <div class="booking-info bi-bg">
+                      <p class="selected-date sd-bold sd-width">Incheckning</p>
+                      <p class="selected-date">fre 24 april 2024 15:00</p>
+                    </div>
+                    <div class="booking-info">
+                      <p class="selected-date sd-bold sd-width">
+                        Antal nätter:
+                      </p>
+                      <p class="selected-date">lör 25 april 2024, 1 natt</p>
+                    </div>
+                    <div class="booking-info bi-bg">
+                      <p class="selected-date sd-bold sd-width">Gäster</p>
+                      <p class="selected-date">2 vuxna</p>
+                    </div>
+                    <div class="booking-info bi-borderrb">
+                      <p class="selected-date sd-bold sd-width">Inkluderar:</p>
+                      <ul class="list-includes">
+                        <li class="span-include">Frukost</li>
+                        <li class="span-include">Vingårdens 3-rättersmeny</li>
+                        <li class="span-include">Vinprovning</li>
+                      </ul>
+                    </div>
+                    <div class="booking-info b-flex-sb">
+                      <p class="selected-date sd-bold">
+                        fre 19 april – lör 20 april
+                      </p>
+                      <p class="selected-date">3 450 SEK</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="booking-price-container mb2">
+                  <div class="booking-price">
+                    <p class="selsected-day">Totalpris</p>
+                    <p class="selsected-day">3 450 SEK</p>
+                  </div>
+                  <div class="booking-price">
+                    <p class="selected-date">Moms</p>
+                    <p class="selected-date">25%</p>
+                  </div>
+                  <section class="keep-goto">
+                    <button
+                      class="btn btn-primary continue-shopping"
+                      onclick="closeModal()"
+                    >
+                      Fortsätta handla
+                    </button>
+                    <a href="stepFour.html" class="btn btn-secondary"
+                      >Gå till kassan</a
+                    >
+                  </section>
+                </div>
+              </div>
+            </section>
+            <a
+              href="stepFour.html"
+              class="btn btn-primary btn-primary-disable"
+              id="continue-button"
+              disabled
+            >
+              Fortsätt
+            </a>
+          </div>
+        </section>
+      </div>
     </section>
 
     <script src="assets/js/script.js"></script>
