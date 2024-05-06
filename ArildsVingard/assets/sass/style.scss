@@ -25,10 +25,13 @@
 body {
   padding-top: 4rem;
   padding-bottom: 4.25rem;
+  background-color: $color-surface-grey-primaryi;
 }
 
 .booking-body-tag {
-  background-color: #fbf8f2;
+  background-color: $color-surface-grey-primaryi;
+  padding-top: 4rem;
+  padding-bottom: 4.25rem;
 }
 
 img {

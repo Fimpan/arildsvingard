@@ -5,7 +5,8 @@
   margin: 0 auto;
   padding: 0 1.25rem;
 }
-
+@media (min-width: $desktop-breakpoint) {
+}
 .brand {
   font-family: inherit;
   font-size: 1.6rem;
@@ -18,18 +19,47 @@
 
 // Header
 .header {
+  // max-width: 1400px;
+  // margin: auto;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  // height: auto;
   z-index: 100;
-  margin: 0 auto;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  background-color: white;
+  // margin: 0 auto;
+  // box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  //   0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
+//Top menu
+.top-menu-container {
+  display: none;
+}
+@media (min-width: $desktop-breakpoint) {
+  .top-menu-container {
+    max-width: 1400px;
+    margin: auto;
+    display: block;
+    padding: 0.75rem;
+    border-bottom: 1px solid #d9d1c5;
+    .top-navbar {
+      display: flex;
+      justify-content: end;
+      .top-menu {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        .top-menu-item {
+          .top-menu-link {
+            display: flex;
+            gap: 8px;
+          }
+        }
+      }
+    }
+  }
+}
 // Wrapper
 .wrapper {
   display: flex;
@@ -39,7 +69,15 @@
   row-gap: 2rem;
   width: 100%;
   height: 4rem;
-  margin: 0 auto;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0.75rem;
+  // margin: 0 auto;
+}
+@media (min-width: $desktop-breakpoint) {
+  .wrapper {
+    padding: 3rem 0.75rem;
+  }
 }
 
 // Navbar
@@ -131,7 +169,7 @@
     font-weight: 500;
     line-height: inherit;
     cursor: pointer;
-    color: black;
+    color: $color-text-primary;
     transition: all 0.35s ease;
 
     &:hover {
@@ -142,38 +180,64 @@
 }
 
 // Burger
-.burger {
-  position: relative;
-  display: block;
-  cursor: pointer;
-  user-select: none;
-  width: 1.6rem;
-  height: 1.15rem;
-  opacity: 1;
-  visibility: visible;
-  background: transparent;
-
-  &-line {
-    position: absolute;
+.burger-container {
+  border: 1.5px solid $color-text-primary;
+  // padding: 1rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-bruger {
+  .book-experience {
+    display: none;
+  }
+  .burger {
+    position: relative;
     display: block;
-    right: 0;
-    width: 100%;
-    height: 2.1px;
+    cursor: pointer;
+    user-select: none;
+    width: 1.6rem;
+    height: 1.15rem;
     opacity: 1;
-    border: none;
-    outline: none;
-    border-radius: 1rem;
-    background: black;
+    visibility: visible;
+    background: transparent;
 
-    &:nth-child(1) {
-      top: 0px;
+    &-line {
+      position: absolute;
+      display: block;
+      right: 0;
+      width: 100%;
+      height: 2.1px;
+      opacity: 1;
+      border: none;
+      outline: none;
+      border-radius: 1rem;
+      background: $color-text-primary;
+
+      &:nth-child(1) {
+        top: 0px;
+      }
+      &:nth-child(2) {
+        top: 0.5rem;
+        // width: 70%;
+      }
+      &:nth-child(3) {
+        top: 1rem;
+      }
     }
-    &:nth-child(2) {
-      top: 0.5rem;
-      width: 70%;
-    }
-    &:nth-child(3) {
-      top: 1rem;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .button-bruger {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .book-experience {
+      display: block;
     }
   }
 }

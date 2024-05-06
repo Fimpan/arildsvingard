@@ -375,13 +375,35 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
   z-index: 100;
-  margin: 0 auto;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  background-color: white;
 }
 
+.top-menu-container {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .top-menu-container {
+    max-width: 1400px;
+    margin: auto;
+    display: block;
+    padding: 0.75rem;
+    border-bottom: 1px solid #d9d1c5;
+  }
+  .top-menu-container .top-navbar {
+    display: flex;
+    justify-content: end;
+  }
+  .top-menu-container .top-navbar .top-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .top-menu-container .top-navbar .top-menu .top-menu-item .top-menu-link {
+    display: flex;
+    gap: 8px;
+  }
+}
 .wrapper {
   display: flex;
   align-items: center;
@@ -391,9 +413,16 @@ a {
   row-gap: 2rem;
   width: 100%;
   height: 4rem;
-  margin: 0 auto;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0.75rem;
 }
 
+@media (min-width: 992px) {
+  .wrapper {
+    padding: 3rem 0.75rem;
+  }
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -474,7 +503,7 @@ a {
   font-weight: 500;
   line-height: inherit;
   cursor: pointer;
-  color: black;
+  color: #1a1a1a;
   transition: all 0.35s ease;
 }
 .submenu-link:hover {
@@ -482,7 +511,20 @@ a {
   color: pink;
 }
 
-.burger {
+.burger-container {
+  border: 1.5px solid #1a1a1a;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-bruger .book-experience {
+  display: none;
+}
+.button-bruger .burger {
   position: relative;
   display: block;
   cursor: pointer;
@@ -495,7 +537,7 @@ a {
   visibility: visible;
   background: transparent;
 }
-.burger-line {
+.button-bruger .burger-line {
   position: absolute;
   display: block;
   right: 0;
@@ -505,19 +547,28 @@ a {
   border: none;
   outline: none;
   border-radius: 1rem;
-  background: black;
+  background: #1a1a1a;
 }
-.burger-line:nth-child(1) {
+.button-bruger .burger-line:nth-child(1) {
   top: 0px;
 }
-.burger-line:nth-child(2) {
+.button-bruger .burger-line:nth-child(2) {
   top: 0.5rem;
-  width: 70%;
 }
-.burger-line:nth-child(3) {
+.button-bruger .burger-line:nth-child(3) {
   top: 1rem;
 }
 
+@media (min-width: 992px) {
+  .button-bruger {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .button-bruger .book-experience {
+    display: block;
+  }
+}
 .overlay {
   position: fixed;
   top: 0;
@@ -1799,10 +1850,13 @@ input::placeholder {
 body {
   padding-top: 4rem;
   padding-bottom: 4.25rem;
+  background-color: #fbf8f2;
 }
 
 .booking-body-tag {
   background-color: #fbf8f2;
+  padding-top: 4rem;
+  padding-bottom: 4.25rem;
 }
 
 img {
