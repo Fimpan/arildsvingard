@@ -9,12 +9,18 @@
   font-size: $m-font-size;
   line-height: 1.24;
   font-family: "MonumentGrotesk";
-  letter-spacing: 0.8px;
+  letter-spacing: 0.05em;
   transition: 0.9s background-color, 0.9s color;
   display: flex;
-  gap: 12px;
+  gap: 10px;
   align-items: center;
   justify-content: center;
+  height: 48px;
+  // max-width: 183px;
+
+  @media (min-width: $desktop-breakpoint) {
+    // font-size: 1.5rem;
+  }
   &:focus {
     outline: 3px solid $btn-text-primary-color;
     outline-offset: 0px;
@@ -99,11 +105,11 @@
       (100% / var(--flex-items)) -
         (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
     );
-    aspect-ratio: 2 / 1;
+    // aspect-ratio: 2 / 1;
 
     &.input-container-one {
       width: 100%;
-      aspect-ratio: 8 / 1;
+      // aspect-ratio: 8 / 1;
     }
     .radio-button {
       opacity: 0;
@@ -169,7 +175,7 @@
         (100% / var(--flex-items)) -
           (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
       );
-      aspect-ratio: 2 / 1;
+      // aspect-ratio: 2 / 1;
     }
   }
 }
@@ -183,7 +189,7 @@
         (100% / var(--flex-items)) -
           (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
       );
-      aspect-ratio: 2 / 1;
+      // aspect-ratio: 2 / 1;
     }
   }
 }
@@ -191,9 +197,9 @@
 // _________________________
 // icons
 .cart-button {
-  background-color: #04aa6d;
+  background-color: #f0efeb;
   padding: 0.5rem 1rem;
-}
-.icon {
-  width: 24px;
+  .icon-cart {
+    width: 24px;
+  }
 }

@@ -204,9 +204,16 @@
       .payment-icons {
         display: block;
         display: flex;
+        justify-content: space-between;
 
         .card-icon {
-          flex: 0 0 33.33%;
+          background-color: #f0efeb;
+
+          flex: 0 0 45%;
+          .icon {
+            width: 65px;
+            height: 35px;
+          }
         }
       }
       .info-text-buttons {

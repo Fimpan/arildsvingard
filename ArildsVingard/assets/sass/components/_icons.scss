@@ -8,6 +8,16 @@
 }
 
 .icon {
+  width: 24px;
+  height: 24px;
+}
+@media (min-width: $desktop-breakpoint) {
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+.icon-back-button {
   width: 16px;
   height: 16px;
 }

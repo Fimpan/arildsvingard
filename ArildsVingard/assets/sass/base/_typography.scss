@@ -35,7 +35,7 @@ h2 {
   font-size: 3rem;
 }
 p {
-  line-height: 1.2;
+  line-height: 120%;
 }
 a {
   color: $primary-text-color;
@@ -91,6 +91,12 @@ a {
     font-size: $b-headline-3-d;
   }
 }
+
+.h4-booking {
+  font-size: $b-headline-4;
+  font-weight: $semi-bold;
+  margin-bottom: 1.5rem;
+}
 .p-booking {
   font-size: $body-booking-s;
   margin-bottom: $body-booking-m-mb;
@@ -131,6 +137,14 @@ a {
 }
 .span-include {
   font-size: $body-booking-xs;
+  list-style-type: disc;
+  margin-left: 1rem;
+
+  &.include-ralign {
+    text-align: left;
+    margin: 0;
+    list-style-type: disc;
+  }
 }
 @media (min-width: $desktop-breakpoint) {
   .span-include {
@@ -138,4 +152,8 @@ a {
       text-align: right;
     }
   }
+}
+
+.body-totalprice {
+  font-weight: 600;
 }

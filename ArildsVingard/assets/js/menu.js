@@ -21,7 +21,7 @@ const collapseSubMenu = () => {
 
 // Toggle Mobile Submenu Function
 const toggleSubMenu = (e) => {
-  if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
+  if (e.target.hasAttribute("data-toggle")) {
     e.preventDefault();
     const menuDropdown = e.target.parentElement;
 
@@ -42,20 +42,7 @@ const toggleSubMenu = (e) => {
   }
 };
 
-// Fixed Resize Window Function
-const resizeWindow = () => {
-  if (window.innerWidth > 992) {
-    if (navbarMenu.classList.contains("active")) {
-      toggleMenu();
-    }
-    if (navbarMenu.querySelector(".menu-dropdown.active")) {
-      collapseSubMenu();
-    }
-  }
-};
-
 // Initialize Event Listeners
 burgerMenu.addEventListener("click", toggleMenu);
 overlayMenu.addEventListener("click", toggleMenu);
 navbarMenu.addEventListener("click", toggleSubMenu);
-window.addEventListener("resize", resizeWindow);

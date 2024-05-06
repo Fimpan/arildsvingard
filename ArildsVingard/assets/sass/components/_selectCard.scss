@@ -29,6 +29,9 @@
       flex: 0 0 33%;
     }
 
+    &.sds-optinal {
+      max-height: 500px;
+    }
     &.hide-selected-dates-section {
       display: none;
       @media (min-width: $ipad-breakpoint) {
@@ -37,7 +40,7 @@
       }
     }
     .header-container {
-      background-color: #d9d9d9;
+      background-color: $color-surface-grey-tertiary;
       padding: 1rem 0;
     }
 
@@ -91,6 +94,7 @@
     // ___________
     // Boooking card
     .booking-container {
+      background-color: $color-surface-grey-secondary;
       text-align: left;
       padding: 1.5rem;
       .booking-selected {
@@ -103,12 +107,13 @@
       }
       .booking-info-container {
         margin-bottom: 1rem;
-        border-bottom: 2px solid black;
+
         .booking-info {
           display: flex;
+          background-color: $color-surface-grey-primaryi;
 
           &.bi-bg {
-            background-color: #d9d9d9;
+            background-color: $color-surface-grey-tertiary;
           }
 
           .selected-date {
@@ -120,7 +125,30 @@
           }
           .list-includes {
             padding: 0.5rem 1rem 0.5rem 0.5rem;
+            li {
+              list-style: none;
+              margin: 0;
+            }
           }
+          &.bi-borderrb {
+            // border-bottom: 2px solid black;
+            // padding-bottom: 1rem;
+          }
+          &.b-flex-sb {
+            padding-left: 0.5rem;
+            justify-content: space-between;
+            .selected-date {
+              padding-right: 0;
+
+              &.sd-bold {
+                padding-left: 0;
+              }
+            }
+          }
+        }
+        .underline-booking {
+          border: 1px solid grey;
+          margin: 1rem 0;
         }
       }
       .booking-price-container {
@@ -151,7 +179,7 @@
       margin-bottom: 2rem;
     }
     .offers {
-      margin: 3rem 0;
+      margin: 0 0 3rem 0;
       &.b-offers {
         // padding: 1.5rem;
         @media (min-width: $desktop-breakpoint) {
@@ -163,7 +191,7 @@
         background-color: $color-surface-grey-secondary;
         margin-bottom: 1rem;
         .offer-content {
-          margin: 1.5rem 0;
+          margin: 1.5rem 1rem 1.5rem 1rem;
           &.oc-booking {
             margin: 1rem;
           }
@@ -205,8 +233,13 @@
           justify-content: space-between;
           align-items: end;
           padding: 0 0 1rem 0;
+          margin: 0rem 1rem;
+
           .btn-select {
             flex: 0 0 40%;
+            &.bs-optional {
+              flex: 0 0 50%;
+            }
           }
         }
       }
@@ -253,9 +286,9 @@
           width: 100%;
           padding: 15px;
           margin: 0 0 1rem 0;
-          border: none;
-          border-radius: 20px;
-          background: #ddd;
+          border: 1px solid #b3b3b3;
+          // border-radius: 20px;
+          background: white;
           resize: none;
           min-height: 100px;
           color: #777;
@@ -271,11 +304,13 @@
   }
 
   @media (min-width: $ipad-breakpoint) {
-    .option-container {
-      padding: 0rem 1.5rem;
+    .offers-container {
+      .option-container {
+        padding: 0rem 1.5rem;
 
-      .select-time {
-        margin-bottom: 0.75rem;
+        .select-time {
+          margin-bottom: 0.75rem;
+        }
       }
     }
   }
@@ -298,7 +333,7 @@
             margin: 0;
             flex-direction: column;
             justify-content: space-between;
-            padding: 1.5rem 0;
+            padding: 1.5rem;
 
             &.oc-booking {
               flex: 0 0 63%;
@@ -320,7 +355,9 @@
             flex-direction: column;
             align-items: flex-end;
             padding: 1.5rem 1.5rem 1.5rem 0;
-
+            &.os-optinal {
+              flex: 0 0 29%;
+            }
             .btn-select {
               display: flex;
               align-items: flex-end;

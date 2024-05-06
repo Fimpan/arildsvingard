@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arilds Vingård</title>
+    <link rel="stylesheet" href="assets/sass/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="booking-body-tag">
+    <header class="header" id="header">
+      <section class="wrapper menuContainer">
+        <a href="./index.html" class="brand">Brand</a>
+        <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
+        <span class="overlay"></span>
+        <nav class="navbar" id="navbar">
+          <ul class="menu" id="menu">
+            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+            <li class="menu-item menu-dropdown">
+              <span class="menu-link" data-toggle="submenu"
+                >Feature<i class="bx bx-chevron-down"></i
+              ></span>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Feature Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Feature Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Feature Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Feature Link</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item menu-dropdown">
+              <span class="menu-link" data-toggle="submenu"
+                >Discover<i class="bx bx-chevron-down"></i
+              ></span>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Discover Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Discover Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Discover Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Discover Link</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item menu-dropdown">
+              <span class="menu-link" data-toggle="submenu"
+                >Resource<i class="bx bx-chevron-down"></i
+              ></span>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Resource Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Resource Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Resource Link</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Resource Link</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="#" class="menu-link">Support</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <div class="stage-container-m">
+      <section class="top">
+        <div class="wrappBookingContent">
+          <a href="stepThree.html">
+            <figure class="back-button">
+              <img
+                src="assets/icons/arrow--left.svg"
+                alt="left"
+                class="icon-back-button"
+              />
+            </figure>
+            <p>Tillbaka</p>
+          </a>
+
+          <h1 class="bokinghead">Välj datum</h1>
+          <div class="emptybox"></div>
+        </div>
+        <div class="stages">
+          <div class="number">
+            <div class="flex-circle">
+              <a href="stepOne.html" class="circle c-active c-green"
+                ><img
+                  src="assets/icons/checkmark-white.svg"
+                  alt="check"
+                  class="icon-stage"
+              /></a>
+            </div>
+            <p class="stageText">Välj datum</p>
+          </div>
+          <div class="emptyStage"></div>
+          <div class="number">
+            <div class="flex-circle">
+              <a href="stepTwo.html" class="circle c-active c-green"
+                ><img
+                  src="assets/icons/checkmark-white.svg"
+                  alt="check"
+                  class="icon-stage"
+              /></a>
+            </div>
+            <p class="stageText">Välj erbjudande</p>
+          </div>
+          <div class="emptyStage"></div>
+          <div class="number">
+            <div class="flex-circle">
+              <span class="circle c-active">3</span>
+            </div>
+            <p class="stageText">Välj tillval</p>
+          </div>
+          <div class="emptyStage"></div>
+          <div class="number">
+            <div class="flex-circle">
+              <span class="circle">4</span>
+            </div>
+            <p class="stageText stageText-disable">Betalning</p>
+          </div>
+        </div>
+      </section>
+      <div class="select-container">
+        <div class="selected-dates-section sds-optinal">
+          <div class="header-container">
+            <span class="selected-headline">Bokning</span>
+          </div>
+          <div class="booking-container">
+            <div class="booking-flex">
+              <div class="booking-selected mb2">
+                <figure class="booking-img">
+                  <img src="assets/img/Rectangle 213.png" alt="hej" />
+                </figure>
+                <div class="booking-text">
+                  <p class="selected-day">
+                    1x Större dubbelrum med utsikt över vinodling (2 vuxna)
+                  </p>
+                  <p class="selected-date">Dubbelsäng</p>
+                </div>
+              </div>
+
+              <div class="booking-info-container expanded mb2">
+                <div class="booking-info bi-bg">
+                  <p class="selected-date sd-bold sd-width">Incheckning</p>
+                  <p class="selected-date">fre 24 april 2024 15:00</p>
+                </div>
+                <div class="booking-info">
+                  <p class="selected-date sd-bold sd-width">Antal nätter:</p>
+                  <p class="selected-date">lör 25 april 2024, 1 natt</p>
+                </div>
+                <div class="booking-info bi-bg">
+                  <p class="selected-date sd-bold sd-width">Gäster</p>
+                  <p class="selected-date">2 vuxna</p>
+                </div>
+                <div class="booking-info bi-borderrb">
+                  <p class="selected-date sd-bold sd-width">Inkluderar:</p>
+                  <ul class="list-includes">
+                    <li class="span-include">Frukost</li>
+                    <li class="span-include">Vingårdens 3-rättersmeny</li>
+                    <li class="span-include">Vinprovning</li>
+                  </ul>
+                </div>
+                <div class="underline-booking"></div>
+                <div class="booking-info bi-bg b-flex-sb">
+                  <p class="selected-date sd-bold">
+                    fre 19 april – lör 20 april
+                  </p>
+                  <p class="selected-date">3 450 SEK</p>
+                </div>
+              </div>
+            </div>
+            <div class="booking-price-container mb2">
+              <div class="booking-price">
+                <p class="selsected-day">Totalpris</p>
+                <p class="selsected-day">3 450 SEK</p>
+              </div>
+              <div class="booking-price">
+                <p class="selected-date">Moms</p>
+                <p class="selected-date">25%</p>
+              </div>
+            </div>
+            <div class="booking-link-container">
+              <div class="booking-link">
+                <a href="#">Villkor för Bokning och betalning</a>
+              </div>
+              <div class="booking-link">
+                <a href="#">Avbryt bokning och gå tillbaka till startsidan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="offers-container">
+          <section class="offers">
+            <h2 class="h2-booking">Boende</h2>
+            <div class="offer-card">
+              <picture class="offer-picture">
+                <source
+                  media="(min-width:768px)"
+                  srcset="assets/img/Rectangle 213.png"
+                />
+                <source
+                  media="(max-width:769px)"
+                  srcset="assets/img/Rectangle 213.png"
+                />
+                <img src="assets/img/Rectangle 213.png" alt="" />
+              </picture>
+              <div class="offer-content">
+                <div class="offer-text">
+                  <h3 class="h3-booking">Avbeställningsskydd</h3>
+                  <p class="booking-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. 
+                  </p>
+                </div>
+              </div>
+              <div class="offer-selected os-optinal">
+                <div class="offer-price">
+                  <p class="span-price">FRÅN 695 SEK</p>
+                  <p class="span-include include-ralign">per gäst och natt</p>
+                </div>
+                <div class="btn-select bs-optional">
+                  <a href="stepThree.html" class="btn btn-secondary"
+                    >LÄGG TILL
+                    <img
+                      src="assets/icons/add--alt.svg"
+                      alt="chevron-right"
+                      class="icon"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="offer-card">
+              <picture class="offer-picture">
+                <source
+                  media="(min-width:768px)"
+                  srcset="assets/img/Rectangle 213.png"
+                />
+                <source
+                  media="(max-width:769px)"
+                  srcset="assets/img/Rectangle 213.png"
+                />
+                <img src="assets/img/Rectangle 213.png" alt="" />
+              </picture>
+              <div class="offer-content">
+                <div class="offer-text">
+                  <h3 class="h3-booking">Elbilladdare</h3>
+                  <p class="booking-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. 
+                  </p>
+                </div>
+              </div>
+              <div class="offer-selected os-optinal">
+                <div class="offer-price">
+                  <p class="span-price">FRÅN 795 SEK</p>
+                  <p class="span-include include-ralign">per gäst och natt</p>
+                </div>
+                <div class="btn-select bs-optional">
+                  <a href="stepThree.html" class="btn btn-secondary"
+                    >LÄGG TILL
+                    <img
+                      src="assets/icons/add--alt.svg"
+                      alt="chevron-right"
+                      class="icon"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="offer-card">
+              <picture class="offer-picture">
+                <source
+                  media="(min-width:768px)"
+                  srcset="assets/img/Rectangle 213.png"
+                />
+                <source
+                  media="(max-width:769px)"
+                  srcset="assets/img/Rectangle 213.png"
+                />
+                <img src="assets/img/Rectangle 213.png" alt="" />
+              </picture>
+              <div class="offer-content">
+                <div class="offer-text">
+                  <h3 class="h3-booking">Spjälsäng</h3>
+                  <p class="booking-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. 
+                  </p>
+                </div>
+              </div>
+              <div class="offer-selected os-optinal">
+                <div class="offer-price">
+                  <p class="span-price">FRÅN 645 SEK</p>
+                  <p class="span-include include-ralign">per gäst och natt</p>
+                </div>
+                <div class="btn-select bs-optional">
+                  <a href="stepThree.html" class="btn btn-secondary"
+                    >LÄGG TILL
+                    <img
+                      src="assets/icons/add--alt.svg"
+                      alt="chevron-right"
+                      class="icon"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <button class="btn btn-chat btn-chat-mb" onclick="openForm()">Chat</button>
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <button type="button" class="close-icon" onclick="closeForm()">
+          X
+        </button>
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <h3>Chat with us</h3>
+
+        <label for="msg">Message</label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+
+        <button type="submit" class="btn btn-open">Send</button>
+        <button type="button" class="btn btn-close" onclick="closeForm()">
+          Close
+        </button>
+      </form>
+    </div>
+    <section class="payment-container">
+      <div class="payment-content">
+        <div class="payment-icons">
+          <span class="card-icon">
+            <img
+              src="assets/icons/ma_symbol.svg"
+              alt="Master Card"
+              class="icon"
+            />
+          </span>
+          <span class="card-icon">
+            <img src="assets/icons/visa.svg" alt="Visa Card" class="icon" />
+          </span>
+        </div>
+
+        <section class="info-text-buttons">
+          <div class="total-price">
+            <p class="body-totalprice">Totaltpris: 3 450 SEK</p>
+          </div>
+          <div class="booking-modal">
+            <a
+              href="stepFour.html"
+              class="btn btn-primary"
+              id="continue-buttons"
+              disabled
+            >
+              HOPPA ÖVER
+              <img
+                src="assets/icons/chew_right_green.svg"
+                alt=""
+                class="icon"
+              />
+            </a>
+          </div>
+        </section>
+      </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/menu.js"></script>
+  </body>
+</html>

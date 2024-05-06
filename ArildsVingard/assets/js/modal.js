@@ -5,6 +5,7 @@ let span = document.getElementsByClassName("close")[0];
 let guestCount1 = 0;
 let guestCount2 = 0;
 let roomCount = 0;
+let guestCount3 = 0;
 
 btn.onclick = function () {
   modal.style.display = "block";
@@ -51,7 +52,20 @@ document
       updateGuestAndRoomCount();
     }
   });
-
+document
+  .getElementById("subtractGuests3")
+  .addEventListener("click", function () {
+    if (guestCount3 > 0) {
+      guestCount3--;
+      document.getElementById("guestCount3").innerText = guestCount3;
+      updateGuestAndRoomCount();
+    }
+  });
+document.getElementById("addGuests3").addEventListener("click", function () {
+  guestCount3++;
+  document.getElementById("guestCount3").innerText = guestCount3;
+  updateGuestAndRoomCount();
+});
 document.getElementById("addRooms").addEventListener("click", function () {
   roomCount++;
   document.getElementById("roomCount").innerText = roomCount;
@@ -69,7 +83,7 @@ document.getElementById("subtractRooms").addEventListener("click", function () {
 function updateGuestAndRoomCount() {
   document.querySelector(".guestModal .quantity").innerText =
     "Antal gäster: " +
-    (guestCount1 + guestCount2) +
+    (guestCount1 + guestCount2 + guestCount3) +
     ", Antal rum: " +
     roomCount;
 }
