@@ -215,42 +215,6 @@ for (var i = 0; i < countries.length; i++) {
   //console.log(select);
 }
 
-let phoneInput;
-
-document.addEventListener("DOMContentLoaded", function () {
-  // Initialize phoneInput
-  phoneInput = window.intlTelInput(document.querySelector("#phone"), {
-    utilsScript:
-      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-  });
-
-  // Set up the onchange event listener for selectCountry
-  document.querySelector('select[name="selectCountry"]').onchange =
-    alertCountry;
-});
-
-function alertCountry(event) {
-  // Get the selected country
-  var country = event.target.value;
-
-  // Update the phone input field
-  phoneInput.setCountry(country.toLowerCase());
-}
-getIp(function (response) {
-  // Use the response
-});
-
-function getIp(callback) {
-  fetch("https://ipinfo.io/140.82.183.34?token=66e2f39b20a2bd", {
-    headers: { Accept: "application/json" },
-  })
-    .then((resp) => resp.json())
-    .then(callback)
-    .catch(() => {
-      // Handle the error
-    });
-}
-
 //phone
 
 function getIp(callback) {
