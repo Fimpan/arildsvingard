@@ -78,6 +78,13 @@
 .iti {
   width: 100%;
 }
+
+// @media (min-width: $desktop-breakpoint) {
+//   .iti__selected-flag {
+//     height: 65%;
+//   }
+// }
+
 .personal-data-container {
   background-color: $color-surface-grey-secondary;
   padding: 1rem;
