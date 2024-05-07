@@ -71,6 +71,16 @@ a {
   }
 }
 
+.body-01 {
+  font-size: $body-01-m;
+  color: $color-text-primary;
+  line-height: 24px;
+  margin-bottom: 2rem;
+  @media (min-width: $desktop-breakpoint) {
+    font-size: $body-01-d;
+    line-height: 27px;
+  }
+}
 .body-02 {
   font-size: $body-02-m;
   color: $color-text-primary;
