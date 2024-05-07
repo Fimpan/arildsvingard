@@ -10,6 +10,9 @@ main {
   &.bg-grey-secondary {
     background-color: $color-surface-grey-secondary;
   }
+  &.bg-green-primary {
+    background-color: $color-surface-grey-primaryi;
+  }
 }
 .max-width-container {
   max-width: 910px;
@@ -30,54 +33,56 @@ main {
   }
 }
 
-.experince-yard-container {
+.max-width-container-l {
   margin: auto;
   padding: 4rem 0;
   max-width: 1600px;
-  .experince-head {
+  .section-head {
     margin-bottom: 2.5rem;
+    max-width: 820px;
     @media (min-width: $desktop-breakpoint) {
       margin-bottom: 3rem;
     }
   }
-  .experince-card-container {
+}
+
+.experince-card-container {
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    justify-content: space-between;
+    --flex-gap: 2rem;
+    gap: var(--flex-gap);
+  }
+
+  .experince-card {
+    margin-bottom: 2rem;
+    //   position: relative;
     @media (min-width: $desktop-breakpoint) {
-      display: flex;
-      justify-content: space-between;
-      --flex-gap: 2rem;
-      gap: var(--flex-gap);
+      --flex-items: 3;
+
+      width: calc(
+        (100% / var(--flex-items)) -
+          (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
+      );
     }
-
-    .experince-card {
-      margin-bottom: 2rem;
-      //   position: relative;
-      @media (min-width: $desktop-breakpoint) {
-        --flex-items: 3;
-
-        width: calc(
-          (100% / var(--flex-items)) -
-            (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
-        );
+    .position-picture {
+      position: relative;
+      .experince-pic {
+        margin-bottom: 0.5rem;
       }
-      .position-picture {
-        position: relative;
-        .experince-pic {
-          margin-bottom: 0.5rem;
-        }
-        .illustration {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-      .experince-link {
-        display: flex;
-        flex-direction: column;
-        a {
-          margin-top: 0.75rem;
-        }
+      .illustration {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     }
+    // .experince-link {
+    //   display: flex;
+    //   flex-direction: column;
+    //   a {
+    //     margin-top: 0.75rem;
+    //   }
+    // }
   }
 }

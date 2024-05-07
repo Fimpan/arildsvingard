@@ -4,7 +4,9 @@
   padding: $btn-padding;
   border-radius: $btn-border-radius;
   text-align: center;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   text-transform: uppercase;
   font-size: $btn-font-size;
   line-height: 1.24;
@@ -13,20 +15,19 @@
   transition: 0.9s background-color, 0.9s color;
   // height: 40px;
   // max-width: 183px;
-  span {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    &.span-teritary-btn {
-      justify-content: left;
-    }
-  }
+  // span {
+  //   display: flex;
+  //   gap: 10px;
+  //   align-items: center;
+  //   justify-content: center;
+  //   &.span-teritary-btn {
+  //     justify-content: left;
+  //   }
+  // }
 
   @media (min-width: $desktop-breakpoint) {
     // font-size: 1.5rem;
     height: 48px;
-    display: inline-block;
   }
   &:focus {
     outline: 3px solid $btn-text-primary-color;
