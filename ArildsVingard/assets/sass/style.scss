@@ -9,6 +9,7 @@
 @import "layout/menu";
 
 @import "components/accessibility";
+@import "components/bodyText";
 @import "components/bookingStages";
 @import "components/buttons";
 @import "components/chat";
@@ -20,10 +21,11 @@
 @import "components/experianceCard";
 @import "components/hero";
 @import "components/icons";
+@import "components/_package";
 @import "components/selectCard";
 @import "components/selectDates.scss";
 @import "components/shopping.scss";
-@import "components/bodyOne";
+@import "components/wineProduce";
 
 @import "pages/home";
 

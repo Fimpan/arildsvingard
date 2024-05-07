@@ -21,6 +21,7 @@ body {
   font-family: "MonumentGrotesk";
   src: url("/ArildsVingard/assets/fonts/MonumentGrotesk-Semi-Mono.ttf")
     format("truetype");
+  font-weight: 600;
 }
 h1 {
   font-size: $headline-1-m;
@@ -40,8 +41,16 @@ h2 {
     font-size: $headline-2;
   }
 }
+h4 {
+  font-size: $headline-4-m;
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: $headline-4;
+  }
+}
 p {
-  line-height: 120%;
+  // line-height: 120%;
+  color: $color-text-primary;
 }
 a {
   color: $primary-text-color;
@@ -58,6 +67,16 @@ a {
   @media (min-width: $desktop-breakpoint) {
     font-size: $Accent_AA-100;
     margin-bottom: 1.5rem;
+  }
+}
+
+.label-50-aa {
+  font-family: "AmbitRegular";
+  color: $color-text-primary;
+  font-size: $label-50-aa-m;
+  letter-spacing: 0.7px;
+  @media (min-width: $desktop-breakpoint) {
+    font-size: $label-50-aa;
   }
 }
 
@@ -82,10 +101,14 @@ a {
   }
 }
 .body-02 {
+  font-family: "AmbitRegular";
   font-size: $body-02-m;
   color: $color-text-primary;
   line-height: 150%;
   margin-bottom: 0.75rem;
+  @media (min-width: $ipad-breakpoint) {
+    margin-bottom: 0rem;
+  }
   @media (min-width: $desktop-breakpoint) {
     font-size: $body-02-d;
   }

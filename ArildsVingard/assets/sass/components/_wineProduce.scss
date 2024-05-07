@@ -1,0 +1,45 @@
+.block-container {
+  @media (min-width: $ipad-breakpoint) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &.block-container-reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.block-pic {
+  margin-bottom: 2.5rem;
+
+  &.block-pic-mb0 {
+    @media (min-width: $ipad-breakpoint) {
+      margin-bottom: 0;
+    }
+  }
+}
+.block-card {
+  margin-bottom: 3rem;
+  @media (min-width: $ipad-breakpoint) {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+}
+.block-card-container {
+  display: flex;
+  justify-content: right;
+  @media (min-width: $ipad-breakpoint) {
+    flex: 0 0 50%;
+  }
+  .block-card-large {
+    margin-bottom: 3rem;
+    width: 90%;
+    @media (min-width: $ipad-breakpoint) {
+      flex: 0 0 100%;
+      margin-bottom: 0rem;
+    }
+  }
+}

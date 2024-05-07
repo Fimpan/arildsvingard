@@ -1,0 +1,11 @@
+.package-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.package-list {
+  li {
+    padding: 1rem 0;
+    border-top: 0.5px solid $color-text-primary;
+  }
+}

@@ -20,12 +20,7 @@
   .about-arilds {
     margin-bottom: 3rem;
   }
-  .body-02-content {
-    @media (min-width: $desktop-breakpoint) {
-      display: flex;
-      gap: 2rem;
-    }
-  }
+
   a {
     margin: 3rem 0 4rem 0;
   }
@@ -35,9 +30,13 @@
   margin: auto;
   padding: 4rem 0;
   max-width: 1600px;
+  @media (min-width: $ipad-breakpoint) {
+    padding: 0;
+  }
   .section-head {
     margin-bottom: 2.5rem;
-    max-width: 820px;
+    max-width: 830px;
+
     @media (min-width: $desktop-breakpoint) {
       margin-bottom: 3rem;
     }

@@ -1,0 +1,9 @@
+.body-02-content {
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    gap: 2rem;
+  }
+}
+.body-01-content {
+  margin-bottom: 2rem;
+}
