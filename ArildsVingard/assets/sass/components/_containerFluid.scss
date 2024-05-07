@@ -1,0 +1,83 @@
+main {
+}
+.container-fluid {
+  //   background-color: blue;
+  padding: 0 0.75rem;
+  @media (min-width: $desktop-breakpoint) {
+    padding: 8rem 2rem;
+  }
+
+  &.bg-grey-secondary {
+    background-color: $color-surface-grey-secondary;
+  }
+}
+.max-width-container {
+  max-width: 910px;
+  margin: auto;
+  // padding: 0.75rem;
+
+  .about-arilds {
+    margin-bottom: 3rem;
+  }
+  .body-02-content {
+    @media (min-width: $desktop-breakpoint) {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+  a {
+    margin: 3rem 0 4rem 0;
+  }
+}
+
+.experince-yard-container {
+  margin: auto;
+  padding: 4rem 0;
+  max-width: 1600px;
+  .experince-head {
+    margin-bottom: 2.5rem;
+    @media (min-width: $desktop-breakpoint) {
+      margin-bottom: 3rem;
+    }
+  }
+  .experince-card-container {
+    @media (min-width: $desktop-breakpoint) {
+      display: flex;
+      justify-content: space-between;
+      --flex-gap: 2rem;
+      gap: var(--flex-gap);
+    }
+
+    .experince-card {
+      margin-bottom: 2rem;
+      //   position: relative;
+      @media (min-width: $desktop-breakpoint) {
+        --flex-items: 3;
+
+        width: calc(
+          (100% / var(--flex-items)) -
+            (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
+        );
+      }
+      .position-picture {
+        position: relative;
+        .experince-pic {
+          margin-bottom: 0.5rem;
+        }
+        .illustration {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .experince-link {
+        display: flex;
+        flex-direction: column;
+        a {
+          margin-top: 0.75rem;
+        }
+      }
+    }
+  }
+}

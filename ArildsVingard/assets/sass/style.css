@@ -220,19 +220,20 @@ body {
 h1 {
   font-size: 3rem;
 }
-@media (min-width: 768px) {
-  h1 {
-    font-size: 5rem;
-  }
-}
 @media (min-width: 992px) {
   h1 {
-    font-size: 6rem;
+    font-size: 11.125rem;
   }
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+}
+@media (min-width: 992px) {
+  h2 {
+    font-size: 6rem;
+  }
 }
 
 p {
@@ -242,6 +243,45 @@ p {
 a {
   color: #1a1a1a;
   text-decoration: none;
+}
+
+.accent-AA-100 {
+  font-family: "MonumentGrotesk";
+  font-size: 1rem;
+  line-height: 24px;
+  color: #1a1a1a;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .accent-AA-100 {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.premble-01 {
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: #1a1a1a;
+  margin-top: 0.5rem;
+}
+@media (min-width: 992px) {
+  .premble-01 {
+    font-size: 2.5rem;
+  }
+}
+
+.body-02 {
+  font-size: 0.875rem;
+  color: #1a1a1a;
+  line-height: 150%;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 992px) {
+  .body-02 {
+    font-size: 1rem;
+  }
 }
 
 .bokinghead {
@@ -354,7 +394,6 @@ a {
 
 /* The layout/ folder contains everything that takes part in laying out the site or application. This folder could have stylesheets for the main parts of the site (header, footer, navigation, sidebar…), the grid system or even CSS styles for all the forms.*/
 .menuContainer {
-  max-width: 75rem;
   height: auto;
   margin: 0 auto;
   padding: 0 1.25rem;
@@ -376,6 +415,7 @@ a {
   left: 0;
   width: 100%;
   z-index: 100;
+  background-color: #fbf8f2;
 }
 
 .top-menu-container {
@@ -384,10 +424,9 @@ a {
 
 @media (min-width: 992px) {
   .top-menu-container {
-    max-width: 1400px;
     margin: auto;
     display: block;
-    padding: 0.75rem;
+    padding: 0.75rem 2rem;
     border-bottom: 1px solid #d9d1c5;
   }
   .top-menu-container .top-navbar {
@@ -413,14 +452,13 @@ a {
   row-gap: 2rem;
   width: 100%;
   height: 4rem;
-  max-width: 1400px;
-  margin: auto;
+  box-sizing: border-box;
   padding: 0.75rem;
 }
 
 @media (min-width: 992px) {
   .wrapper {
-    padding: 3rem 0.75rem;
+    padding: 3rem 2rem;
   }
 }
 .navbar {
@@ -688,11 +726,21 @@ a {
   font-family: "MonumentGrotesk";
   letter-spacing: 0.05em;
   transition: 0.9s background-color, 0.9s color;
+}
+.btn span {
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: center;
-  height: 48px;
+}
+.btn span.span-teritary-btn {
+  justify-content: left;
+}
+@media (min-width: 992px) {
+  .btn {
+    height: 48px;
+    display: inline-block;
+  }
 }
 .btn:focus {
   outline: 3px solid #c1d955;
@@ -722,7 +770,10 @@ a {
 .btn.btn-secondary:active {
   background-color: #434d1a;
 }
-.btn.btn-tetriary:hover {
+.btn.btn-teritary {
+  padding: 0;
+}
+.btn.btn-teritary:hover {
   text-decoration: underline;
 }
 .btn.btn-chat {
@@ -976,6 +1027,85 @@ a {
     margin-top: 1rem;
   }
 }
+.container-fluid {
+  padding: 0 0.75rem;
+}
+@media (min-width: 992px) {
+  .container-fluid {
+    padding: 8rem 2rem;
+  }
+}
+.container-fluid.bg-grey-secondary {
+  background-color: #f3f0e8;
+}
+
+.max-width-container {
+  max-width: 910px;
+  margin: auto;
+}
+.max-width-container .about-arilds {
+  margin-bottom: 3rem;
+}
+@media (min-width: 992px) {
+  .max-width-container .body-02-content {
+    display: flex;
+    gap: 2rem;
+  }
+}
+.max-width-container a {
+  margin: 3rem 0 4rem 0;
+}
+
+.experince-yard-container {
+  margin: auto;
+  padding: 4rem 0;
+  max-width: 1600px;
+}
+.experince-yard-container .experince-head {
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 992px) {
+  .experince-yard-container .experince-head {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .experince-yard-container .experince-card-container {
+    display: flex;
+    justify-content: space-between;
+    --flex-gap: 2rem;
+    gap: var(--flex-gap);
+  }
+}
+.experince-yard-container .experince-card-container .experince-card {
+  margin-bottom: 2rem;
+}
+@media (min-width: 992px) {
+  .experince-yard-container .experince-card-container .experince-card {
+    --flex-items: 3;
+    width: calc(100% / var(--flex-items) - (var(--flex-items) - 1) / var(--flex-items) * var(--flex-gap));
+  }
+}
+.experince-yard-container .experince-card-container .experince-card .position-picture {
+  position: relative;
+}
+.experince-yard-container .experince-card-container .experince-card .position-picture .experince-pic {
+  margin-bottom: 0.5rem;
+}
+.experince-yard-container .experince-card-container .experince-card .position-picture .illustration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.experince-yard-container .experince-card-container .experince-card .experince-link {
+  display: flex;
+  flex-direction: column;
+}
+.experince-yard-container .experince-card-container .experince-card .experince-link a {
+  margin-top: 0.75rem;
+}
+
 .iti {
   position: relative;
   display: inline-block;
@@ -2782,6 +2912,52 @@ input::placeholder {
     justify-content: space-between;
   }
 }
+.hero {
+  margin-top: 4rem;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .hero {
+    margin-top: 9rem;
+  }
+}
+.hero .bg-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  color: #fbf8f2;
+}
+@media (min-width: 992px) {
+  .hero .bg-text {
+    top: 30%;
+    left: 20%;
+    transform: translate(-20%, -30%);
+  }
+}
+.hero .bg-text .mbl {
+  margin-left: 2rem;
+}
+@media (min-width: 992px) {
+  .hero .bg-text .mbl {
+    margin-left: 17rem;
+  }
+}
+.hero .booking-button {
+  min-width: 240px;
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translate(-50%, -6%);
+}
+@media (min-width: 992px) {
+  .hero .booking-button {
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
+}
+
 .input-icon {
   position: absolute;
   top: 50%;
@@ -3397,8 +3573,6 @@ input::placeholder {
 }
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
 body {
-  padding-top: 4rem;
-  padding-bottom: 4.25rem;
   background-color: #fbf8f2;
 }
 

@@ -23,16 +23,22 @@ body {
     format("truetype");
 }
 h1 {
-  font-size: 3rem;
-  @media (min-width: 768px) {
-    font-size: 5rem;
-  }
-  @media (min-width: 992px) {
-    font-size: 6rem;
+  font-size: $headline-1-m;
+
+  // @media (min-width: 768px) {
+  //   font-size: 5rem;
+  // }
+  @media (min-width: $desktop-breakpoint) {
+    font-size: $headline-1;
   }
 }
 h2 {
-  font-size: 3rem;
+  font-size: $headline-2-m;
+  margin-top: 0.5rem;
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: $headline-2;
+  }
 }
 p {
   line-height: 120%;
@@ -40,6 +46,39 @@ p {
 a {
   color: $primary-text-color;
   text-decoration: none;
+}
+
+.accent-AA-100 {
+  font-family: "MonumentGrotesk";
+  font-size: $Accent_AA-100-m;
+  line-height: 24px;
+  color: $color-text-primary;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  @media (min-width: $desktop-breakpoint) {
+    font-size: $Accent_AA-100;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.premble-01 {
+  font-size: $preamble-01-m;
+  line-height: 120%;
+  color: $color-text-primary;
+  margin-top: 0.5rem;
+  @media (min-width: $desktop-breakpoint) {
+    font-size: $preamble-01;
+  }
+}
+
+.body-02 {
+  font-size: $body-02-m;
+  color: $color-text-primary;
+  line-height: 150%;
+  margin-bottom: 0.75rem;
+  @media (min-width: $desktop-breakpoint) {
+    font-size: $body-02-d;
+  }
 }
 
 // Booking header
