@@ -762,6 +762,15 @@ a {
 .btn.btn-secondary:active {
   background-color: #434d1a;
 }
+.btn.btn-secondary-full {
+  width: 100%;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .btn.btn-secondary-full {
+    width: auto;
+  }
+}
 .btn.btn-teritary {
   padding: 0;
 }
@@ -1031,7 +1040,7 @@ a {
   background-color: #f3f0e8;
 }
 .container-fluid.bg-green-primary {
-  background-color: #fbf8f2;
+  background-color: #ebefd6;
 }
 
 .max-width-container {
@@ -1064,36 +1073,6 @@ a {
   .max-width-container-l .section-head {
     margin-bottom: 3rem;
   }
-}
-
-@media (min-width: 992px) {
-  .experince-card-container {
-    display: flex;
-    justify-content: space-between;
-    --flex-gap: 2rem;
-    gap: var(--flex-gap);
-  }
-}
-.experince-card-container .experince-card {
-  margin-bottom: 2rem;
-}
-@media (min-width: 992px) {
-  .experince-card-container .experince-card {
-    --flex-items: 3;
-    width: calc(100% / var(--flex-items) - (var(--flex-items) - 1) / var(--flex-items) * var(--flex-gap));
-  }
-}
-.experince-card-container .experince-card .position-picture {
-  position: relative;
-}
-.experince-card-container .experince-card .position-picture .experince-pic {
-  margin-bottom: 0.5rem;
-}
-.experince-card-container .experince-card .position-picture .illustration {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .iti {
@@ -2904,7 +2883,37 @@ input::placeholder {
 }
 .block-heading {
   display: block;
-  margin-bottom: 0;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 992px) {
+  .experince-card-container {
+    display: flex;
+    justify-content: space-between;
+    --flex-gap: 2rem;
+    gap: var(--flex-gap);
+  }
+}
+.experince-card-container .experince-card {
+  margin-bottom: 2rem;
+}
+@media (min-width: 992px) {
+  .experince-card-container .experince-card {
+    --flex-items: 3;
+    width: calc(100% / var(--flex-items) - (var(--flex-items) - 1) / var(--flex-items) * var(--flex-gap));
+  }
+}
+.experince-card-container .experince-card .position-picture {
+  position: relative;
+}
+.experince-card-container .experince-card .position-picture .experince-pic {
+  margin-bottom: 0.5rem;
+}
+.experince-card-container .experince-card .position-picture .illustration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero {

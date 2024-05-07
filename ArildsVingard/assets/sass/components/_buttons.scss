@@ -58,6 +58,14 @@
       background-color: $btn-color-hover;
     }
   }
+
+  &.btn-secondary-full {
+    width: 100%;
+    justify-content: center;
+    @media (min-width: $desktop-breakpoint) {
+      width: auto;
+    }
+  }
   &.btn-teritary {
     padding: 0;
     &:hover {

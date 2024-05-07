@@ -1,4 +1,44 @@
 .block-heading {
   display: block;
-  margin-bottom: 0;
+  margin-bottom: 0.75rem;
+}
+.experince-card-container {
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    justify-content: space-between;
+    --flex-gap: 2rem;
+    gap: var(--flex-gap);
+  }
+
+  .experince-card {
+    margin-bottom: 2rem;
+    //   position: relative;
+    @media (min-width: $desktop-breakpoint) {
+      --flex-items: 3;
+
+      width: calc(
+        (100% / var(--flex-items)) -
+          (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
+      );
+    }
+    .position-picture {
+      position: relative;
+      .experince-pic {
+        margin-bottom: 0.5rem;
+      }
+      .illustration {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    // .experince-link {
+    //   display: flex;
+    //   flex-direction: column;
+    //   a {
+    //     margin-top: 0.75rem;
+    //   }
+    // }
+  }
 }
