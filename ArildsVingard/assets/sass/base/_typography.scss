@@ -36,7 +36,9 @@ h1 {
 h2 {
   font-size: $headline-2-m;
   margin-top: 0.5rem;
-
+  span {
+    display: block;
+  }
   @media (min-width: $desktop-breakpoint) {
     font-size: $headline-2;
   }
@@ -67,6 +69,13 @@ a {
   @media (min-width: $desktop-breakpoint) {
     font-size: $Accent_AA-100;
     margin-bottom: 1.5rem;
+  }
+  &.accent-AA-100-mb0 {
+    @media (min-width: $desktop-breakpoint) {
+      margin-bottom: 0rem;
+      display: flex;
+      align-items: center;
+    }
   }
 }
 

@@ -26,16 +26,10 @@ html {
   list-style: none;
   list-style-type: none;
   text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
 }
 
 body {
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
-  height: -webkit-fill-available;
 }
 
 img,
@@ -231,6 +225,9 @@ h2 {
   font-size: 2.5rem;
   margin-top: 0.5rem;
 }
+h2 span {
+  display: block;
+}
 @media (min-width: 992px) {
   h2 {
     font-size: 6rem;
@@ -257,7 +254,7 @@ a {
 
 .accent-AA-100 {
   font-family: "MonumentGrotesk";
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 24px;
   color: #1a1a1a;
   letter-spacing: 0.8px;
@@ -265,8 +262,15 @@ a {
 }
 @media (min-width: 992px) {
   .accent-AA-100 {
-    font-size: 1.125rem;
+    font-size: 1.6875rem;
     margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .accent-AA-100.accent-AA-100-mb0 {
+    margin-bottom: 0rem;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -775,15 +779,16 @@ a {
   align-items: center;
   gap: 0.5rem;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.24;
   font-family: "MonumentGrotesk";
   letter-spacing: 0.05em;
-  transition: 0.9s background-color, 0.9s color;
+  transition: 0.3s background-color, 0.3s color;
 }
 @media (min-width: 992px) {
   .btn {
     height: 48px;
+    font-size: 1rem;
   }
 }
 .btn:focus {
@@ -810,6 +815,9 @@ a {
 .btn.btn-secondary:hover {
   background-color: #252a10;
   color: #c1d955;
+}
+.btn.btn-secondary:hover .icon {
+  filter: invert(100%) sepia(20%) saturate(4584%) hue-rotate(11deg) brightness(94%) contrast(79%);
 }
 .btn.btn-secondary:active {
   background-color: #434d1a;
@@ -3041,6 +3049,14 @@ input::placeholder {
 .package-price {
   display: flex;
   justify-content: space-between;
+  margin: 1.5rem;
+}
+.package-price.package-price-none {
+  display: none;
+}
+
+.package-text {
+  margin: 1.25rem 0 0.5rem 0;
 }
 
 .package-list li {
@@ -3216,6 +3232,11 @@ input::placeholder {
   background-color: #f3f0e8;
   margin-bottom: 1rem;
 }
+@media (min-width: 768px) {
+  .select-container .offers-container .offers .offer-card {
+    min-height: 282px;
+  }
+}
 .select-container .offers-container .offers .offer-card .offer-content {
   margin: 1.5rem 1rem 1.5rem 1rem;
 }
@@ -3249,12 +3270,6 @@ input::placeholder {
   align-items: end;
   padding: 0 0 1rem 0;
   margin: 0rem 1rem;
-}
-.select-container .offers-container .offers .offer-card .offer-selected .btn-select {
-  flex: 0 0 40%;
-}
-.select-container .offers-container .offers .offer-card .offer-selected .btn-select.bs-optional {
-  flex: 0 0 50%;
 }
 .select-container .offers-container .option-container {
   padding: 0 1rem;
@@ -3317,6 +3332,11 @@ input::placeholder {
   }
   .select-container .offers-container .offers .offer-card .offer-picture {
     flex: 0 0 35%;
+  }
+  .select-container .offers-container .offers .offer-card .offer-picture img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .select-container .offers-container .offers .offer-card .offer-content {
     display: flex;

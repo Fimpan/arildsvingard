@@ -190,6 +190,9 @@
       .offer-card {
         background-color: $color-surface-grey-secondary;
         margin-bottom: 1rem;
+        @media (min-width: $ipad-breakpoint) {
+          min-height: 282px;
+        }
         .offer-content {
           margin: 1.5rem 1rem 1.5rem 1rem;
           &.oc-booking {
@@ -235,12 +238,12 @@
           padding: 0 0 1rem 0;
           margin: 0rem 1rem;
 
-          .btn-select {
-            flex: 0 0 40%;
-            &.bs-optional {
-              flex: 0 0 50%;
-            }
-          }
+          // .btn-select {
+          //   flex: 0 0 40%;
+          //   &.bs-optional {
+          //     flex: 0 0 50%;
+          //   }
+          // }
         }
       }
     }
@@ -326,6 +329,10 @@
 
           .offer-picture {
             flex: 0 0 35%;
+            img {
+              height: 100%;
+              object-fit: cover;
+            }
           }
           .offer-content {
             display: flex;
