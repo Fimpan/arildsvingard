@@ -298,6 +298,20 @@ a {
   }
 }
 
+.premble-02 {
+  font-size: 14px;
+  line-height: 27px;
+  color: #1a1a1a;
+}
+@media (min-width: 992px) {
+  .premble-02 {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+}
+
 .body-01 {
   font-size: 1rem;
   color: #1a1a1a;
@@ -1101,6 +1115,18 @@ a {
 }
 .container-fluid.bg-green-primary {
   background-color: #ebefd6;
+}
+.container-fluid.bg-blue-secondary {
+  background-color: #93a5d3;
+}
+.container-fluid.bg-grey-tertiary {
+  background-color: #d9d1c5;
+  padding: 0 0 0 0.75rem;
+}
+@media (min-width: 992px) {
+  .container-fluid.bg-grey-tertiary {
+    padding: 8rem 2rem;
+  }
 }
 
 .max-width-container {
@@ -3048,20 +3074,81 @@ input::placeholder {
 
 .package-price {
   display: flex;
-  justify-content: space-between;
-  margin: 1.5rem;
+  align-items: baseline;
+  margin: 1.5rem 0;
+  gap: 10px;
 }
 .package-price.package-price-none {
   display: none;
 }
-
-.package-text {
-  margin: 1.25rem 0 0.5rem 0;
+@media (min-width: 768px) {
+  .package-price.package-price-none {
+    border-bottom: 0.5px solid #1a1a1a;
+    padding-bottom: 1rem;
+    display: block;
+    display: flex;
+    align-items: baseline;
+    margin: 1.5rem 0;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .package-price.package-price-block {
+    display: none;
+  }
 }
 
+@media (min-width: 768px) {
+  .package-container {
+    display: flex;
+    --flex-gap: 2rem;
+    gap: var(--flex-gap);
+  }
+}
+
+.pakage-card {
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .pakage-card {
+    --flex-items: 3;
+    width: calc(100% / var(--flex-items) - (var(--flex-items) - 1) / var(--flex-items) * var(--flex-gap));
+  }
+}
+.pakage-card.pakage-card-mb0 {
+  margin-bottom: 0;
+}
+
+.package-pic {
+  margin-bottom: 1.25rem;
+}
+
+.package-text {
+  margin: 1.25rem 0;
+}
+@media (min-width: 768px) {
+  .package-text {
+    padding-right: 0.5rem;
+  }
+}
+
+.package-list {
+  border-bottom: 0.5px solid #1a1a1a;
+}
+@media (min-width: 768px) {
+  .package-list {
+    margin-bottom: 2rem;
+  }
+}
 .package-list li {
   padding: 1rem 0;
   border-top: 0.5px solid #1a1a1a;
+}
+
+.guest-person p {
+  margin-bottom: 0;
 }
 
 @media (min-width: 992px) {
@@ -3656,6 +3743,23 @@ input::placeholder {
     display: none;
   }
 }
+.text-block-container {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.text-block-illustrion {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.text-block-illustrion img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
 @media (min-width: 768px) {
   .block-container {
     display: flex;

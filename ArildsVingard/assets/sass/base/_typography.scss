@@ -98,7 +98,17 @@ a {
     font-size: $preamble-01;
   }
 }
-
+.premble-02 {
+  font-size: 14px;
+  line-height: 27px;
+  color: $color-text-primary;
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+}
 .body-01 {
   font-size: $body-01-m;
   color: $color-text-primary;

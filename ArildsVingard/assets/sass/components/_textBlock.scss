@@ -1,0 +1,20 @@
+.max-width-container-illustration {
+}
+
+.text-block-container {
+  text-align: center;
+  padding: 4rem 0;
+  //   display: flex;
+  //   flex-wrap: wrap;
+}
+.text-block-illustrion {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+}

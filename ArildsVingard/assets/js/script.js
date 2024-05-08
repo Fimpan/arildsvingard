@@ -170,3 +170,24 @@ document.querySelector(".expand-button").addEventListener("click", function () {
 });
 
 // localStorage.setItem("name", true);
+
+// _____________________
+
+// button change text
+document.addEventListener("DOMContentLoaded", function () {
+  function checkViewport() {
+    var btnText = document.getElementById("btn-text");
+    if (window.innerWidth >= 1024) {
+      // Change 1024 to your desktop breakpoint
+      btnText.textContent = "Desktop Text"; // Change 'Desktop Text' to the text you want on desktop
+    } else {
+      btnText.textContent = "Boka vingårdspaket";
+    }
+  }
+
+  // Call checkViewport at page load
+  checkViewport();
+
+  // Call checkViewport at window resize
+  window.addEventListener("resize", checkViewport);
+});

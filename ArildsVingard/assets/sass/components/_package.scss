@@ -1,18 +1,85 @@
-.package-price {
+@mixin package-price-styles {
   display: flex;
-  justify-content: space-between;
-  margin: 1.5rem;
+  align-items: baseline;
+  margin: 1.5rem 0;
+  gap: 10px;
+}
+
+.package-price {
+  @include package-price-styles;
 
   &.package-price-none {
     display: none;
+
+    @media (min-width: $ipad-breakpoint) {
+      border-bottom: 0.5px solid $color-text-primary;
+      padding-bottom: 1rem;
+      display: block;
+      @include package-price-styles;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &.package-price-block {
+    @media (min-width: $ipad-breakpoint) {
+      display: none;
+    }
   }
 }
-.package-text {
-  margin: 1.25rem 0 0.5rem 0;
+.package-container {
+  @media (min-width: $ipad-breakpoint) {
+    display: flex;
+    --flex-gap: 2rem;
+    gap: var(--flex-gap);
+  }
 }
+.pakage-card {
+  margin-bottom: 3rem;
+  @media (min-width: $ipad-breakpoint) {
+    --flex-items: 3;
+
+    width: calc(
+      (100% / var(--flex-items)) -
+        (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
+    );
+  }
+
+  &.pakage-card-mb0 {
+    margin-bottom: 0;
+  }
+}
+.package-pic {
+  margin-bottom: 1.25rem;
+}
+.package-text {
+  margin: 1.25rem 0;
+  @media (min-width: $ipad-breakpoint) {
+    padding-right: 0.5rem;
+  }
+}
+// .list-button-container {
+//   @media (min-width: $ipad-breakpoint) {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     height: 100%;
+//   }
+// }
+
 .package-list {
+  border-bottom: 0.5px solid $color-text-primary;
+  @media (min-width: $ipad-breakpoint) {
+    margin-bottom: 2rem;
+  }
   li {
     padding: 1rem 0;
     border-top: 0.5px solid $color-text-primary;
+  }
+}
+
+.guest-person {
+  p {
+    margin-bottom: 0;
   }
 }

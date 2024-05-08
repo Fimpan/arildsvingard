@@ -11,6 +11,16 @@
   &.bg-green-primary {
     background-color: $color-surface-green-primary;
   }
+  &.bg-blue-secondary {
+    background-color: $color-surface-blue-secondary;
+  }
+  &.bg-grey-tertiary {
+    background-color: $color-surface-grey-tertiary;
+    padding: 0 0 0 0.75rem;
+    @media (min-width: $desktop-breakpoint) {
+      padding: 8rem 2rem;
+    }
+  }
 }
 .max-width-container {
   max-width: 910px;
