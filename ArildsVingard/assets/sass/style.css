@@ -300,15 +300,12 @@ a {
 
 .premble-02 {
   font-size: 14px;
-  line-height: 27px;
+  line-height: 24px;
   color: #1a1a1a;
 }
 @media (min-width: 992px) {
   .premble-02 {
     font-size: 22px;
-    display: flex;
-    align-items: center;
-    padding: 2rem;
   }
 }
 

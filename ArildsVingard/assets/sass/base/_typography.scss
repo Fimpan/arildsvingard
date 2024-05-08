@@ -100,13 +100,10 @@ a {
 }
 .premble-02 {
   font-size: 14px;
-  line-height: 27px;
+  line-height: 24px;
   color: $color-text-primary;
   @media (min-width: $desktop-breakpoint) {
     font-size: 22px;
-    display: flex;
-    align-items: center;
-    padding: 2rem;
   }
 }
 .body-01 {
