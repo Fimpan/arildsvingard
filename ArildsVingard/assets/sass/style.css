@@ -892,11 +892,12 @@ footer ul li .body-02 {
   text-decoration: underline;
 }
 .btn.btn-chat {
-  background-color: #04aa6d;
+  background-color: #252a10;
   color: white;
   position: fixed;
   bottom: 23px;
   right: 28px;
+  padding: 0.75rem 0.75rem;
 }
 .btn.btn-chat-mb {
   bottom: 80px;
@@ -906,9 +907,6 @@ footer ul li .body-02 {
 }
 .btn.btn-close {
   background-color: red;
-}
-.btn.btn-open {
-  background-color: #04aa6d;
 }
 .btn.btn-full-bleed {
   width: 100%;
@@ -996,8 +994,8 @@ footer ul li .body-02 {
 .chat-popup {
   display: none;
   position: fixed;
-  bottom: 0;
-  right: 15px;
+  bottom: 5%;
+  right: 5%;
   z-index: 9;
   /* Add styles to the form container */
 }
@@ -1006,9 +1004,12 @@ footer ul li .body-02 {
   max-width: 300px;
   padding: 10px;
   border-radius: 20px;
-  background-color: white;
+  background-color: #ebefd6;
   color: #777;
   /* Full-width textarea */
+}
+.chat-popup .form-container p {
+  margin-bottom: 1rem;
 }
 .chat-popup .form-container .close-icon {
   position: absolute;
@@ -1022,7 +1023,7 @@ footer ul li .body-02 {
 .chat-popup .form-container textarea {
   width: 100%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 0.5rem 0 1rem 0;
   border: none;
   border-radius: 20px;
   background: #ddd;
@@ -1034,6 +1035,10 @@ footer ul li .body-02 {
 .chat-popup .form-container textarea:focus {
   background-color: #ddd;
   outline: none;
+}
+.chat-popup .form-container .send-btn {
+  display: flex;
+  justify-content: end;
 }
 
 .accordion {

@@ -1075,18 +1075,22 @@
     <div class="chat-popup" id="myForm">
       <form action="/action_page.php" class="form-container">
         <button type="button" class="close-icon" onclick="closeForm()">
-          X
+          <img src="assets/icons/close.svg" alt="close" class="icon" />
         </button>
-        <i class="fa-solid fa-chalkboard-user"></i>
-        <h3>Chat with us</h3>
+        <p>Chatta med oss</p>
 
-        <label for="msg">Message</label>
-        <textarea placeholder="Type message.." name="msg" required></textarea>
-
-        <button type="submit" class="btn btn-open">Send</button>
-        <button type="button" class="btn btn-close" onclick="closeForm()">
+        <label for="msg">Meddelande</label>
+        <textarea
+          placeholder="Skriv ditt meddelande.."
+          name="msg"
+          required
+        ></textarea>
+        <div class="send-btn">
+          <button type="submit" class="btn btn-primary btn-open">Send</button>
+          <!-- <button type="button" class="btn btn-close" onclick="closeForm()">
           Close
-        </button>
+        </button> -->
+        </div>
       </form>
     </div>
     <script src="assets/js/script.js"></script>

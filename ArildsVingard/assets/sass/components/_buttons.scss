@@ -79,11 +79,12 @@
     }
   }
   &.btn-chat {
-    background-color: #04aa6d;
+    background-color: $color-surface-green-secondary;
     color: white;
     position: fixed;
     bottom: 23px;
     right: 28px;
+    padding: 0.75rem 0.75rem;
   }
 
   &.btn-chat-mb {
@@ -96,7 +97,7 @@
     background-color: red;
   }
   &.btn-open {
-    background-color: #04aa6d;
+    // background-color: #04aa6d;
   }
   &.btn-full-bleed {
     // border-radius: 0;

@@ -2,8 +2,8 @@
 .chat-popup {
   display: none;
   position: fixed;
-  bottom: 0;
-  right: 15px;
+  bottom: 5%;
+  right: 5%;
   z-index: 9;
   /* Add styles to the form container */
   .form-container {
@@ -11,9 +11,12 @@
     max-width: 300px;
     padding: 10px;
     border-radius: 20px;
-    background-color: white;
+    background-color: $color-surface-green-primary;
     color: #777;
 
+    p {
+      margin-bottom: 1rem;
+    }
     .close-icon {
       position: absolute;
       top: 10px;
@@ -27,7 +30,7 @@
     textarea {
       width: 100%;
       padding: 15px;
-      margin: 5px 0 22px 0;
+      margin: 0.5rem 0 1rem 0;
       border: none;
       border-radius: 20px;
       background: #ddd;
@@ -40,6 +43,10 @@
         background-color: #ddd;
         outline: none;
       }
+    }
+    .send-btn {
+      display: flex;
+      justify-content: end;
     }
   }
 }
