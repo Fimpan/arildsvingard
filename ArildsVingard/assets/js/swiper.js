@@ -14,7 +14,7 @@ const swiper = new Swiper(".swiper-slider", {
 
   // Enabled autoplay mode
   autoplay: {
-    delay: 3000,
+    delay: 5000,
     disableOnInteraction: false,
   },
 

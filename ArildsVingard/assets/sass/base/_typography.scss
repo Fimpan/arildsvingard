@@ -25,6 +25,9 @@ body {
 }
 h1 {
   font-size: $headline-1-m;
+  span {
+    display: block;
+  }
 
   // @media (min-width: 768px) {
   //   font-size: 5rem;

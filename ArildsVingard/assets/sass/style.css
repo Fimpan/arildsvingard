@@ -215,6 +215,9 @@ body {
 h1 {
   font-size: 3rem;
 }
+h1 span {
+  display: block;
+}
 @media (min-width: 992px) {
   h1 {
     font-size: 11.125rem;
@@ -254,7 +257,7 @@ a {
 
 .accent-AA-100 {
   font-family: "MonumentGrotesk";
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 24px;
   color: #1a1a1a;
   letter-spacing: 0.8px;
@@ -262,7 +265,7 @@ a {
 }
 @media (min-width: 992px) {
   .accent-AA-100 {
-    font-size: 1.6875rem;
+    font-size: 1.125rem;
     margin-bottom: 1.5rem;
   }
 }
@@ -449,6 +452,10 @@ a {
 }
 
 /* The layout/ folder contains everything that takes part in laying out the site or application. This folder could have stylesheets for the main parts of the site (header, footer, navigation, sidebar…), the grid system or even CSS styles for all the forms.*/
+footer {
+  color: #f3f0e8;
+}
+
 .menuContainer {
   height: auto;
   margin: 0 auto;
@@ -752,7 +759,7 @@ a {
   width: 2.5rem;
   height: 2.5rem;
   margin: auto;
-  color: #ffffff;
+  color: #f3f0e8;
 }
 .top .stages .number .flex-circle .circle.c-active {
   background-color: #252a10;
@@ -993,6 +1000,117 @@ a {
   outline: none;
 }
 
+.accordion {
+  background-color: #f3f0e8;
+  color: #1a1a1a;
+  cursor: pointer;
+  padding: 1.5rem 0;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-top: 0.5px solid #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion:last-of-type {
+  border-bottom: 0;
+}
+.accordion:after {
+  font-weight: 700;
+}
+@media (min-width: 992px) {
+  .accordion {
+    display: none;
+  }
+}
+
+.calendar-block-container {
+  margin-top: 1rem;
+  border-bottom: 0.5px solid #1a1a1a;
+}
+@media (min-width: 992px) {
+  .calendar-block-container {
+    margin-top: 5rem;
+  }
+}
+
+.calendar-time .mt1 h4 {
+  margin-top: 0.5rem;
+}
+
+.panel {
+  width: 90%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+@media (min-width: 992px) {
+  .panel {
+    border-top: 0.5px solid #1a1a1a;
+    padding: 2.5rem 0;
+    width: 100%;
+    display: block;
+    max-height: none;
+    display: flex;
+  }
+}
+.panel .body-01 {
+  margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .panel .body-01.body-01-none {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .panel .accent-AA-100 {
+    flex: 0 0 25%;
+  }
+}
+.panel .accent-AA-100.accent-AA-100-mb {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 992px) {
+  .panel .accent-AA-100.accent-AA-100-align-left {
+    text-align: right;
+  }
+}
+
+.icon-expanded {
+  display: none;
+}
+
+.calendar-dates {
+  display: none;
+}
+@media (min-width: 992px) {
+  .calendar-dates {
+    display: block;
+    flex: 0 0 25%;
+  }
+}
+.calendar-dates span {
+  display: block;
+  margin-bottom: 0;
+}
+
+.calendar-info {
+  display: none;
+}
+@media (min-width: 992px) {
+  .calendar-info {
+    display: block;
+    flex: 0 0 50%;
+  }
+}
+.calendar-info h4 {
+  margin-bottom: 0.6rem;
+}
+
 .stage-container.confirmation-container {
   padding: 3rem 1.25rem;
   max-width: 1000px;
@@ -1122,8 +1240,11 @@ a {
 }
 @media (min-width: 992px) {
   .container-fluid.bg-grey-tertiary {
-    padding: 8rem 2rem;
+    padding: 10rem 2rem;
   }
+}
+.container-fluid.bg-green-secondary {
+  background-color: #252a10;
 }
 
 .max-width-container {

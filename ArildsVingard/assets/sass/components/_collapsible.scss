@@ -1,0 +1,125 @@
+.accordion {
+  background-color: $color-surface-grey-secondary;
+  color: $color-text-primary;
+  cursor: pointer;
+  padding: 1.5rem 0;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-top: 0.5px solid $primary-text-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
+
+  &:hover,
+  &.active {
+    // background-color: #ccc;
+  }
+
+  &:after {
+    // color: #777;
+    font-weight: 700;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+}
+
+.active {
+  &:after {
+    // content: url('../assets/icons/chevron--down.svg');
+  }
+}
+
+.calendar-block-container {
+  margin-top: 1rem;
+  border-bottom: 0.5px solid $primary-text-color;
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: 5rem;
+  }
+}
+.calendar-time {
+  .mt1 {
+    h4 {
+      margin-top: 0.5rem;
+    }
+  }
+}
+.panel {
+  //   margin: 1rem 0;
+  width: 90%;
+  //   background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  @media (min-width: $desktop-breakpoint) {
+    // Adjust the value as needed for your desktop breakpoint
+    border-top: 0.5px solid $primary-text-color;
+    padding: 2.5rem 0;
+    width: 100%;
+    display: block;
+    max-height: none;
+    // height: 500px;
+    display: flex;
+  }
+
+  .body-01 {
+    margin-bottom: 1rem;
+    &.body-01-none {
+      @media (min-width: $desktop-breakpoint) {
+        // Adjust the value as needed for your desktop breakpoint
+        display: none;
+      }
+    }
+  }
+  .accent-AA-100 {
+    @media (min-width: $desktop-breakpoint) {
+      // Adjust the value as needed for your desktop breakpoint
+      flex: 0 0 25%;
+    }
+    &.accent-AA-100-mb {
+      margin-bottom: 1.5rem;
+    }
+    &.accent-AA-100-align-left {
+      @media (min-width: $desktop-breakpoint) {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.icon-expanded {
+  display: none;
+}
+
+.calendar-dates {
+  display: none;
+  @media (min-width: $desktop-breakpoint) {
+    // Adjust the value as needed for your desktop breakpoint
+    display: block;
+    flex: 0 0 25%;
+  }
+  span {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+.calendar-info {
+  display: none;
+  @media (min-width: $desktop-breakpoint) {
+    // Adjust the value as needed for your desktop breakpoint
+    display: block;
+    flex: 0 0 50%;
+  }
+  h4 {
+    margin-bottom: 0.6rem;
+  }
+}
