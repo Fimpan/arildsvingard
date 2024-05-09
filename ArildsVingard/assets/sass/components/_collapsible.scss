@@ -18,15 +18,13 @@
     border-bottom: 0;
   }
 
-  &:hover,
-  &.active {
-    // background-color: #ccc;
-  }
+  //   &:hover,
+  //   &.active {
+  //   }
 
-  &:after {
-    // color: #777;
-    font-weight: 700;
-  }
+  //   &:after {
+  //     font-weight: 700;
+  //   }
 
   @media (min-width: $desktop-breakpoint) {
     display: none;
