@@ -1,7 +1,8 @@
 .select-container {
   @media (min-width: $desktop-breakpoint) {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    gap: 24px;
     margin-bottom: 4rem;
   }
 
@@ -30,7 +31,7 @@
       position: sticky;
       top: 9rem;
       // max-height: 438px;
-      flex: 0 0 33%;
+      // flex: 0 0 33%;
     }
 
     &.sds-optinal {
@@ -333,7 +334,7 @@
   @media (min-width: $desktop-breakpoint) {
     .offers-container {
       margin: 0;
-      flex: 0 0 66%;
+      // flex: 0 0 66%;
       .offers {
         .offer-card {
           display: flex;
