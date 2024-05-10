@@ -163,9 +163,10 @@ input::placeholder {
     margin-bottom: 1rem;
   }
 }
-@media (min-width: $ipad-breakpoint) {
+@media (min-width: $desktop-breakpoint) {
   .cancel-continue-buttons {
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
   }
 }

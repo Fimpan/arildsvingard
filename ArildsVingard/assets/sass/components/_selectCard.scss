@@ -58,7 +58,7 @@
       .selected-dates-container {
         display: flex;
         justify-content: space-between;
-
+        gap: 1rem;
         .invisible-link {
           border: 1px solid #221504;
           flex: 0 0 45%;
@@ -159,10 +159,10 @@
             }
           }
         }
-        .underline-booking {
-          border: 1px solid grey;
-          margin: 1rem 0;
-        }
+      }
+      .underline-booking {
+        border: 1px solid grey;
+        margin: 1rem 0;
       }
       .booking-price-container {
         margin-bottom: 1rem;
@@ -171,6 +171,7 @@
           justify-content: space-between;
           &.mb1 {
             margin-bottom: 1rem;
+            background-color: $color-surface-grey-tertiary;
           }
         }
       }
@@ -334,7 +335,7 @@
   @media (min-width: $desktop-breakpoint) {
     .offers-container {
       margin: 0;
-      // flex: 0 0 66%;
+      flex: 1;
       .offers {
         .offer-card {
           display: flex;

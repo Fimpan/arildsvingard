@@ -586,7 +586,7 @@ footer ul li .body-02 {
   .navbar {
     top: 9rem;
     width: 100%;
-    height: 70%;
+    height: 100%;
   }
 }
 .navbar.active {
@@ -3161,10 +3161,11 @@ input::placeholder {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .cancel-continue-buttons {
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
   }
 }
 .block-heading {
@@ -3411,6 +3412,7 @@ input::placeholder {
 .select-container .selected-dates-section .dates-wrapper .selected-dates-container {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 .select-container .selected-dates-section .dates-wrapper .selected-dates-container .invisible-link {
   border: 1px solid #221504;
@@ -3496,7 +3498,7 @@ input::placeholder {
 .select-container .selected-dates-section .booking-container .booking-info-container .booking-info.b-flex-sb .selected-date.sd-bold {
   padding-left: 0;
 }
-.select-container .selected-dates-section .booking-container .booking-info-container .underline-booking {
+.select-container .selected-dates-section .booking-container .underline-booking {
   border: 1px solid grey;
   margin: 1rem 0;
 }
@@ -3509,6 +3511,7 @@ input::placeholder {
 }
 .select-container .selected-dates-section .booking-container .booking-price-container .booking-price.mb1 {
   margin-bottom: 1rem;
+  background-color: #d9d1c5;
 }
 .select-container .selected-dates-section .booking-container .booking-link-container {
   text-decoration: underline;
@@ -3626,6 +3629,7 @@ input::placeholder {
 @media (min-width: 992px) {
   .select-container .offers-container {
     margin: 0;
+    flex: 1;
   }
   .select-container .offers-container .offers .offer-card {
     display: flex;
