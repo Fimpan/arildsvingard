@@ -11,77 +11,123 @@
     />
   </head>
 
-  <body class="booking-body-tag">
+  <body class="booking-body-tag booking-body-tag-mb0">
     <header class="header" id="header">
+      <section class="top-menu-container">
+        <nav class="top-navbar">
+          <ul class="top-menu">
+            <li class="top-menu-item">
+              <a href="#" class="top-menu-link">Kontakt</a>
+            </li>
+            <li class="top-menu-item">
+              <a href="#" class="top-menu-link">Presentkort</a>
+            </li>
+            <li class="top-menu-item">
+              <a href="#" class="top-menu-link">öppettider</a>
+            </li>
+            <li class="top-menu-item">
+              <a href="#" class="top-menu-link">
+                <img
+                  src="assets/icons/ibm-watson--language-translator.svg"
+                  alt="language"
+                  class="icon"
+                />
+                <select id="languageSelect">
+                  <option value="swe">SWE</option>
+                  <option value="eng">ENG</option>
+                  <option value="eng">DE</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
       <section class="wrapper menuContainer">
-        <a href="./index.html" class="brand">Brand</a>
-        <div class="burger" id="burger">
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-        </div>
+        <a href="./index.html" class="brand">
+          <picture class="offer-picture">
+            <source
+              media="(min-width:768px)"
+              srcset="assets/logotype/logotype-desktop.svg"
+            />
+            <source
+              media="(max-width:769px)"
+              srcset="assets/logotype/logotype-mobile.svg"
+            />
+            <img src="assets/logotype/logotype-desktop.svg" alt="" /> </picture
+        ></a>
+        <section class="button-bruger">
+          <div class="book-experience"></div>
+          <div class="burger-container">
+            <div class="burger" id="burger">
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+            </div>
+          </div>
+        </section>
         <span class="overlay"></span>
         <nav class="navbar" id="navbar">
           <ul class="menu" id="menu">
-            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-            <li class="menu-item menu-dropdown">
-              <span class="menu-link" data-toggle="submenu"
-                >Feature<i class="bx bx-chevron-down"></i
-              ></span>
-              <ul class="submenu">
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Feature Link</a>
-                </li>
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Feature Link</a>
-                </li>
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Feature Link</a>
-                </li>
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Feature Link</a>
-                </li>
-              </ul>
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">Hem</a>
             </li>
             <li class="menu-item menu-dropdown">
               <span class="menu-link" data-toggle="submenu"
-                >Discover<i class="bx bx-chevron-down"></i
-              ></span>
+                >Vinodling
+                <img
+                  src="assets/icons/arrow--right.svg"
+                  alt="right"
+                  class="icon"
+              /></span>
               <ul class="submenu">
                 <li class="submenu-item">
-                  <a href="#" class="submenu-link">Discover Link</a>
+                  <a href="#" class="submenu-link"
+                    >Vinordling (jordmån, skördefest)</a
+                  >
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-link">Discover Link</a>
+                  <a href="#" class="submenu-link">Om vinproduktionen</a>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-link">Discover Link</a>
-                </li>
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Discover Link</a>
+                  <a href="#" class="submenu-link">Om druvsorterna</a>
                 </li>
               </ul>
+            </li>
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">Hotell</a>
+            </li>
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">Glamping</a>
+            </li>
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">Paket & Erbjudande</a>
             </li>
             <li class="menu-item menu-dropdown">
               <span class="menu-link" data-toggle="submenu"
-                >Resource<i class="bx bx-chevron-down"></i
-              ></span>
+                >Sällskap
+                <img
+                  src="assets/icons/arrow--right.svg"
+                  alt="right"
+                  class="icon"
+              /></span>
               <ul class="submenu">
                 <li class="submenu-item">
-                  <a href="#" class="submenu-link">Resource Link</a>
+                  <a href="#" class="submenu-link">Konferans</a>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-link">Resource Link</a>
+                  <a href="#" class="submenu-link">Bröllop</a>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-link">Resource Link</a>
-                </li>
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Resource Link</a>
+                  <a href="#" class="submenu-link">Gruppresor över 10 pers</a>
                 </li>
               </ul>
             </li>
-            <li class="menu-item"><a href="#" class="menu-link">Support</a></li>
+
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">Restaurang</a>
+            </li>
+            <li class="menu-item"><a href="#" class="menu-link">Om oss</a></li>
           </ul>
         </nav>
       </section>
@@ -100,7 +146,7 @@
             <p>Tillbaka</p>
           </a>
 
-          <h1 class="bokinghead">Välj datum</h1>
+          <h1 class="bokinghead">Välj Erbjudande</h1>
           <div class="emptybox"></div>
         </div>
         <div class="stages">
@@ -175,7 +221,7 @@
               </div>
             </div>
           </div>
-          <a href="stepOne.html" class="btn btn-primary btn-full-bleed"
+          <a href="stepOne.html" class="btn btn-secondary btn-full-bleed"
             >Ändra sökning</a
           >
         </section>
@@ -544,6 +590,77 @@
         </main>
       </div>
     </div>
+    <footer>
+      <section class="footer-container bg-green-secondary">
+        <div class="max-width-container-l max-width-container-l-p2">
+          <div class="footer-menu-container body-02">
+            <div class="footer-block">
+              <nav class="footer-nav">
+                <ul class="footer-links">
+                  <li class="footer-link">
+                    <a href="#" class="body-02">Vinproduktion</a>
+                  </li>
+                  <li class="footer-link">
+                    <a href="#" class="body-02">Hotell</a>
+                  </li>
+                  <li class="footer-link">
+                    <a href="#" class="body-02">Glamping</a>
+                  </li>
+                  <li class="footer-link">
+                    <a href="#" class="body-02">Paket & priser</a>
+                  </li>
+                  <li class="footer-link">
+                    <a href="#" class="body-02">Evenemang & konferens</a>
+                  </li>
+                  <li class="footer-link">
+                    <a href="#" class="body-02">Restaurang</a>
+                  </li>
+                  <li class="footer-link">
+                    <a href="#" class="body-02">Om oss</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer-contact">
+                <ul>
+                  <li>
+                    <a href="mailto:info@arildsvingard.com" class="body-02"
+                      >info@arildsvingard.se</a
+                    >
+                  </li>
+                  <!-- Replace with your email -->
+                  <li>
+                    <a href="tel:0123456789" class="body-02">042-34 64 20</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.google.com/maps/place/Arilds+Ving%C3%A5rd/@56.2667425,12.572298,17z/data=!3m1!4b1!4m9!3m8!1s0x4652279b965503dd:0x565c2a775daa3ebf!5m2!4m1!1i2!8m2!3d56.2667395!4d12.5748729!16s%2Fg%2F1hc3gtsdw?entry=ttu"
+                      target="_blank"
+                      class="body-02"
+                      >Lillavägen 71, 263 73 Arild</a
+                    >
+                  </li>
+
+                  <!-- Replace with your phone number -->
+                </ul>
+              </div>
+            </div>
+            <div class="footer-logo">
+              <picture class="offer-picture">
+                <source
+                  media="(min-width:768px)"
+                  srcset="assets/logotype/logotyp_secondary_vit.svg"
+                />
+                <source
+                  media="(max-width:769px)"
+                  srcset="assets/logotype/logotyp_primar_vit.svg"
+                />
+                <img src="assets/logotype/logotyp_secondary_vit.svg" alt="" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/menu.js"></script>
   </body>

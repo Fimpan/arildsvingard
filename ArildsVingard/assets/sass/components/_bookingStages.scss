@@ -6,9 +6,9 @@
   }
   .wrappBookingContent {
     margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    @media (min-width: $ipad-breakpoint) {
+      margin-bottom: 2.5rem;
+    }
     a {
       display: flex;
       align-items: center;
@@ -28,6 +28,9 @@
   @media (min-width: $ipad-breakpoint) {
     .wrappBookingContent {
       justify-content: space-between;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
     }
   }
   .stages {

@@ -379,6 +379,11 @@ a {
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
+@media (min-width: 992px) {
+  .h2-booking {
+    margin-top: 0;
+  }
+}
 
 .h3-booking {
   font-size: 1.25rem;
@@ -492,6 +497,10 @@ footer ul li .body-02 {
   background-color: #252a10;
 }
 
+.footer-logo {
+  padding: 2rem;
+}
+
 .menuContainer {
   height: auto;
   margin: 0 auto;
@@ -520,7 +529,6 @@ footer ul li .body-02 {
 .top-menu-container {
   display: none;
 }
-
 @media (min-width: 992px) {
   .top-menu-container {
     margin: auto;
@@ -564,15 +572,22 @@ footer ul li .body-02 {
   position: fixed;
   top: 0;
   left: -100%;
-  width: 75%;
+  width: 80%;
   height: 100%;
   z-index: 10;
   opacity: 0;
   overflow-y: auto;
   visibility: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  background-color: white;
+  background-color: #fbf8f2;
   transition: all 0.5s ease;
+}
+@media (min-width: 992px) {
+  .navbar {
+    top: 9rem;
+    width: 100%;
+    height: 70%;
+  }
 }
 .navbar.active {
   left: 0rem;
@@ -585,9 +600,22 @@ footer ul li .body-02 {
   height: auto;
   padding: 1rem 0;
 }
+@media (min-width: 992px) {
+  .menu {
+    width: 50%;
+    margin: 2rem 0 0 2rem;
+  }
+}
 .menu-item {
   display: block;
   margin: 0 auto;
+  border-bottom: 1px solid #1a1a1a;
+  padding: 1.5rem 0;
+}
+@media (min-width: 768px) {
+  .menu-item {
+    padding: 2rem 0;
+  }
 }
 .menu-link {
   display: flex;
@@ -596,13 +624,18 @@ footer ul li .body-02 {
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: inherit;
   cursor: pointer;
   text-transform: capitalize;
-  color: black;
+  color: #1a1a1a;
   transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .menu-link {
+    font-size: 2rem;
+  }
 }
 .menu-link > i.bx {
   font-size: 1.35rem;
@@ -611,7 +644,7 @@ footer ul li .body-02 {
 }
 .menu-link:hover {
   outline: none;
-  color: pink;
+  color: #ebefd6;
 }
 
 .submenu {
@@ -629,6 +662,7 @@ footer ul li .body-02 {
   transform: translateY(0px);
   box-shadow: none;
   background: transparent;
+  font-size: 1.5rem;
 }
 .submenu-item {
   display: block;
@@ -636,7 +670,7 @@ footer ul li .body-02 {
 }
 .submenu-link {
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: inherit;
   cursor: pointer;
@@ -645,7 +679,7 @@ footer ul li .body-02 {
 }
 .submenu-link:hover {
   outline: none;
-  color: pink;
+  color: #ebefd6;
 }
 
 .burger-container {
@@ -718,6 +752,11 @@ footer ul li .body-02 {
   transition: all 0.35s ease-in-out;
   background-color: rgba(0, 0, 0, 0.65);
 }
+@media (min-width: 992px) {
+  .overlay {
+    top: 9rem;
+  }
+}
 .overlay.active {
   display: block;
   opacity: 1;
@@ -753,9 +792,11 @@ footer ul li .body-02 {
 }
 .top .wrappBookingContent {
   margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .top .wrappBookingContent {
+    margin-bottom: 2.5rem;
+  }
 }
 .top .wrappBookingContent a {
   display: flex;
@@ -774,6 +815,9 @@ footer ul li .body-02 {
 @media (min-width: 768px) {
   .top .wrappBookingContent {
     justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 .top .stages {
@@ -2859,6 +2903,7 @@ footer ul li .body-02 {
 .calContainer {
   background-color: #ffffff;
   padding: 1rem;
+  margin-bottom: 4rem;
 }
 .calContainer .bookingInfo {
   margin-bottom: 2rem;
@@ -3311,18 +3356,24 @@ input::placeholder {
   .select-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 4rem;
   }
 }
 .select-container .selected-dates-section {
   margin: auto;
-  background-color: #f0f0f0;
+  background-color: #f3f0e8;
   text-align: center;
   max-width: 384px;
   max-height: 470px;
 }
 .select-container .selected-dates-section.sds-page-two {
-  max-height: 388px;
+  max-height: 450px;
   padding-bottom: 1.5rem;
+}
+@media (min-width: 992px) {
+  .select-container .selected-dates-section.sds-page-two {
+    max-height: 427px;
+  }
 }
 .select-container .selected-dates-section.sds-page-two a {
   width: 90%;
@@ -3332,7 +3383,7 @@ input::placeholder {
   .select-container .selected-dates-section {
     margin: 0;
     position: sticky;
-    top: 5rem;
+    top: 9rem;
     flex: 0 0 33%;
   }
 }
@@ -3353,7 +3404,7 @@ input::placeholder {
   padding: 1rem 0;
 }
 .select-container .selected-dates-section .dates-wrapper {
-  padding: 1rem 1rem 0 1rem;
+  padding: 1.5rem 1rem 0 1rem;
 }
 .select-container .selected-dates-section .dates-wrapper p {
   margin: 0.5rem;
@@ -3363,18 +3414,27 @@ input::placeholder {
   justify-content: space-between;
 }
 .select-container .selected-dates-section .dates-wrapper .selected-dates-container .invisible-link {
+  border: 1px solid #221504;
   flex: 0 0 45%;
-  background-color: white;
 }
 .select-container .selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .day-container {
-  background-color: #d9d9d9;
+  background-color: #221504;
   padding: 0.25rem 0.5rem;
 }
 .select-container .selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .day-container .selected-day {
   font-size: 1.25rem;
+  color: #f3f0e8;
+  font-family: "MonumentGrotesk";
+}
+.select-container .selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .selected-date {
+  margin-top: 1.5rem;
+  font-family: "MonumentGrotesk";
+  text-transform: uppercase;
+  color: #999;
 }
 .select-container .selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .selected-month {
   font-size: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 .select-container .selected-dates-section .dates-wrapper .details-container {
   padding: 2rem 0;
@@ -3640,12 +3700,22 @@ input::placeholder {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
+@media (min-width: 992px) {
+  .booking .datepicker .check .modal {
+    overflow: hidden;
+  }
+}
 .booking .datepicker .check .modal-content {
   background-color: #fefefe;
   margin: 50% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+}
+@media (min-width: 992px) {
+  .booking .datepicker .check .modal-content {
+    width: 30%;
+  }
 }
 .booking .datepicker .check .modal-content .quantityContent {
   display: flex;
@@ -3979,6 +4049,10 @@ body {
   padding-bottom: 4.25rem;
 }
 
+.booking-body-tag-mb0 {
+  padding-bottom: 0;
+}
+
 img {
   width: 100%;
 }
@@ -4003,4 +4077,9 @@ img {
 .top {
   text-align: center;
   margin: 2rem 0;
+}
+@media (min-width: 992px) {
+  .top {
+    padding: 6rem 0 2rem 0;
+  }
 }/*# sourceMappingURL=style.css.map */

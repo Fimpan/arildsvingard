@@ -173,6 +173,9 @@ a {
   font-size: $b-headline-2-m;
   margin-bottom: $b-headline-2-m-mb;
   font-weight: 600;
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: 0;
+  }
 }
 .h3-booking {
   font-size: $b-headline-3-m;

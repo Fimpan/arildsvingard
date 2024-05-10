@@ -25,6 +25,9 @@
         height: 100%;
         overflow: auto;
         background-color: rgba(0, 0, 0, 0.4);
+        @media (min-width: $desktop-breakpoint) {
+          overflow: hidden;
+        }
       }
 
       .modal-content {
@@ -33,6 +36,9 @@
         padding: 20px;
         border: 1px solid #888;
         width: 80%;
+        @media (min-width: $desktop-breakpoint) {
+          width: 30%;
+        }
         .quantityContent {
           display: flex;
           justify-content: space-between;

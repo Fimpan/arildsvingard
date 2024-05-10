@@ -35,6 +35,8 @@
 //Top menu
 .top-menu-container {
   display: none;
+  .top-menu-link {
+  }
 }
 @media (min-width: $desktop-breakpoint) {
   .top-menu-container {
@@ -60,6 +62,7 @@
     }
   }
 }
+
 // Wrapper
 .wrapper {
   display: flex;
@@ -87,7 +90,7 @@
   position: fixed;
   top: 0;
   left: -100%;
-  width: 75%;
+  width: 80%;
   height: 100%;
   z-index: 10;
   opacity: 0;
@@ -95,9 +98,13 @@
   visibility: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  background-color: white;
+  background-color: $color-surface-grey-primaryi;
   transition: all 0.5s ease;
-
+  @media (min-width: $desktop-breakpoint) {
+    top: 9rem;
+    width: 100%;
+    height: 70%;
+  }
   &.active {
     left: 0rem;
     opacity: 1;
@@ -110,10 +117,18 @@
   width: 100%;
   height: auto;
   padding: 1rem 0;
-
+  @media (min-width: $desktop-breakpoint) {
+    width: 50%;
+    margin: 2rem 0 0 2rem;
+  }
   &-item {
     display: block;
     margin: 0 auto;
+    border-bottom: 1px solid $color-text-primary;
+    padding: 1.5rem 0;
+    @media (min-width: $ipad-breakpoint) {
+      padding: 2rem 0;
+    }
   }
 
   &-link {
@@ -122,14 +137,16 @@
     padding: 0.5rem 1.25rem;
     column-gap: 0.25rem;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: inherit;
     cursor: pointer;
     text-transform: capitalize;
-    color: black;
+    color: $color-text-primary;
     transition: all 0.3s ease-in-out;
-
+    @media (min-width: $ipad-breakpoint) {
+      font-size: 2rem;
+    }
     > i.bx {
       font-size: 1.35rem;
       line-height: 1.5;
@@ -138,7 +155,7 @@
 
     &:hover {
       outline: none;
-      color: pink;
+      color: $color-surface-green-primary;
     }
   }
 }
@@ -159,6 +176,7 @@
   transform: translateY(0px);
   box-shadow: none;
   background: transparent;
+  font-size: 1.5rem;
 
   &-item {
     display: block;
@@ -167,7 +185,7 @@
 
   &-link {
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: inherit;
     cursor: pointer;
@@ -176,7 +194,7 @@
 
     &:hover {
       outline: none;
-      color: pink;
+      color: $color-surface-green-primary;
     }
   }
 }
@@ -256,7 +274,9 @@
   visibility: hidden;
   transition: all 0.35s ease-in-out;
   background-color: rgba(0, 0, 0, 0.65);
-
+  @media (min-width: $desktop-breakpoint) {
+    top: 9rem;
+  }
   &.active {
     display: block;
     opacity: 1;

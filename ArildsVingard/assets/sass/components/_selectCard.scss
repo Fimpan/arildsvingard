@@ -2,18 +2,22 @@
   @media (min-width: $desktop-breakpoint) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 4rem;
   }
 
   .selected-dates-section {
     margin: auto;
-    background-color: #f0f0f0;
+    background-color: $color-surface-grey-secondary;
     text-align: center;
     max-width: 384px;
     max-height: 470px;
 
     &.sds-page-two {
-      max-height: 388px;
+      max-height: 450px;
       padding-bottom: 1.5rem;
+      @media (min-width: $desktop-breakpoint) {
+        max-height: 427px;
+      }
 
       a {
         width: 90%;
@@ -24,7 +28,7 @@
     @media (min-width: $desktop-breakpoint) {
       margin: 0;
       position: sticky;
-      top: 5rem;
+      top: 9rem;
       // max-height: 438px;
       flex: 0 0 33%;
     }
@@ -45,7 +49,7 @@
     }
 
     .dates-wrapper {
-      padding: 1rem 1rem 0 1rem;
+      padding: 1.5rem 1rem 0 1rem;
 
       p {
         margin: 0.5rem;
@@ -55,21 +59,29 @@
         justify-content: space-between;
 
         .invisible-link {
+          border: 1px solid #221504;
           flex: 0 0 45%;
-          background-color: white;
+          // background-color: white;
           .single-date-container {
             .day-container {
-              background-color: #d9d9d9;
+              background-color: #221504;
               padding: 0.25rem 0.5rem;
               .selected-day {
                 font-size: 1.25rem;
+                color: $color-text-Invert;
+                font-family: "MonumentGrotesk";
               }
             }
-            // .selected-date {
-            //   font-size: 0.75rem;
-            // }
+            .selected-date {
+              margin-top: 1.5rem;
+              font-family: "MonumentGrotesk";
+              text-transform: uppercase;
+
+              color: #999;
+            }
             .selected-month {
               font-size: 1.25rem;
+              margin-bottom: 1.5rem;
             }
           }
         }
