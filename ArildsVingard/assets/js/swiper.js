@@ -9,7 +9,7 @@ const swiper = new Swiper(".swiper-slider", {
   loop: true,
   mousewheel: false,
   keyboard: {
-    enabled: false,
+    enabled: true,
   },
 
   // Enabled autoplay mode

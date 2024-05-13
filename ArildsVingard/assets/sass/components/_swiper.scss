@@ -68,12 +68,13 @@
 }
 
 .review {
-  display: flex;
+  display: flex !important;
   .quote-icon {
+    flex: 0 0 20% !important;
     img {
       // width: auto;
-      width: 50px;
-      max-width: 100%; // Ensure it doesn't overflow its container
+      width: 50px !important;
+      max-width: 100% !important; // Ensure it doesn't overflow its container
     }
   }
 }
