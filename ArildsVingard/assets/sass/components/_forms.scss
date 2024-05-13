@@ -117,7 +117,7 @@ input::placeholder {
   font-size: 1rem;
 }
 .input-field {
-  width: 99%;
+  width: 100%;
   //   margin-bottom: 0.75rem;
   &.if-mb {
     margin-bottom: 0.75rem;
@@ -126,7 +126,11 @@ input::placeholder {
     padding-left: 2rem;
   }
 }
-
+//Present-card
+// #warning {
+//   display: none;
+//   margin-bottom: 0.75rem;
+// }
 .input-wrapper {
   position: relative;
   margin-bottom: 0.75rem;

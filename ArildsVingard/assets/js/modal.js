@@ -1,20 +1,52 @@
-// Get references to the date input fields and the button
+// Get references to the date input fields and the buttons
 var checkInDateInput = document.querySelector(
   ".datepicker .check:nth-child(1) .checkChoose"
 );
 var checkOutDateInput = document.querySelector(
   ".datepicker .check:nth-child(2) .checkChoose"
 );
-var offerButton = document.getElementById("offerButton");
+var klarButton = document.getElementById("klarButton");
+var visaButton = document.getElementById("visaButton");
+
+// Initialize guest and room counts
 let guestCount1 = 0;
 let guestCount2 = 0;
-let roomCount = 0;
 let guestCount3 = 0;
-// Initially prevent the default action of the offerButton
-offerButton.addEventListener("click", preventDefaultAction);
+let roomCount = 0;
+
+// Add an event listener to the "Klar" button to close the modal
+klarButton.addEventListener("click", function (e) {
+  e.preventDefault();
+  modal.style.display = "none";
+});
 
 function preventDefaultAction(e) {
   e.preventDefault();
+}
+// Initially disable the "Visa erbjudande" button
+visaButton.classList.add("btn-primary-disable");
+visaButton.addEventListener("click", preventDefaultAction);
+
+function checkDates() {
+  // If both dates have been selected and at least one guest or room has been added, enable the button
+  if (
+    checkInDateInput.textContent !== "Lägg till datum" &&
+    checkOutDateInput.textContent !== "Lägg till datum" &&
+    (parseInt(guestCount1.textContent) > 0 ||
+      parseInt(guestCount2.textContent) > 0 ||
+      parseInt(guestCount3.textContent) > 0)
+  ) {
+    visaButton.classList.remove("btn-primary-disable");
+    visaButton.classList.add("btn-primary");
+    // Remove the event listener that prevents the default action
+    visaButton.removeEventListener("click", preventDefaultAction);
+  } else {
+    // If dates are not selected or no guests or rooms have been added, disable the button
+    visaButton.classList.remove("btn-primary");
+    visaButton.classList.add("btn-primary-disable");
+    // Add the event listener that prevents the default action
+    visaButton.addEventListener("click", preventDefaultAction);
+  }
 }
 
 // Add a MutationObserver to watch for changes in the .checkChoose elements' text content
@@ -22,26 +54,32 @@ var observer = new MutationObserver(checkDates);
 observer.observe(checkInDateInput, { childList: true });
 observer.observe(checkOutDateInput, { childList: true });
 
+// Define the function that closes the modal
+function closeModal(e) {
+  e.preventDefault();
+  modal.style.display = "none";
+}
+// Add a MutationObserver to watch for changes in the .checkChoose elements' text content
+var observer = new MutationObserver(checkDates);
+observer.observe(checkInDateInput, { childList: true });
+observer.observe(checkOutDateInput, { childList: true });
+
 function checkDates() {
-  // If both dates have been selected and a selection has been made in the modal, enable the button
+  // If both dates have been selected, enable the button
   if (
     checkInDateInput.textContent !== "Lägg till datum" &&
-    checkOutDateInput.textContent !== "Lägg till datum" &&
-    (parseInt(guestCount1.textContent) > 0 ||
-      parseInt(guestCount2.textContent) > 0 ||
-      parseInt(guestCount3.textContent) > 0 ||
-      parseInt(roomCount.textContent) > 0)
+    checkOutDateInput.textContent !== "Lägg till datum"
   ) {
-    offerButton.classList.remove("btn-primary-disable");
-    offerButton.classList.add("btn-primary");
+    visaButton.classList.remove("btn-primary-disable");
+    visaButton.classList.add("btn-primary");
     // Remove the event listener that prevents the default action
-    offerButton.removeEventListener("click", preventDefaultAction);
+    visaButton.removeEventListener("click", preventDefaultAction);
   } else {
-    // If dates are not selected or no selection has been made in the modal, disable the button
-    offerButton.classList.remove("btn-primary");
-    offerButton.classList.add("btn-primary-disable");
+    // If dates are not selected, disable the button
+    visaButton.classList.remove("btn-primary");
+    visaButton.classList.add("btn-primary-disable");
     // Add the event listener that prevents the default action
-    offerButton.addEventListener("click", preventDefaultAction);
+    visaButton.addEventListener("click", preventDefaultAction);
   }
 }
 
@@ -129,34 +167,4 @@ function updateGuestAndRoomCount() {
   document.querySelector(".guestModal .quantity").innerText =
     guestCount1 + guestCount2 + " gäster, " + guestCount3 + " rum";
   checkDates(); // Call checkDates to update the state of the button
-}
-
-function checkDates() {
-  console.log("Checking dates...");
-  console.log("Check-in date:", checkInDateInput.textContent);
-  console.log("Check-out date:", checkOutDateInput.textContent);
-  console.log("Guest count 1:", guestCount1);
-  console.log("Guest count 2:", guestCount2);
-  console.log("Guest count 3:", guestCount3);
-  console.log("Room count:", roomCount);
-
-  // If both dates have been selected and a selection has been made in the modal, enable the button
-  if (
-    checkInDateInput.textContent !== "Lägg till datum" &&
-    checkOutDateInput.textContent !== "Lägg till datum" &&
-    (guestCount1 > 0 || guestCount2 > 0 || guestCount3 > 0 || roomCount > 0)
-  ) {
-    console.log("Enabling button...");
-    offerButton.classList.remove("btn-primary-disable");
-    offerButton.classList.add("btn-primary");
-    // Remove the event listener that prevents the default action
-    offerButton.removeEventListener("click", preventDefaultAction);
-  } else {
-    // If dates are not selected or no selection has been made in the modal, disable the button
-    console.log("Disabling button...");
-    offerButton.classList.remove("btn-primary");
-    offerButton.classList.add("btn-primary-disable");
-    // Add the event listener that prevents the default action
-    offerButton.addEventListener("click", preventDefaultAction);
-  }
 }

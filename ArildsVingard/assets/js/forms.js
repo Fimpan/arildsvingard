@@ -286,3 +286,15 @@ document.getElementById("cardnumber").addEventListener("input", function (e) {
     .trim()
     .slice(0, 19);
 });
+
+//Presentkort
+document.getElementById("okButton").addEventListener("click", function (e) {
+  console.log("OK button clicked");
+  e.preventDefault();
+  var warningElement = document.getElementById("warning");
+  if (warningElement) {
+    warningElement.style.display = "block";
+  } else {
+    console.log("Warning element not found");
+  }
+});

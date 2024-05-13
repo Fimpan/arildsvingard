@@ -3121,7 +3121,7 @@ input::placeholder {
 }
 
 .input-field {
-  width: 99%;
+  width: 100%;
 }
 .input-field.if-mb {
   margin-bottom: 0.75rem;
