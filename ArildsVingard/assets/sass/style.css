@@ -3038,7 +3038,7 @@ footer ul li .body-02 {
   height: 20px;
 }
 .material-checkbox input[type=checkbox]:checked ~ .checkmark {
-  background-color: #2f3300;
+  background-color: #252a10;
   border-color: #454b00;
 }
 .material-checkbox input[type=checkbox]:checked ~ .checkmark:after {
@@ -3068,7 +3068,7 @@ footer ul li .body-02 {
   width: 16px;
   height: 16px;
   margin-right: 12px;
-  border: 2px solid #454b00;
+  border: 1.5px solid #252a10;
   transition: all 0.3s;
 }
 .material-checkbox:hover input[type=checkbox] ~ .checkmark {
@@ -3728,7 +3728,8 @@ input::placeholder {
 }
 @media (min-width: 992px) {
   .booking .datepicker .check .modal-content {
-    width: 30%;
+    margin: 15% auto;
+    width: 20%;
   }
 }
 .booking .datepicker .check .modal-content .quantityContent {
@@ -3754,6 +3755,10 @@ input::placeholder {
 }
 .booking .datepicker .check .modal-content .quantityContent .add-sub button {
   width: 2rem;
+}
+.booking .datepicker .check .modal-content .done-button {
+  display: flex;
+  justify-content: right;
 }
 .booking .datepicker .check .close {
   color: #aaa;

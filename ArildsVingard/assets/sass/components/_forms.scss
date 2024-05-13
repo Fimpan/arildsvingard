@@ -15,7 +15,7 @@
 
     &:checked {
       ~ .checkmark {
-        background-color: #2f3300;
+        background-color: #252a10;
         border-color: #454b00;
 
         &:after {
@@ -56,7 +56,7 @@
     width: 16px;
     height: 16px;
     margin-right: 12px;
-    border: 2px solid #454b00;
+    border: 1.5px solid #252a10;
     // border-radius: 50%;
     transition: all 0.3s;
   }
