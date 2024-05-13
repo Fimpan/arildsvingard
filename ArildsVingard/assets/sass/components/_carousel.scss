@@ -1,0 +1,21 @@
+.home-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+
+  .item {
+    width: 100%;
+
+    @media (min-width: $desktop-breakpoint) {
+      width: calc(50% - 10px);
+    }
+  }
+}
+
+.show-pic {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

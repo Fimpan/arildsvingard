@@ -23,25 +23,24 @@ klarButton.addEventListener("click", function (e) {
 function preventDefaultAction(e) {
   e.preventDefault();
 }
+
 // Initially disable the "Visa erbjudande" button
 visaButton.classList.add("btn-primary-disable");
 visaButton.addEventListener("click", preventDefaultAction);
 
 function checkDates() {
-  // If both dates have been selected and at least one guest or room has been added, enable the button
+  // If both dates have been selected and a selection has been made in the modal, enable the button
   if (
     checkInDateInput.textContent !== "Lägg till datum" &&
     checkOutDateInput.textContent !== "Lägg till datum" &&
-    (parseInt(guestCount1.textContent) > 0 ||
-      parseInt(guestCount2.textContent) > 0 ||
-      parseInt(guestCount3.textContent) > 0)
+    (guestCount1 > 0 || guestCount2 > 0 || guestCount3 > 0 || roomCount > 0)
   ) {
     visaButton.classList.remove("btn-primary-disable");
     visaButton.classList.add("btn-primary");
     // Remove the event listener that prevents the default action
     visaButton.removeEventListener("click", preventDefaultAction);
   } else {
-    // If dates are not selected or no guests or rooms have been added, disable the button
+    // If dates are not selected or no selection has been made in the modal, disable the button
     visaButton.classList.remove("btn-primary");
     visaButton.classList.add("btn-primary-disable");
     // Add the event listener that prevents the default action

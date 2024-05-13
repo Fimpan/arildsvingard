@@ -1,14 +1,33 @@
 .stage-container {
   &.confirmation-container {
-    padding: 4rem 1.25rem;
+    padding: 6rem 1.25rem;
     max-width: 1000px;
     margin: auto;
+
+    @media (min-width: $desktop-breakpoint) {
+      padding: 15rem 1.25rem;
+    }
     .confirm-content {
-      // background-color: #f3f0e8;
+      background-color: #f3f0e8;
+      // padding: 1rem;
+
+      @media (min-width: $desktop-breakpoint) {
+        padding: 2rem;
+      }
       .confirm-number {
+        padding: 1rem;
+        @media (min-width: $desktop-breakpoint) {
+          // display: flex;
+          // justify-content: space-evenly;
+          // flex-direction: column;
+          padding: 0rem;
+        }
         margin-bottom: 1rem;
         .confirm-head {
           margin-bottom: 1rem;
+          @media (min-width: $desktop-breakpoint) {
+            margin-bottom: 5.5rem;
+          }
           .h1-confirm {
             font-size: 2rem;
             font-weight: 600;
@@ -46,6 +65,7 @@
         .confirm-info-text {
           &.ci-semibold {
             font-weight: 600;
+            margin-bottom: 0.5rem;
           }
         }
       }
@@ -133,11 +153,15 @@
         flex-direction: column;
         font-size: $body-booking-s;
         align-items: center;
+        color: grey;
         .copy-arilds {
         }
         .confirm-terms-policy {
           gap: 1rem;
           margin-top: 1rem;
+          a {
+            color: grey;
+          }
         }
       }
     }

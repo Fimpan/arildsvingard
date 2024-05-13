@@ -1034,6 +1034,26 @@ footer ul li .body-02 {
   width: 24px;
 }
 
+.home-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+.home-slider .item {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .home-slider .item {
+    width: calc(50% - 10px);
+  }
+}
+
+.show-pic img {
+  width: 100%;
+  height: auto;
+}
+
 /* The popup chat - hidden by default */
 .chat-popup {
   display: none;
@@ -1194,15 +1214,39 @@ footer ul li .body-02 {
 }
 
 .stage-container.confirmation-container {
-  padding: 4rem 1.25rem;
+  padding: 6rem 1.25rem;
   max-width: 1000px;
   margin: auto;
 }
+@media (min-width: 992px) {
+  .stage-container.confirmation-container {
+    padding: 15rem 1.25rem;
+  }
+}
+.stage-container.confirmation-container .confirm-content {
+  background-color: #f3f0e8;
+}
+@media (min-width: 992px) {
+  .stage-container.confirmation-container .confirm-content {
+    padding: 2rem;
+  }
+}
 .stage-container.confirmation-container .confirm-content .confirm-number {
+  padding: 1rem;
   margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .stage-container.confirmation-container .confirm-content .confirm-number {
+    padding: 0rem;
+  }
 }
 .stage-container.confirmation-container .confirm-content .confirm-number .confirm-head {
   margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .stage-container.confirmation-container .confirm-content .confirm-number .confirm-head {
+    margin-bottom: 5.5rem;
+  }
 }
 .stage-container.confirmation-container .confirm-content .confirm-number .confirm-head .h1-confirm {
   font-size: 2rem;
@@ -1231,6 +1275,7 @@ footer ul li .body-02 {
 }
 .stage-container.confirmation-container .confirm-info-container .confirm-info .confirm-info-text.ci-semibold {
   font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 .stage-container.confirmation-container .ci-bg {
   background-color: #f3f0e8;
@@ -1293,10 +1338,14 @@ footer ul li .body-02 {
     flex-direction: column;
     font-size: 0.875rem;
     align-items: center;
+    color: grey;
   }
   .stage-container.confirmation-container .confirm-terms-policy-container .confirm-terms-policy {
     gap: 1rem;
     margin-top: 1rem;
+  }
+  .stage-container.confirmation-container .confirm-terms-policy-container .confirm-terms-policy a {
+    color: grey;
   }
 }
 .container-fluid {
