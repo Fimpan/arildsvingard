@@ -1034,18 +1034,12 @@ footer ul li .body-02 {
   width: 24px;
 }
 
-.home-slider {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 12px;
-}
-.home-slider .item {
+.swiper-container .item {
   width: 100%;
 }
 @media (min-width: 992px) {
-  .home-slider .item {
-    width: calc(50% - 10px);
+  .swiper-container .item {
+    width: 100%;
   }
 }
 
