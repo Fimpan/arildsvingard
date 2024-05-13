@@ -1034,18 +1034,45 @@ footer ul li .body-02 {
   width: 24px;
 }
 
-.swiper-container .item {
+.slides-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
   width: 100%;
+  scrollbar-width: none;
+}
+.slides-container::-webkit-scrollbar {
+  display: none;
+}
+.slides-container .slides-inner {
+  display: flex;
+  gap: 0.75rem;
 }
 @media (min-width: 992px) {
-  .swiper-container .item {
-    width: 100%;
+  .slides-container .slides-inner {
+    flex-wrap: wrap;
+    --flex-gap: 2rem;
+    gap: var(--flex-gap);
   }
 }
-
-.show-pic img {
+.slides-container .slides-inner .slide {
+  flex: 0 0 auto;
+  width: 50%;
+  scroll-snap-align: start;
+}
+@media (min-width: 992px) {
+  .slides-container .slides-inner .slide {
+    --flex-items: 3;
+    width: calc(100% / var(--flex-items) - (var(--flex-items) - 1) / var(--flex-items) * var(--flex-gap));
+  }
+}
+.slides-container .slides-inner .slide img {
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* The popup chat - hidden by default */

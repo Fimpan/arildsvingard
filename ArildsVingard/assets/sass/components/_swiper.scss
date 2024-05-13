@@ -66,3 +66,14 @@
     padding-top: 1rem;
   }
 }
+
+.review {
+  display: flex;
+  .quote-icon {
+    img {
+      // width: auto;
+      width: 50px;
+      max-width: 100%; // Ensure it doesn't overflow its container
+    }
+  }
+}

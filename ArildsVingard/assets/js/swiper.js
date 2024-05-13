@@ -1,7 +1,7 @@
 const swiper = new Swiper(".swiper-slider", {
   // Optional parameters
   centeredSlides: true,
-  slidesPerView: 1.3,
+  slidesPerView: 1,
 
   spaceBetween: 32,
   grabCursor: true,
@@ -34,11 +34,11 @@ const swiper = new Swiper(".swiper-slider", {
   // Responsive breakpoints
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 32,
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 32,
     },
   },
