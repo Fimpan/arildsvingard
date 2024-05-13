@@ -1086,6 +1086,51 @@ footer ul li .body-02 {
      object-fit: cover;
 }
 
+.custom-slides-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  cursor: pointer;
+  scrollbar-width: none;
+}
+.custom-slides-container::-webkit-scrollbar {
+  display: none;
+}
+.custom-slides-container .custom-slides-inner {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.custom-slides-container .custom-slides-inner .custom-slide {
+  flex: 1;
+  scroll-snap-align: start;
+  overflow: hidden;
+  width: 100%;
+}
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.dot.current-dot {
+  background: #333;
+}
+
 /* The popup chat - hidden by default */
 .chat-popup {
   display: none;
