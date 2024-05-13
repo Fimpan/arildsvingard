@@ -664,6 +664,17 @@ footer ul li .body-02 {
   background: transparent;
   font-size: 1.5rem;
 }
+@media (min-width: 992px) {
+  .submenu {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+  }
+}
 .submenu-item {
   display: block;
   margin-top: 0.75rem;

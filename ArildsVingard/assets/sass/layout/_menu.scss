@@ -161,6 +161,44 @@
 }
 
 // Submenu
+// .submenu {
+//   position: relative;
+//   top: -0.5rem;
+//   left: 2.5rem;
+//   width: 100%;
+//   max-height: 0;
+//   padding: 0px;
+//   border: none;
+//   outline: none;
+//   opacity: 1;
+//   overflow: hidden;
+//   visibility: visible;
+//   transform: translateY(0px);
+//   box-shadow: none;
+//   background: transparent;
+//   font-size: 1.5rem;
+
+//   &-item {
+//     display: block;
+//     margin-top: 0.75rem;
+//   }
+
+//   &-link {
+//     font-family: inherit;
+//     font-size: 1.5rem;
+//     font-weight: 500;
+//     line-height: inherit;
+//     cursor: pointer;
+//     color: $color-text-primary;
+//     transition: all 0.35s ease;
+
+//     &:hover {
+//       outline: none;
+//       color: $color-surface-green-primary;
+//     }
+//   }
+// }
+
 .submenu {
   position: relative;
   top: -0.5rem;
@@ -177,6 +215,16 @@
   box-shadow: none;
   background: transparent;
   font-size: 1.5rem;
+
+  @media (min-width: $desktop-breakpoint) {
+    position: fixed; // Make the submenu fixed on desktop
+    top: 0;
+    left: 50%; // Make it start from the middle of the screen
+    width: 50%; // Make it take up 50% of the screen's width
+    height: auto; // Make it take up the same height as the menu
+    padding: 1rem; // Add padding
+    border: 1px solid #ccc; // Add border
+  }
 
   &-item {
     display: block;
