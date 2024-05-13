@@ -570,9 +570,9 @@ footer ul li .body-02 {
 }
 .navbar {
   position: fixed;
-  top: 0;
+  top: 4rem;
   left: -100%;
-  width: 80%;
+  width: 100%;
   height: 100%;
   z-index: 10;
   opacity: 0;
@@ -742,7 +742,7 @@ footer ul li .body-02 {
 }
 .overlay {
   position: fixed;
-  top: 0;
+  top: 4rem;
   left: 0;
   height: 100%;
   width: 100%;
@@ -1194,7 +1194,7 @@ footer ul li .body-02 {
 }
 
 .stage-container.confirmation-container {
-  padding: 3rem 1.25rem;
+  padding: 4rem 1.25rem;
   max-width: 1000px;
   margin: auto;
 }
@@ -1331,7 +1331,7 @@ footer ul li .body-02 {
   margin: auto;
 }
 .max-width-container .about-arilds {
-  margin-bottom: 3rem;
+  margin: 4rem 0 3rem 0;
 }
 .max-width-container a {
   margin: 3rem 0 4rem 0;
@@ -3144,6 +3144,10 @@ input::placeholder {
   border: none;
   border-bottom: 1px solid #bbbbbb;
 }
+.form-flex.form-flex-mobile {
+  display: flex;
+  gap: 0.75rem;
+}
 
 @media (min-width: 768px) {
   .form-flex {
@@ -3396,6 +3400,14 @@ input::placeholder {
 @media (min-width: 768px) {
   .select-container .selected-dates-section.hide-selected-dates-section {
     display: block;
+    max-height: 470px;
+  }
+}
+.select-container .selected-dates-section.selected-dates-section-mw {
+  max-height: 495px;
+}
+@media (min-width: 992px) {
+  .select-container .selected-dates-section.selected-dates-section-mw {
     max-height: 470px;
   }
 }

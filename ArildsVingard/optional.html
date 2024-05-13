@@ -13,75 +13,121 @@
 
   <body class="booking-body-tag">
     <header class="header" id="header">
+      <section class="top-menu-container">
+        <nav class="top-navbar">
+          <ul class="top-menu">
+            <li class="top-menu-item">
+              <a href="#" class="top-menu-link">Kontakt</a>
+            </li>
+            <li class="top-menu-item">
+              <a href="#" class="top-menu-link">Presentkort</a>
+            </li>
+            <li class="top-menu-item">
+              <a href="#" class="top-menu-link">öppettider</a>
+            </li>
+            <li class="top-menu-item">
+              <a href="#" class="top-menu-link">
+                <img
+                  src="assets/icons/ibm-watson--language-translator.svg"
+                  alt="language"
+                  class="icon"
+                />
+                <select id="languageSelect">
+                  <option value="swe">SWE</option>
+                  <option value="eng">ENG</option>
+                  <option value="eng">DE</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
       <section class="wrapper menuContainer">
-        <a href="./index.html" class="brand">Brand</a>
-        <div class="burger" id="burger">
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-        </div>
+        <a href="./index.html" class="brand">
+          <picture class="offer-picture">
+            <source
+              media="(min-width:768px)"
+              srcset="assets/logotype/logotype-desktop.svg"
+            />
+            <source
+              media="(max-width:769px)"
+              srcset="assets/logotype/logotype-mobile.svg"
+            />
+            <img src="assets/logotype/logotype-desktop.svg" alt="" /> </picture
+        ></a>
+        <section class="button-bruger">
+          <div class="book-experience"></div>
+          <div class="burger-container">
+            <div class="burger" id="burger">
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+            </div>
+          </div>
+        </section>
         <span class="overlay"></span>
         <nav class="navbar" id="navbar">
           <ul class="menu" id="menu">
-            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-            <li class="menu-item menu-dropdown">
-              <span class="menu-link" data-toggle="submenu"
-                >Feature<i class="bx bx-chevron-down"></i
-              ></span>
-              <ul class="submenu">
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Feature Link</a>
-                </li>
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Feature Link</a>
-                </li>
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Feature Link</a>
-                </li>
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Feature Link</a>
-                </li>
-              </ul>
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">Hem</a>
             </li>
             <li class="menu-item menu-dropdown">
               <span class="menu-link" data-toggle="submenu"
-                >Discover<i class="bx bx-chevron-down"></i
-              ></span>
+                >Vinodling
+                <img
+                  src="assets/icons/arrow--right.svg"
+                  alt="right"
+                  class="icon"
+              /></span>
               <ul class="submenu">
                 <li class="submenu-item">
-                  <a href="#" class="submenu-link">Discover Link</a>
+                  <a href="#" class="submenu-link"
+                    >Vinordling (jordmån, skördefest)</a
+                  >
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-link">Discover Link</a>
+                  <a href="#" class="submenu-link">Om vinproduktionen</a>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-link">Discover Link</a>
-                </li>
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Discover Link</a>
+                  <a href="#" class="submenu-link">Om druvsorterna</a>
                 </li>
               </ul>
+            </li>
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">Hotell</a>
+            </li>
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">Glamping</a>
+            </li>
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">Paket & Erbjudande</a>
             </li>
             <li class="menu-item menu-dropdown">
               <span class="menu-link" data-toggle="submenu"
-                >Resource<i class="bx bx-chevron-down"></i
-              ></span>
+                >Sällskap
+                <img
+                  src="assets/icons/arrow--right.svg"
+                  alt="right"
+                  class="icon"
+              /></span>
               <ul class="submenu">
                 <li class="submenu-item">
-                  <a href="#" class="submenu-link">Resource Link</a>
+                  <a href="#" class="submenu-link">Konferans</a>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-link">Resource Link</a>
+                  <a href="#" class="submenu-link">Bröllop</a>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-link">Resource Link</a>
-                </li>
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Resource Link</a>
+                  <a href="#" class="submenu-link">Gruppresor över 10 pers</a>
                 </li>
               </ul>
             </li>
-            <li class="menu-item"><a href="#" class="menu-link">Support</a></li>
+
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">Restaurang</a>
+            </li>
+            <li class="menu-item"><a href="#" class="menu-link">Om oss</a></li>
           </ul>
         </nav>
       </section>

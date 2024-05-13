@@ -44,6 +44,13 @@
         max-height: 470px;
       }
     }
+
+    &.selected-dates-section-mw {
+      max-height: 495px;
+      @media (min-width: $desktop-breakpoint) {
+        max-height: 470px;
+      }
+    }
     .header-container {
       background-color: $color-surface-grey-tertiary;
       padding: 1rem 0;

@@ -142,6 +142,10 @@ input::placeholder {
     border: none;
     border-bottom: 1px solid #bbbbbb;
   }
+  &.form-flex-mobile {
+    display: flex;
+    gap: 0.75rem;
+  }
 }
 @media (min-width: $ipad-breakpoint) {
   .form-flex {
