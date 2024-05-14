@@ -55,7 +55,13 @@
         .top-menu-item {
           .top-menu-link {
             display: flex;
+
             gap: 8px;
+
+            #languageSelect {
+              background-color: transparent;
+              border: none;
+            }
           }
         }
       }

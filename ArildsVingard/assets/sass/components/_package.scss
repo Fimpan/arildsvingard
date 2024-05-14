@@ -43,10 +43,19 @@
       (100% / var(--flex-items)) -
         (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
     );
+    margin-bottom: 0rem;
   }
 
   &.pakage-card-mb0 {
     margin-bottom: 0;
+  }
+}
+.pakage-card-flex {
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
 }
 .package-pic {

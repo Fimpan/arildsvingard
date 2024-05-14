@@ -228,3 +228,9 @@
     width: 24px;
   }
 }
+
+.btn-desktop-none {
+  @media (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+}

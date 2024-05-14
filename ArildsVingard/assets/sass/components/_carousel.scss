@@ -1,3 +1,9 @@
+.calendar-btn {
+  display: none;
+  @media (min-width: $desktop-breakpoint) {
+    display: block;
+  }
+}
 .slides-container {
   overflow-x: scroll;
   overflow-y: hidden;
@@ -11,9 +17,11 @@
   // Hide scrollbar for Firefox
   scrollbar-width: none;
   // height: 100vh;
+
   .slides-inner {
     display: flex;
     gap: 0.75rem;
+    margin-bottom: 2.5rem;
 
     @media (min-width: $desktop-breakpoint) {
       flex-wrap: wrap;

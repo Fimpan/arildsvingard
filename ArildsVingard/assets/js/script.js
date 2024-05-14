@@ -8,6 +8,31 @@ function closeForm() {
 }
 
 // _________________________________________________________
+document.addEventListener("DOMContentLoaded", (event) => {
+  function checkWidth() {
+    const btnElement1 = document.querySelector(".btn-text1");
+    const btnElement2 = document.querySelector(".btn-text2");
+    const btnElement3 = document.querySelector(".btn-text3");
+    const h2Element = document.querySelector(".text-change");
+    if (window.matchMedia("(min-width: 992px)").matches) {
+      btnElement1.textContent = "Boka vingårdspaket med hotell"; // Change 'Desktop Text 1' to your desired text
+      btnElement2.textContent = "Boka vingårdspaket med glamping"; // Change 'Desktop Text 2' to your desired text
+      btnElement3.textContent = "Boka vingårdspaket med Husbil"; // Change 'Desktop Text 3' to your desired text
+      h2Element.textContent = "Bilder från vingården";
+    } else {
+      btnElement1.textContent = "Boka vingårdspaket";
+      btnElement2.textContent = "Boka vingårdspaket";
+      btnElement3.textContent = "Boka vingårdspaket";
+      h2Element.textContent = "En bildberättelse";
+    }
+  }
+
+  // Check width on load
+  checkWidth();
+
+  // Check width on resize
+  window.addEventListener("resize", checkWidth);
+});
 
 //calendar
 let myDays;
@@ -174,20 +199,22 @@ document.querySelector(".expand-button").addEventListener("click", function () {
 // _____________________
 
 // button change text
-document.addEventListener("DOMContentLoaded", function () {
-  function checkViewport() {
-    var btnText = document.getElementById("btn-text");
-    if (window.innerWidth >= 1024) {
-      // Change 1024 to your desktop breakpoint
-      btnText.textContent = "Desktop Text"; // Change 'Desktop Text' to the text you want on desktop
-    } else {
-      btnText.textContent = "Boka vingårdspaket";
-    }
-  }
+// document.addEventListener("DOMContentLoaded", function () {
+//   function checkViewport() {
+//     var btnText = document.getElementById("btn-text");
+//     if (window.innerWidth >= 1024) {
+//       // Change 1024 to your desktop breakpoint
+//       btnText.textContent = "Desktop Text"; // Change 'Desktop Text' to the text you want on desktop
+//     } else {
+//       btnText.textContent = "Boka vingårdspaket";
+//     }
+//   }
 
-  // Call checkViewport at page load
-  checkViewport();
+//   // Call checkViewport at page load
+//   checkViewport();
 
-  // Call checkViewport at window resize
-  window.addEventListener("resize", checkViewport);
-});
+//   // Call checkViewport at window resize
+//   window.addEventListener("resize", checkViewport);
+// });
+
+// _____________________

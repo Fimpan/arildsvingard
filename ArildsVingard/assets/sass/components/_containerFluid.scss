@@ -50,6 +50,14 @@
     @media (min-width: $desktop-breakpoint) {
       margin-bottom: 3rem;
     }
+    &.section-head-flex {
+      @media (min-width: $desktop-breakpoint) {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        max-width: 1600px;
+      }
+    }
   }
   &.max-width-container-l-p2 {
     padding: 2rem 0 1rem 0;
