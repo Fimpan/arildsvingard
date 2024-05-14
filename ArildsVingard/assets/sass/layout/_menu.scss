@@ -118,7 +118,7 @@
   height: auto;
   padding: 1rem 0;
   @media (min-width: $desktop-breakpoint) {
-    width: 50%;
+    width: auto;
     margin: 2rem 0 0 2rem;
   }
   &-item {
@@ -128,6 +128,7 @@
     padding: 1.5rem 0;
     @media (min-width: $ipad-breakpoint) {
       padding: 2rem 0;
+      display: flex;
     }
   }
 
@@ -146,6 +147,7 @@
     transition: all 0.3s ease-in-out;
     @media (min-width: $ipad-breakpoint) {
       font-size: 2rem;
+      flex: 0 0 50%;
     }
     > i.bx {
       font-size: 1.35rem;
@@ -217,13 +219,14 @@
   font-size: 1.5rem;
 
   @media (min-width: $desktop-breakpoint) {
-    position: fixed; // Make the submenu fixed on desktop
-    top: 0;
-    left: 50%; // Make it start from the middle of the screen
-    width: 50%; // Make it take up 50% of the screen's width
-    height: auto; // Make it take up the same height as the menu
-    padding: 1rem; // Add padding
-    border: 1px solid #ccc; // Add border
+    // position: fixed; // Make the submenu fixed on desktop
+    // top: 0;
+    // left: 50%; // Make it start from the middle of the screen
+    // width: 50%; // Make it take up 50% of the screen's width
+    // height: auto; // Make it take up the same height as the menu
+    // padding: 1rem; // Add padding
+    // border: 1px solid #ccc; // Add border
+    position: static;
   }
 
   &-item {

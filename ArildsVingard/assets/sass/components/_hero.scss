@@ -1,8 +1,14 @@
 .hero {
   margin-top: 4rem;
   position: relative;
+  height: 80vmin;
   @media (min-width: $desktop-breakpoint) {
     margin-top: 9rem;
+  }
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 
   .bg-text {
