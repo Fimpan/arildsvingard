@@ -47,6 +47,15 @@
       background-color: $btn-color-enable;
     }
   }
+
+  &.btn-primary-full {
+    display: flex;
+    justify-content: center;
+    @media (min-width: $ipad-breakpoint) {
+      display: inline-flex;
+      justify-content: unset;
+    }
+  }
   &.btn-primary-disable {
     background-color: #99a273;
     color: $btn-text-primary-color;

@@ -407,6 +407,30 @@
         </div>
       </section>
     </footer>
+    <button class="btn btn-chat btn-chat-mb" onclick="openForm()">
+      <img src="assets/icons/forum.svg" alt="" />
+    </button>
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <button type="button" class="close-icon" onclick="closeForm()">
+          <img src="assets/icons/close.svg" alt="close" class="icon" />
+        </button>
+        <p>Chatta med oss</p>
+
+        <label for="msg">Meddelande</label>
+        <textarea
+          placeholder="Skriv ditt meddelande.."
+          name="msg"
+          required
+        ></textarea>
+        <div class="send-btn">
+          <button type="submit" class="btn btn-primary btn-open">Send</button>
+          <!-- <button type="button" class="btn btn-close" onclick="closeForm()">
+          Close
+        </button> -->
+        </div>
+      </form>
+    </div>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/modal.js"></script>
     <script src="assets/js/menu.js"></script>
