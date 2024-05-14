@@ -4128,6 +4128,9 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
 }
+.payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container .booking-price-container .keep-goto .btn {
+  font-size: 0.7rem;
+}
 .payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container .booking-link-container {
   text-decoration: underline;
   font-size: 0.75rem;

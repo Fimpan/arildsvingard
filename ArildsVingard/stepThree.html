@@ -285,7 +285,7 @@
                 </picture>
                 <div class="offer-content oc-booking">
                   <div class="offer-text oc-max-height">
-                    <h3 class="h3-booking">Vingårdspaket</h3>
+                    <h3 class="h3-booking">Vingårdens 3-rättersmeny</h3>
                     <p class="booking-body">
                       <!-- <p> -->
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -418,7 +418,7 @@
                 </picture>
                 <div class="offer-content oc-booking">
                   <div class="offer-text oc-max-height">
-                    <h3 class="h3-booking">Vingårdspaket</h3>
+                    <h3 class="h3-booking">Vinprovning</h3>
                     <p class=".booking-body">
                       <!-- <p> -->
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -458,22 +458,28 @@
         </main>
       </div>
     </div>
-    <button class="btn btn-chat btn-chat-mb" onclick="openForm()">Chat</button>
+    <button class="btn btn-chat btn-chat-mb" onclick="openForm()">
+      <img src="assets/icons/forum.svg" alt="" />
+    </button>
     <div class="chat-popup" id="myForm">
       <form action="/action_page.php" class="form-container">
         <button type="button" class="close-icon" onclick="closeForm()">
-          X
+          <img src="assets/icons/close.svg" alt="close" class="icon" />
         </button>
-        <i class="fa-solid fa-chalkboard-user"></i>
-        <h3>Chat with us</h3>
+        <p>Chatta med oss</p>
 
-        <label for="msg">Message</label>
-        <textarea placeholder="Type message.." name="msg" required></textarea>
-
-        <button type="submit" class="btn btn-open">Send</button>
-        <button type="button" class="btn btn-close" onclick="closeForm()">
+        <label for="msg">Meddelande</label>
+        <textarea
+          placeholder="Skriv ditt meddelande.."
+          name="msg"
+          required
+        ></textarea>
+        <div class="send-btn">
+          <button type="submit" class="btn btn-primary btn-open">Send</button>
+          <!-- <button type="button" class="btn btn-close" onclick="closeForm()">
           Close
-        </button>
+        </button> -->
+        </div>
       </form>
     </div>
     <section class="payment-container">
@@ -518,6 +524,7 @@
                 </button>
                 <!-- <span class="selected-headline">Bokning</span> -->
               </div>
+
               <div class="booking-container">
                 <div class="booking-flex">
                   <div class="booking-selected mb2">
@@ -604,30 +611,7 @@
         </section>
       </div>
     </section>
-    <button class="btn btn-chat btn-chat-mb" onclick="openForm()">
-      <img src="assets/icons/forum.svg" alt="" />
-    </button>
-    <div class="chat-popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
-        <button type="button" class="close-icon" onclick="closeForm()">
-          <img src="assets/icons/close.svg" alt="close" class="icon" />
-        </button>
-        <p>Chatta med oss</p>
 
-        <label for="msg">Meddelande</label>
-        <textarea
-          placeholder="Skriv ditt meddelande.."
-          name="msg"
-          required
-        ></textarea>
-        <div class="send-btn">
-          <button type="submit" class="btn btn-primary btn-open">Send</button>
-          <!-- <button type="button" class="btn btn-close" onclick="closeForm()">
-          Close
-        </button> -->
-        </div>
-      </form>
-    </div>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/bookingModal.js"></script>
