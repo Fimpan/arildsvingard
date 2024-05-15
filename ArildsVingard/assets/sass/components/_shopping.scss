@@ -195,6 +195,17 @@
           }
         }
       }
+      .info-text-buttons {
+        .booking-modal {
+          .cart-button {
+            display: flex;
+            justify-content: center;
+            width: 50px;
+            height: 48px;
+            align-items: center;
+          }
+        }
+      }
     }
   }
 }

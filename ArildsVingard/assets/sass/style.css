@@ -677,6 +677,7 @@ footer ul li .body-02 {
   left: 2.5rem;
   width: 100%;
   max-height: 0;
+  z-index: -1;
   padding-top: 1rem;
   border: none;
   outline: none;
@@ -4260,6 +4261,13 @@ input::placeholder {
 .payment-container .info-text-buttons .booking-modal .selected-dates-section .booking-container .booking-link-container {
   text-decoration: underline;
   font-size: 0.75rem;
+}
+.payment-container .info-text-buttons .booking-modal .info-text-buttons .booking-modal .cart-button {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 48px;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
