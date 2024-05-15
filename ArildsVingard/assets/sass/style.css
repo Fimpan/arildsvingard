@@ -611,6 +611,7 @@ footer ul li .body-02 {
   }
 }
 .menu-item {
+  z-index: 100;
   display: block;
   margin: 0 auto;
   border-bottom: 1px solid #1a1a1a;
