@@ -3661,6 +3661,11 @@ input::placeholder {
 .select-container .selected-dates-section .booking-container .booking-selected .booking-img {
   flex: 0 0 30%;
 }
+.select-container .selected-dates-section .booking-container .booking-selected .booking-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 .select-container .selected-dates-section .booking-container .booking-info-container {
   margin-bottom: 1rem;
 }
@@ -3729,6 +3734,9 @@ input::placeholder {
     padding: 1.5rem;
   }
 }
+.select-container .offers-container .offers.offers-mt {
+  margin-top: 3rem;
+}
 .select-container .offers-container .offers .offer-card {
   background-color: #f3f0e8;
   margin-bottom: 1rem;
@@ -3769,7 +3777,7 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  padding: 0 0 1rem 0;
+  padding: 2rem 0 1rem 0;
   margin: 0rem 1rem;
 }
 .select-container .offers-container .option-container {
@@ -3829,7 +3837,6 @@ input::placeholder {
   }
   .select-container .offers-container .offers .offer-card {
     display: flex;
-    justify-content: space-between;
   }
   .select-container .offers-container .offers .offer-card .offer-picture {
     flex: 0 0 35%;
@@ -3856,14 +3863,15 @@ input::placeholder {
     list-style-type: disc;
   }
   .select-container .offers-container .offers .offer-card .offer-selected {
-    flex: 0 0 25%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 1.5rem 1.5rem 1.5rem 0;
   }
   .select-container .offers-container .offers .offer-card .offer-selected.os-optinal {
-    flex: 0 0 29%;
+    flex: 0 0 auto;
+    padding: 1.5rem 0 1.5rem 0;
   }
   .select-container .offers-container .offers .offer-card .offer-selected .btn-select {
     display: flex;
@@ -3988,6 +3996,11 @@ input::placeholder {
   background-color: white;
   padding: 0.75rem 1rem;
 }
+@media (min-width: 992px) {
+  .payment-container {
+    padding: 2rem 1rem;
+  }
+}
 .payment-container .payment-icons {
   display: none;
 }
@@ -3995,7 +4008,7 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
+  gap: 24px;
 }
 .payment-container .info-text-buttons .booking-modal {
   display: flex;

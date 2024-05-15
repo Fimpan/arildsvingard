@@ -8,6 +8,9 @@
   width: 100%;
   background-color: white;
   padding: 0.75rem 1rem;
+  @media (min-width: $desktop-breakpoint) {
+    padding: 2rem 1rem;
+  }
   .payment-icons {
     display: none;
   }
@@ -16,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    gap: 24px;
 
     .booking-modal {
       display: flex;

@@ -124,6 +124,12 @@
         .booking-img {
           flex: 0 0 30%;
         }
+
+        .booking-text {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+        }
       }
       .booking-info-container {
         margin-bottom: 1rem;
@@ -208,6 +214,9 @@
           padding: 1.5rem;
         }
       }
+      &.offers-mt {
+        margin-top: 3rem;
+      }
       .offer-card {
         background-color: $color-surface-grey-secondary;
         margin-bottom: 1rem;
@@ -256,7 +265,7 @@
           display: flex;
           justify-content: space-between;
           align-items: end;
-          padding: 0 0 1rem 0;
+          padding: 2rem 0 1rem 0;
           margin: 0rem 1rem;
 
           // .btn-select {
@@ -346,7 +355,7 @@
       .offers {
         .offer-card {
           display: flex;
-          justify-content: space-between;
+          // justify-content: space-between;
 
           .offer-picture {
             flex: 0 0 35%;
@@ -378,13 +387,14 @@
             }
           }
           .offer-selected {
-            flex: 0 0 25%;
+            flex: 1;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             padding: 1.5rem 1.5rem 1.5rem 0;
             &.os-optinal {
-              flex: 0 0 29%;
+              flex: 0 0 auto;
+              padding: 1.5rem 0 1.5rem 0;
             }
             .btn-select {
               display: flex;
