@@ -75,6 +75,7 @@
           (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
       );
       font-size: 0.75rem;
+      font-family: "MonumentGrotesk";
     }
   }
 
@@ -103,21 +104,23 @@
       display: flex;
       justify-content: center;
       align-content: center;
-      border: 1px solid black;
+      // border: 1px solid black;
       // padding: 0.3rem 0.5rem;
       font-size: 1rem;
       background-color: #d9d1c5;
       cursor: pointer;
       &:hover {
-        background-color: #efefef;
+        background-color: #ebefd6;
       }
       &.active {
-        background-color: lightyellow;
+        background-color: #434d1a;
+        color: white;
       }
       // Add styles for previous and next month
       &.prev-month,
       &.next-month {
-        background-color: #f3f0e8;
+        background-color: #f2efe7;
+        color: #c4c0b6;
         cursor: default;
 
         &:hover {

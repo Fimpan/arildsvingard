@@ -356,7 +356,9 @@
         .offer-card {
           display: flex;
           // justify-content: space-between;
-
+          &.offer-card-gap {
+            gap: 1.5rem;
+          }
           .offer-picture {
             flex: 0 0 35%;
             img {

@@ -3150,6 +3150,7 @@ footer ul li .body-02 {
   --flex-items: 7;
   width: calc(100% / var(--flex-items) - (var(--flex-items) - 1) / var(--flex-items) * var(--flex-gap));
   font-size: 0.75rem;
+  font-family: "MonumentGrotesk";
 }
 @media (min-width: 768px) {
   .calContainer .week-days-container {
@@ -3173,19 +3174,20 @@ footer ul li .body-02 {
   display: flex;
   justify-content: center;
   align-content: center;
-  border: 1px solid black;
   font-size: 1rem;
   background-color: #d9d1c5;
   cursor: pointer;
 }
 .calContainer .cal span:hover {
-  background-color: #efefef;
+  background-color: #ebefd6;
 }
 .calContainer .cal span.active {
-  background-color: lightyellow;
+  background-color: #434d1a;
+  color: white;
 }
 .calContainer .cal span.prev-month, .calContainer .cal span.next-month {
-  background-color: #f3f0e8;
+  background-color: #f2efe7;
+  color: #c4c0b6;
   cursor: default;
 }
 .calContainer .cal span.prev-month:hover, .calContainer .cal span.next-month:hover {
@@ -3837,6 +3839,9 @@ input::placeholder {
   }
   .select-container .offers-container .offers .offer-card {
     display: flex;
+  }
+  .select-container .offers-container .offers .offer-card.offer-card-gap {
+    gap: 1.5rem;
   }
   .select-container .offers-container .offers .offer-card .offer-picture {
     flex: 0 0 35%;
