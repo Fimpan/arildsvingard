@@ -3654,6 +3654,7 @@ input::placeholder {
 @media (min-width: 992px) {
   .select-container .selected-dates-section.sds-page-two {
     max-height: 427px;
+    width: 384px;
   }
 }
 .select-container .selected-dates-section.sds-page-two a {
@@ -3695,19 +3696,17 @@ input::placeholder {
 }
 .select-container .selected-dates-section .dates-wrapper .selected-dates-container {
   display: flex;
-  justify-content: space-between;
   gap: 1rem;
 }
 .select-container .selected-dates-section .dates-wrapper .selected-dates-container .invisible-link {
   border: 1px solid #221504;
-  flex: 0 0 45%;
 }
 .select-container .selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .day-container {
   background-color: #221504;
   padding: 0.25rem 0.5rem;
 }
 .select-container .selected-dates-section .dates-wrapper .selected-dates-container .invisible-link .single-date-container .day-container .selected-day {
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   color: #f3f0e8;
   font-family: "MonumentGrotesk";
 }

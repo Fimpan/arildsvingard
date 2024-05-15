@@ -493,7 +493,13 @@
           required
         ></textarea>
         <div class="send-btn">
-          <button type="submit" class="btn btn-primary btn-open">Send</button>
+          <button
+            type="submit"
+            class="btn btn-primary btn-open"
+            onclick="event.preventDefault();"
+          >
+            Skicka
+          </button>
           <!-- <button type="button" class="btn btn-close" onclick="closeForm()">
           Close
         </button> -->
@@ -517,7 +523,7 @@
 
         <section class="info-text-buttons">
           <div class="total-price">
-            <p class="body-totalprice">Totaltpris: 3 450 SEK</p>
+            <p class="body-totalprice">Totalt: 3 450 SEK</p>
           </div>
           <div class="booking-modal">
             <button class="cart-button">

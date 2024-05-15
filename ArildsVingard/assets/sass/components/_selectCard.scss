@@ -26,6 +26,7 @@
       padding-bottom: 1.5rem;
       @media (min-width: $desktop-breakpoint) {
         max-height: 427px;
+        width: 384px;
       }
 
       a {
@@ -68,18 +69,19 @@
       }
       .selected-dates-container {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         gap: 1rem;
         .invisible-link {
+          // width: 50%;
           border: 1px solid #221504;
-          flex: 0 0 45%;
+          // flex: 0 0 45%;
           // background-color: white;
           .single-date-container {
             .day-container {
               background-color: #221504;
               padding: 0.25rem 0.5rem;
               .selected-day {
-                font-size: 1.25rem;
+                font-size: 0.875rem;
                 color: $color-text-Invert;
                 font-family: "MonumentGrotesk";
               }

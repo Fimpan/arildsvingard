@@ -142,12 +142,17 @@
       </section>
     </header>
     <section class="hero">
-      <video autoplay="" muted="" loop="" src="assets/video/hero_video.mp4">
-        <picture>
-          <source media="(max-width: 590px)" srcset="ssets/img/hero-img.png" />
-          <source media="(max-width: 920px)" srcset="ssets/img/hero-img.png" />
-          <img src="assets/img/hero-img.png" alt="Vingård" />
-        </picture>
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        style="pointer-events: none"
+        src="assets/video/hero_video.mp4"
+      >
+        <source media="(max-width: 590px)" srcset="assets/img/hero-img.png" />
+        <source media="(max-width: 920px)" srcset="assets/img/hero-img.png" />
+        <img src="assets/img/hero-img.png" alt="Vingård" />
       </video>
       <div class="bg-text">
         <h1><span>Vingård på</span> <span class="mbl">Kullabygden</span></h1>
@@ -1287,7 +1292,13 @@
           required
         ></textarea>
         <div class="send-btn">
-          <button type="submit" class="btn btn-primary btn-open">Send</button>
+          <button
+            type="submit"
+            class="btn btn-primary btn-open"
+            onclick="event.preventDefault();"
+          >
+            Skicka
+          </button>
           <!-- <button type="button" class="btn btn-close" onclick="closeForm()">
           Close
         </button> -->
