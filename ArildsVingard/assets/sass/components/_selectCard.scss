@@ -223,6 +223,9 @@
       }
       &.offers-mt {
         margin-top: 3rem;
+        @media (min-width: $ipad-breakpoint) {
+          margin-top: 0;
+        }
       }
       .offer-card {
         background-color: $color-surface-grey-secondary;

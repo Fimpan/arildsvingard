@@ -3835,6 +3835,11 @@ input::placeholder {
 .select-container .offers-container .offers.offers-mt {
   margin-top: 3rem;
 }
+@media (min-width: 768px) {
+  .select-container .offers-container .offers.offers-mt {
+    margin-top: 0;
+  }
+}
 .select-container .offers-container .offers .offer-card {
   background-color: #f3f0e8;
   margin-bottom: 1rem;
