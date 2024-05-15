@@ -5,6 +5,15 @@
   bottom: 78px;
   right: 28px;
   z-index: 9;
+
+  &.chat-popup-bottom {
+    bottom: 135px;
+    right: 28px;
+
+    @media (min-width: $desktop-breakpoint) {
+      bottom: 170px;
+    }
+  }
   /* Add styles to the form container */
   .form-container {
     position: relative;

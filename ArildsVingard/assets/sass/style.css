@@ -1019,6 +1019,11 @@ footer ul li .body-02 {
 .btn.btn-chat-mb {
   bottom: 80px;
 }
+@media (min-width: 992px) {
+  .btn.btn-chat-mb {
+    bottom: 111px;
+  }
+}
 .btn.btn-booking {
   min-width: 180px;
 }
@@ -1224,6 +1229,15 @@ footer ul li .body-02 {
   right: 28px;
   z-index: 9;
   /* Add styles to the form container */
+}
+.chat-popup.chat-popup-bottom {
+  bottom: 135px;
+  right: 28px;
+}
+@media (min-width: 992px) {
+  .chat-popup.chat-popup-bottom {
+    bottom: 170px;
+  }
 }
 .chat-popup .form-container {
   position: relative;
@@ -3666,6 +3680,9 @@ input::placeholder {
     max-height: 470px;
   }
 }
+.select-container .selected-dates-section.selected-dates-section-mb {
+  margin-bottom: 3rem;
+}
 .select-container .selected-dates-section .header-container {
   background-color: #d9d1c5;
   padding: 1rem 0;
@@ -3761,7 +3778,7 @@ input::placeholder {
   margin: 0;
 }
 .select-container .selected-dates-section .booking-container .booking-info-container .booking-info.b-flex-sb {
-  padding-left: 0.5rem;
+  padding: 0 0.5rem;
   justify-content: space-between;
 }
 .select-container .selected-dates-section .booking-container .booking-info-container .booking-info.b-flex-sb .selected-date {
@@ -3778,6 +3795,7 @@ input::placeholder {
   margin-bottom: 1rem;
 }
 .select-container .selected-dates-section .booking-container .booking-price-container .booking-price {
+  margin-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -4072,7 +4090,7 @@ input::placeholder {
 }
 @media (min-width: 992px) {
   .payment-container {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
   }
 }
 .payment-container .payment-icons {

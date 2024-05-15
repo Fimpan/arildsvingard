@@ -99,6 +99,9 @@
 
   &.btn-chat-mb {
     bottom: 80px;
+    @media (min-width: $desktop-breakpoint) {
+      bottom: 111px;
+    }
   }
   &.btn-booking {
     min-width: 180px;
