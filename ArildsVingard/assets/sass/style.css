@@ -926,8 +926,8 @@ footer ul li .body-02 {
   }
 }
 .btn.btn-primary-disable {
-  background-color: #99a273;
-  color: #c1d955;
+  background-color: #cccccc;
+  color: #666666;
 }
 .btn.btn-secondary {
   border: 1.5px solid #434d1a;
@@ -1316,6 +1316,10 @@ footer ul li .body-02 {
 }
 .calendar-info h4 {
   margin-bottom: 0.6rem;
+}
+
+.btn-desktop-none {
+  margin-top: 2.5rem;
 }
 
 .stage-container.confirmation-container {
