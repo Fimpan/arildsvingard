@@ -107,7 +107,7 @@
   background-color: $color-surface-grey-primaryi;
   transition: all 0.5s ease;
   @media (min-width: $desktop-breakpoint) {
-    top: 9rem;
+    top: 8rem;
     width: 100%;
     height: 100%;
   }
@@ -141,6 +141,7 @@
   &-link {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0.5rem 1.25rem;
     column-gap: 0.25rem;
     font-family: inherit;
@@ -165,47 +166,28 @@
       outline: none;
       color: $color-surface-green-primary;
     }
+    .icon {
+      width: 24px;
+      height: 24px;
+      @media (min-width: $ipad-breakpoint) {
+        width: 32px;
+        height: 32px;
+      }
+    }
   }
 }
+.menu-dropdown {
+  // other styles...
 
-// Submenu
-// .submenu {
-//   position: relative;
-//   top: -0.5rem;
-//   left: 2.5rem;
-//   width: 100%;
-//   max-height: 0;
-//   padding: 0px;
-//   border: none;
-//   outline: none;
-//   opacity: 1;
-//   overflow: hidden;
-//   visibility: visible;
-//   transform: translateY(0px);
-//   box-shadow: none;
-//   background: transparent;
-//   font-size: 1.5rem;
-
-//   &-item {
-//     display: block;
-//     margin-top: 0.75rem;
-//   }
-
-//   &-link {
-//     font-family: inherit;
-//     font-size: 1.5rem;
-//     font-weight: 500;
-//     line-height: inherit;
-//     cursor: pointer;
-//     color: $color-text-primary;
-//     transition: all 0.35s ease;
-
-//     &:hover {
-//       outline: none;
-//       color: $color-surface-green-primary;
-//     }
-//   }
-// }
+  &.active {
+    .icon {
+      @media (max-width: $ipad-breakpoint) {
+        transform: rotate(90deg);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+  }
+}
 
 .submenu {
   position: relative;
@@ -213,7 +195,8 @@
   left: 2.5rem;
   width: 100%;
   max-height: 0;
-  padding: 0px;
+  // padding: 0px;
+  padding-top: 1rem;
   border: none;
   outline: none;
   opacity: 1;
@@ -223,6 +206,7 @@
   box-shadow: none;
   background: transparent;
   font-size: 1.5rem;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
   @media (min-width: $desktop-breakpoint) {
     // position: fixed; // Make the submenu fixed on desktop
@@ -232,7 +216,9 @@
     // height: auto; // Make it take up the same height as the menu
     // padding: 1rem; // Add padding
     // border: 1px solid #ccc; // Add border
+    padding: 0 0 0 3rem;
     position: static;
+    animation: slideIn 0.5s ease-in-out;
   }
 
   &-item {
@@ -249,10 +235,24 @@
     color: $color-text-primary;
     transition: all 0.35s ease;
 
+    @media (min-width: $desktop-breakpoint) {
+      font-size: 2rem;
+    }
     &:hover {
       outline: none;
       color: $color-surface-green-primary;
     }
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -276,33 +276,52 @@
     display: block;
     cursor: pointer;
     user-select: none;
-    width: 1.6rem;
+    width: 1.25rem;
     height: 1.15rem;
     opacity: 1;
     visibility: visible;
     background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
 
     &-line {
       position: absolute;
       display: block;
-      right: 0;
+      // right: 50%;
+      // bottom: 50%;
       width: 100%;
-      height: 2.1px;
+      height: 1.5px;
       opacity: 1;
       border: none;
       outline: none;
       border-radius: 1rem;
       background: $color-text-primary;
-
+      transition: 0.3s;
       &:nth-child(1) {
-        top: 0px;
+        top: 10px;
       }
       &:nth-child(2) {
-        top: 0.5rem;
-        // width: 70%;
+        top: 15px; // Adjusted to 4px
       }
       &:nth-child(3) {
-        top: 1rem;
+        top: 20px; // Adjusted to 8px
+      }
+    }
+    &.exit {
+      span {
+        &:nth-child(1) {
+          top: 15px;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          top: 15px; // Adjusted to 8px
+          transform: rotate(-45deg);
+        }
       }
     }
   }

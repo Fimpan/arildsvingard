@@ -1,85 +1,5 @@
-// // a,
-// // button {
-// //   cursor: pointer;
-// //   user-select: none;
-// //   border: none;
-// //   outline: none;
-// //   background: none;
-// // }
-
-// // img {
-// //   max-width: 100%;
-// //   height: auto;
-// //   object-fit: cover;
-// //   image-rendering: -webkit-optimize-contrast;
-// //   image-rendering: -moz-crisp-edges;
-// //   image-rendering: crisp-edges;
-// // }
-
-// // .slideSection .instaHeading h2 {
-// //   text-align: left;
-// // }
-// /* Elements */
-// .slideSection {
-//   margin: 0 auto;
-//   padding-block: 5rem;
-// }
-
-// .containerSwiper {
-//   &.slider-column {
-//     width: 100vw;
-//     height: 100%;
-//   }
-// }
-
-// .swiper {
-//   height: auto;
-//   @media (min-width: $ipad-breakpoint) {
-//     display: flex !important;
-//     align-items: center !important;
-//     // height: 60vh;
-//     // width: ;
-//   }
-//   &.swiper-slider {
-//     @media (min-width: $ipad-breakpoint) {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//     }
-//   }
-// }
-// .swiper-pagination {
-//   margin-top: 1rem !important;
-// }
-// .swiper-slide {
-//   width: 100%;
-//   //   object-fit: cover;
-//   @media (min-width: $ipad-breakpoint) {
-//     height: auto;
-//     width: 30%;
-//     // white-space: normal;
-//   }
-// }
-
-// .comment-text {
-//   @media (min-width: $ipad-breakpoint) {
-//     padding-top: 1rem;
-//   }
-// }
-
-// .review {
-//   display: flex !important;
-//   .quote-icon {
-//     flex: 0 0 20% !important;
-//     img {
-//       // width: auto;
-//       width: 50px !important;
-//       max-width: 100% !important; // Ensure it doesn't overflow its container
-//     }
-//   }
-// }
 .swiper-wrapper {
-  min-height: 350px;
+  min-height: 320px;
   align-items: center;
 }
 .swiper-slide {
@@ -87,8 +7,15 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
   text-align: center;
+
+  .premble-02 {
+    line-height: 1.5;
+  }
+}
+.containerSwiper {
+  height: 320px !important;
 }
 .swiper-pagination-bullet-active {
   background-color: grey !important;

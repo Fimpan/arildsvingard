@@ -16,9 +16,9 @@
   }
   &.bg-grey-tertiary {
     background-color: $color-surface-grey-tertiary;
-    padding: 0 0 0 0.75rem;
+    padding: 0 0.75rem;
     @media (min-width: $desktop-breakpoint) {
-      padding: 10rem 2rem;
+      padding: 8rem 2rem;
     }
   }
 }
@@ -26,7 +26,9 @@
   max-width: 910px;
   margin: auto;
   // padding: 0.75rem;
-
+  &.max-width-container-quote {
+    max-width: 770px;
+  }
   .about-arilds {
     margin: 4rem 0 3rem 0;
   }
