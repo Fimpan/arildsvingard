@@ -213,7 +213,10 @@
       margin-bottom: 2rem;
     }
     .offers {
-      margin: 0 0 3rem 0;
+      margin: 0;
+      @media (min-width: $desktop-breakpoint) {
+        padding: 1.5rem;
+      }
       &.b-offers {
         // padding: 1.5rem;
         @media (min-width: $desktop-breakpoint) {
