@@ -123,6 +123,12 @@
       padding: 2rem 1.75rem;
     }
   }
+  &.btn-primary-font {
+    font-size: 0.75rem;
+    @media (min-width: $desktop-breakpoint) {
+      font-size: 1rem;
+    }
+  }
 }
 .guestModal {
   text-align: left;
