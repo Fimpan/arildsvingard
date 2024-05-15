@@ -10,11 +10,20 @@
 .icon {
   width: 20px;
   height: 20px;
+
+  &.hero-icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 @media (min-width: $desktop-breakpoint) {
   .icon {
     width: 20px;
     height: 20px;
+    &.hero-icon {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 .icon-back-button {

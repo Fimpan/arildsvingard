@@ -1029,6 +1029,12 @@ footer ul li .body-02 {
   width: 100%;
   display: block;
 }
+@media (min-width: 992px) {
+  .btn.btn-hero {
+    font-size: 1.5rem;
+    padding: 2rem 1.75rem;
+  }
+}
 
 .guestModal {
   text-align: left;
@@ -3475,7 +3481,7 @@ input::placeholder {
 }
 @media (min-width: 992px) {
   .hero .booking-button {
-    bottom: 20%;
+    bottom: 15%;
     left: 50%;
     transform: translate(-50%, -20%);
     min-width: 240px;
@@ -3496,11 +3502,19 @@ input::placeholder {
   width: 20px;
   height: 20px;
 }
+.icon.hero-icon {
+  width: 20px;
+  height: 20px;
+}
 
 @media (min-width: 992px) {
   .icon {
     width: 20px;
     height: 20px;
+  }
+  .icon.hero-icon {
+    width: 24px;
+    height: 24px;
   }
 }
 .icon-back-button {

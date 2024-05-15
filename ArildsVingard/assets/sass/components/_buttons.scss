@@ -114,6 +114,12 @@
     width: 100%;
     display: block;
   }
+  &.btn-hero {
+    @media (min-width: $desktop-breakpoint) {
+      font-size: 1.5rem;
+      padding: 2rem 1.75rem;
+    }
+  }
 }
 .guestModal {
   text-align: left;
