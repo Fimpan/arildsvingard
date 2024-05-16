@@ -1,4 +1,3 @@
 # arildsvingard
-Examensarbete 2024
-Skriv nånting sa julia
-hejfim
+
+Examensarbete 2024 Brobygrafiska
