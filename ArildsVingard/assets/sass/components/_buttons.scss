@@ -73,7 +73,8 @@
       color: $btn-text-primary-color;
 
       .icon {
-        filter: invert(100%) sepia(20%) saturate(4584%) hue-rotate(11deg) brightness(94%) contrast(79%);
+        filter: invert(100%) sepia(20%) saturate(4584%) hue-rotate(11deg)
+          brightness(94%) contrast(79%);
       }
     }
 
@@ -136,6 +137,10 @@
 
   &.btn-hero {
     @media (min-width: $desktop-breakpoint) {
+      font-size: 1rem;
+      padding: 2rem 1.75rem;
+    }
+    @media (min-width: 1400px) {
       font-size: 1.5rem;
       padding: 2rem 1.75rem;
     }
@@ -171,7 +176,10 @@
     // margin: 0.5rem;
     --flex-items: 2;
 
-    width: calc((100% / var(--flex-items)) - (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap)));
+    width: calc(
+      (100% / var(--flex-items)) -
+        (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
+    );
     // aspect-ratio: 2 / 1;
 
     &.input-container-one {
@@ -214,7 +222,7 @@
     }
 
     .radio-button:checked {
-      +.radio-tile {
+      + .radio-tile {
         // background-color: #079ad9;
         background-color: $btn-color-primary;
         color: $btn-text-primary-color;
@@ -223,7 +231,7 @@
         transform: scale(1.01, 1.01);
       }
 
-      +.radio-tile .radio-tile-label {
+      + .radio-tile .radio-tile-label {
         // color: white;
         // background-color: #079ad9;
         color: $btn-text-primary-color;
@@ -241,7 +249,10 @@
     .input-container {
       --flex-items: 3;
 
-      width: calc((100% / var(--flex-items)) - (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap)));
+      width: calc(
+        (100% / var(--flex-items)) -
+          (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
+      );
       // aspect-ratio: 2 / 1;
     }
   }
@@ -252,7 +263,10 @@
     .input-container {
       --flex-items: 5;
 
-      width: calc((100% / var(--flex-items)) - (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap)));
+      width: calc(
+        (100% / var(--flex-items)) -
+          (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
+      );
       // aspect-ratio: 2 / 1;
     }
   }
