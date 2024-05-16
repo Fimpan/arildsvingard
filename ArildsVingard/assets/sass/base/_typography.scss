@@ -2,29 +2,30 @@
 //Eftersom vi har nollställt all style, så kommer all text per default bli 16px, dvs ni måste bestämma storlek på allt
 
 body {
-  font-family: "AmbitRegular";
+  font-family: "AmbitRegular", sans-serif;
 }
 
 @font-face {
   font-family: "AmbitRegular";
-  src: url("/ArildsVingard/assets/fonts/Ambit\ Regular.otf");
+  src: url("../fonts/Ambit-Regular.otf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "AmbitSemiBold";
-  src: url("/ArildsVingard/assets/fonts/Ambit\ SemiBold.otf");
+  src: url("../fonts/Ambit-SemiBold.otf");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "MonumentGrotesk";
-  src: url("/ArildsVingard/assets/fonts/MonumentGrotesk-Semi-Mono.ttf")
-    format("truetype");
+  src: url("../fonts/MonumentGrotesk-Semi-Mono.ttf") format("truetype");
   font-weight: 600;
 }
+
 h1 {
   font-size: $headline-1-m;
+
   span {
     display: block;
   }
@@ -36,16 +37,20 @@ h1 {
     font-size: $headline-1;
   }
 }
+
 h2 {
   font-size: $headline-2-m;
   margin-top: 0.5rem;
+
   span {
     display: block;
   }
+
   @media (min-width: $desktop-breakpoint) {
     font-size: $headline-2;
   }
 }
+
 h4 {
   font-size: $headline-4-m;
 
@@ -53,26 +58,30 @@ h4 {
     font-size: $headline-4;
   }
 }
+
 p {
   // line-height: 120%;
   color: $color-text-primary;
 }
+
 a {
   color: $primary-text-color;
   text-decoration: none;
 }
 
 .accent-AA-100 {
-  font-family: "MonumentGrotesk";
+  font-family: "MonumentGrotesk", sans-serif;
   font-size: $Accent_AA-100-m;
   line-height: 24px;
   color: $color-text-primary;
   letter-spacing: 0.8px;
   text-transform: uppercase;
+
   @media (min-width: $desktop-breakpoint) {
     font-size: $Accent_AA-100;
     margin-bottom: 1.5rem;
   }
+
   &.accent-AA-100-mb0 {
     @media (min-width: $desktop-breakpoint) {
       margin-bottom: 0rem;
@@ -83,10 +92,11 @@ a {
 }
 
 .label-50-aa {
-  font-family: "AmbitRegular";
+  font-family: "AmbitRegular", sans-serif;
   color: $color-text-primary;
   font-size: $label-50-aa-m;
   letter-spacing: 0.7px;
+
   @media (min-width: $desktop-breakpoint) {
     font-size: $label-50-aa;
   }
@@ -97,37 +107,45 @@ a {
   line-height: 120%;
   color: $color-text-primary;
   margin-top: 0.5rem;
+
   @media (min-width: $desktop-breakpoint) {
     font-size: $preamble-01;
   }
 }
+
 .premble-02 {
   font-size: 14px;
   line-height: 24px;
   color: $color-text-primary;
+
   @media (min-width: $desktop-breakpoint) {
     font-size: 22px;
   }
 }
+
 .body-01 {
   font-size: $body-01-m;
   color: $color-text-primary;
   line-height: 24px;
   margin-bottom: 2rem;
+
   @media (min-width: $desktop-breakpoint) {
     font-size: $body-01-d;
     line-height: 27px;
   }
 }
+
 .body-02 {
-  font-family: "AmbitRegular";
+  font-family: "AmbitRegular", sans-serif;
   font-size: $body-02-m;
   color: $color-text-primary;
   line-height: 150%;
   margin-bottom: 0.75rem;
+
   @media (min-width: $ipad-breakpoint) {
     margin-bottom: 0rem;
   }
+
   @media (min-width: $desktop-breakpoint) {
     font-size: $body-02-d;
   }
@@ -141,9 +159,11 @@ a {
     font-size: $b-headline-1;
   }
 }
+
 .stageText {
   font-size: $stage-font-size;
   margin-top: 0.5rem;
+
   &.stageText-disable {
     color: #d9d9d9;
   }
@@ -157,6 +177,7 @@ a {
   font-weight: $semi-bold;
   font-size: $b-headline-4-m;
 }
+
 .checkChoose {
   font-size: 0.75rem;
   font-weight: $regular;
@@ -173,14 +194,17 @@ a {
   font-size: $b-headline-2-m;
   margin-bottom: $b-headline-2-m-mb;
   font-weight: 600;
+
   @media (min-width: $desktop-breakpoint) {
     margin-top: 0;
   }
 }
+
 .h3-booking {
   font-size: $b-headline-3-m;
   font-weight: $semi-bold;
   margin-bottom: $b-headline-3-m-mb;
+
   @media (min-width: $ipad-breakpoint) {
     font-size: $b-headline-3-d;
   }
@@ -191,12 +215,15 @@ a {
   font-weight: $semi-bold;
   margin-bottom: 1.5rem;
 }
+
 .p-booking {
   font-size: $body-booking-s;
   margin-bottom: $body-booking-m-mb;
+
   @media (min-width: $ipad-breakpoint) {
     font-size: $body-booking-m;
   }
+
   @media (min-width: $desktop-breakpoint) {
     font-size: $body-booking-l;
   }
@@ -214,6 +241,7 @@ a {
     // font-size: $body-booking-l;
   }
 }
+
 .selected-date {
   font-size: 0.75rem;
 
@@ -225,10 +253,12 @@ a {
 .span-booking {
   font-size: $body-booking-xs;
 }
+
 .span-price {
   letter-spacing: 0.05rem;
   // font-weight: $semi-bold;
 }
+
 .span-include {
   font-size: $body-booking-xs;
   list-style-type: disc;
@@ -240,6 +270,7 @@ a {
     list-style-type: disc;
   }
 }
+
 @media (min-width: $desktop-breakpoint) {
   .span-include {
     &.include-ralign {

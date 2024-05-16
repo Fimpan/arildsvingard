@@ -10,7 +10,7 @@
   text-transform: uppercase;
   font-size: 1rem;
   line-height: 1.24;
-  font-family: "MonumentGrotesk";
+  font-family: "MonumentGrotesk", sans-serif;
   letter-spacing: 0.05em;
   line-height: 1.5;
   transition: 0.3s background-color, 0.3s color;
@@ -31,6 +31,7 @@
     height: 48px;
     font-size: $btn-font-size;
   }
+
   &:focus {
     outline: 3px solid $btn-text-primary-color;
     outline-offset: 0px;
@@ -43,6 +44,7 @@
     &:hover {
       background-color: $btn-color-hover;
     }
+
     &:active {
       background-color: $btn-color-enable;
     }
@@ -51,25 +53,30 @@
   &.btn-primary-full {
     display: flex;
     justify-content: center;
+
     @media (min-width: $ipad-breakpoint) {
       display: inline-flex;
       justify-content: unset;
     }
   }
+
   &.btn-primary-disable {
     background-color: #cccccc;
     color: #666666;
   }
+
   &.btn-secondary {
     border: $btn-stroke-secondary;
+
     &:hover {
       background-color: $btn-color-primary;
       color: $btn-text-primary-color;
+
       .icon {
-        filter: invert(100%) sepia(20%) saturate(4584%) hue-rotate(11deg)
-          brightness(94%) contrast(79%);
+        filter: invert(100%) sepia(20%) saturate(4584%) hue-rotate(11deg) brightness(94%) contrast(79%);
       }
     }
+
     &:active {
       background-color: $btn-color-hover;
     }
@@ -78,16 +85,20 @@
   &.btn-secondary-full {
     width: 100%;
     justify-content: center;
+
     @media (min-width: $ipad-breakpoint) {
       width: auto;
     }
   }
+
   &.btn-teritary {
     padding: 0;
+
     &:hover {
       text-decoration: underline;
     }
   }
+
   &.btn-chat {
     background-color: $color-surface-green-secondary;
     color: white;
@@ -99,37 +110,46 @@
 
   &.btn-chat-mb {
     bottom: 80px;
+
     @media (min-width: $desktop-breakpoint) {
       bottom: 111px;
     }
   }
+
   &.btn-booking {
     min-width: 180px;
   }
+
   &.btn-close {
     background-color: red;
   }
+
   &.btn-open {
     // background-color: #04aa6d;
   }
+
   &.btn-full-bleed {
     // border-radius: 0;
     width: 100%;
     display: block;
   }
+
   &.btn-hero {
     @media (min-width: $desktop-breakpoint) {
       font-size: 1.5rem;
       padding: 2rem 1.75rem;
     }
   }
+
   &.btn-primary-font {
     font-size: 0.75rem;
+
     @media (min-width: $desktop-breakpoint) {
       font-size: 1rem;
     }
   }
 }
+
 .guestModal {
   text-align: left;
 }
@@ -144,22 +164,21 @@
   // justify-content: center;
   --flex-gap: 0.75rem;
   gap: var(--flex-gap);
+
   .input-container {
     position: relative;
     // height: 80px;
     // margin: 0.5rem;
     --flex-items: 2;
 
-    width: calc(
-      (100% / var(--flex-items)) -
-        (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
-    );
+    width: calc((100% / var(--flex-items)) - (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap)));
     // aspect-ratio: 2 / 1;
 
     &.input-container-one {
       width: 100%;
       // aspect-ratio: 8 / 1;
     }
+
     .radio-button {
       opacity: 0;
       position: absolute;
@@ -195,7 +214,7 @@
     }
 
     .radio-button:checked {
-      + .radio-tile {
+      +.radio-tile {
         // background-color: #079ad9;
         background-color: $btn-color-primary;
         color: $btn-text-primary-color;
@@ -204,7 +223,7 @@
         transform: scale(1.01, 1.01);
       }
 
-      + .radio-tile .radio-tile-label {
+      +.radio-tile .radio-tile-label {
         // color: white;
         // background-color: #079ad9;
         color: $btn-text-primary-color;
@@ -213,17 +232,16 @@
     }
   }
 }
+
 @media (min-width: $ipad-breakpoint) {
   .radio-tile-group {
     --flex-gap: 1rem;
     gap: var(--flex-gap);
+
     .input-container {
       --flex-items: 3;
 
-      width: calc(
-        (100% / var(--flex-items)) -
-          (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
-      );
+      width: calc((100% / var(--flex-items)) - (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap)));
       // aspect-ratio: 2 / 1;
     }
   }
@@ -234,10 +252,7 @@
     .input-container {
       --flex-items: 5;
 
-      width: calc(
-        (100% / var(--flex-items)) -
-          (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
-      );
+      width: calc((100% / var(--flex-items)) - (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap)));
       // aspect-ratio: 2 / 1;
     }
   }
@@ -248,6 +263,7 @@
 .cart-button {
   background-color: #f0efeb;
   padding: 0.5rem 1rem;
+
   .icon-cart {
     width: 24px;
   }

@@ -4,8 +4,9 @@
   margin: 0 auto;
   padding: 0 1.25rem;
 }
-@media (min-width: $desktop-breakpoint) {
-}
+
+@media (min-width: $desktop-breakpoint) {}
+
 .brand {
   font-family: inherit;
   font-size: 1.6rem;
@@ -35,9 +36,10 @@
 //Top menu
 .top-menu-container {
   display: none;
-  .top-menu-link {
-  }
+
+  .top-menu-link {}
 }
+
 @media (min-width: $desktop-breakpoint) {
   .top-menu-container {
     // max-width: 1400px;
@@ -45,13 +47,16 @@
     display: block;
     padding: 0.75rem 2rem;
     border-bottom: 1px solid #d9d1c5;
+
     .top-navbar {
       display: flex;
       justify-content: end;
+
       .top-menu {
         display: flex;
         align-items: center;
         gap: 2rem;
+
         .top-menu-item {
           .top-menu-link {
             display: flex;
@@ -85,6 +90,7 @@
   padding: 0.75rem;
   // margin: 0 auto;
 }
+
 @media (min-width: $desktop-breakpoint) {
   .wrapper {
     padding: 3rem 2rem;
@@ -106,11 +112,13 @@
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   background-color: $color-surface-grey-primaryi;
   transition: all 0.5s ease;
+
   @media (min-width: $desktop-breakpoint) {
     top: 8rem;
     width: 100%;
     height: 100%;
   }
+
   &.active {
     left: 0rem;
     opacity: 1;
@@ -123,16 +131,19 @@
   width: 100%;
   height: auto;
   padding: 1rem 0;
+
   @media (min-width: $desktop-breakpoint) {
     width: auto;
     margin: 2rem 0 0 2rem;
   }
+
   &-item {
     z-index: 100;
     display: block;
     margin: 0 auto;
     border-bottom: 1px solid $color-text-primary;
     padding: 1.5rem 0;
+
     @media (min-width: $ipad-breakpoint) {
       padding: 2rem 0;
       display: flex;
@@ -153,11 +164,13 @@
     text-transform: capitalize;
     color: $color-text-primary;
     transition: all 0.3s ease-in-out;
+
     @media (min-width: $ipad-breakpoint) {
       font-size: 2rem;
       flex: 0 0 50%;
     }
-    > i.bx {
+
+    >i.bx {
       font-size: 1.35rem;
       line-height: 1.5;
       color: inherit;
@@ -165,11 +178,16 @@
 
     &:hover {
       outline: none;
-      color: $color-surface-green-primary;
+      color: $btn-color-disable;
     }
+
     .icon {
       width: 24px;
       height: 24px;
+      user-select: none;
+      pointer-events: none;
+      transition: transform 0.3s ease-in-out;
+
       @media (min-width: $ipad-breakpoint) {
         width: 32px;
         height: 32px;
@@ -177,6 +195,19 @@
     }
   }
 }
+
+.active-icon {
+
+
+  .icon {
+
+    @media (max-width: $ipad-breakpoint) {
+      transform: rotate(90deg);
+    }
+
+  }
+}
+
 .menu-dropdown {
   // other styles...
 
@@ -201,14 +232,14 @@
   padding-top: 1rem;
   border: none;
   outline: none;
-  opacity: 1;
+  opacity: 0;
   overflow: hidden;
-  visibility: visible;
+  visibility: hidden;
   transform: translateY(0px);
   box-shadow: none;
   background: transparent;
   font-size: 1.5rem;
-  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 
   @media (min-width: $desktop-breakpoint) {
     // position: fixed; // Make the submenu fixed on desktop
@@ -226,6 +257,12 @@
   &-item {
     display: block;
     margin-top: 0.75rem;
+    transition: 0.5s;
+  }
+
+  &.show-menu {
+    opacity: 1;
+    visibility: visible;
   }
 
   &-link {
@@ -240,6 +277,7 @@
     @media (min-width: $desktop-breakpoint) {
       font-size: 2rem;
     }
+
     &:hover {
       outline: none;
       color: $color-surface-green-primary;
@@ -252,6 +290,7 @@
     transform: translateY(-100%);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -269,10 +308,12 @@
   justify-content: center;
   align-items: center;
 }
+
 .button-bruger {
   .book-experience {
     display: none;
   }
+
   .burger {
     position: relative;
     display: block;
@@ -301,25 +342,31 @@
       border-radius: 1rem;
       background: $color-text-primary;
       transition: 0.3s;
+
       &:nth-child(1) {
         top: 10px;
       }
+
       &:nth-child(2) {
         top: 15px; // Adjusted to 4px
       }
+
       &:nth-child(3) {
         top: 20px; // Adjusted to 8px
       }
     }
+
     &.exit {
       span {
         &:nth-child(1) {
           top: 15px;
           transform: rotate(45deg);
         }
+
         &:nth-child(2) {
           display: none;
         }
+
         &:nth-child(3) {
           top: 15px; // Adjusted to 8px
           transform: rotate(-45deg);
@@ -334,6 +381,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+
     .book-experience {
       display: block;
     }
@@ -352,9 +400,11 @@
   visibility: hidden;
   transition: all 0.35s ease-in-out;
   background-color: rgba(0, 0, 0, 0.65);
+
   @media (min-width: $desktop-breakpoint) {
     top: 9rem;
   }
+
   &.active {
     display: block;
     opacity: 1;
