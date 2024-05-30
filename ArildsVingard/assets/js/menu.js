@@ -15,27 +15,25 @@ const toggleMenu = () => {
 
 // Collapsible Mobile Submenu Function
 const collapseSubMenu = () => {
-  navbarMenu
-    .querySelector(".submenu")
-    .removeAttribute("style");
+  navbarMenu.querySelector(".submenu").removeAttribute("style");
   navbarMenu.querySelector(".submenu.show-menu").classList.remove("show-menu");
 };
 
 // Toggle Mobile Submenu Function
 const toggleSubMenu = (e) => {
-  console.log(e.target.hasAttribute('data-toggle'));
-  if (e.target.hasAttribute('data-toggle')) {
+  console.log(e.target.hasAttribute("data-toggle"));
+  if (e.target.hasAttribute("data-toggle")) {
     e.preventDefault();
-    e.target.classList.toggle('active-icon');
+    e.target.classList.toggle("active-icon");
     const submenuRef = e.target.nextElementSibling;
-    if (submenuRef.classList.contains('show-menu')) {
+    if (submenuRef.classList.contains("show-menu")) {
       // collapseSubMenu();
       submenuRef.removeAttribute("style");
     } else {
       // collapseSubMenu();
       submenuRef.style.maxHeight = submenuRef.scrollHeight + "px";
     }
-    submenuRef.classList.toggle('show-menu');
+    submenuRef.classList.toggle("show-menu");
   }
   // if (e.target.hasAttribute('data-toggle')) {
   //   e.preventDefault();

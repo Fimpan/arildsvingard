@@ -1064,7 +1064,7 @@ footer ul li .body-02 {
 }
 @media (min-width: 1400px) {
   .btn.btn-hero {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 2rem 1.75rem;
   }
 }
@@ -3540,7 +3540,7 @@ input::placeholder {
 }
 @media (min-width: 1900px) {
   .hero .booking-button {
-    bottom: 10%;
+    bottom: 8%;
     left: 50%;
     transform: translate(-50%, -20%);
     min-width: 240px;
